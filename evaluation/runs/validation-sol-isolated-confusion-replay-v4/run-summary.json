@@ -1,0 +1,18 @@
+{
+  "selected": 15,
+  "targeted_adjudication_sample_ids": [
+    "inv_0003",
+    "inv_0021",
+    "inv_0025"
+  ],
+  "standard_adjudication_sample_ids": [
+    "inv_0010",
+    "inv_0068",
+    "inv_0070",
+    "inv_0071",
+    "inv_0076"
+  ],
+  "counterfactual_adjudicator_cost_usd": 0.549908,
+  "api_calls": 0,
+  "predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-isolated-confusion-replay-v4\\predictions"
+}

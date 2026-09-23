@@ -25,6 +25,8 @@ PROMPT_VERSION_V2 = "inventory-full-catalog-adjudication-v2"
 MODEL_BUNDLE_VERSION_V2 = "terra-luna-sol-full-catalog-v2"
 PROMPT_VERSION_V3 = "inventory-confusion-aware-adjudication-v3"
 MODEL_BUNDLE_VERSION_V3 = "terra-luna-sol-confusion-aware-v3"
+PROMPT_VERSION_V4 = "inventory-isolated-confusion-adjudication-v4"
+MODEL_BUNDLE_VERSION_V4 = "terra-luna-sol-isolated-confusion-v4"
 DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_INPUT_USD_PER_MILLION = 4.0
 DEFAULT_OUTPUT_USD_PER_MILLION = 20.0
@@ -133,6 +135,50 @@ def targeted_reference_names(
     if len(expanded) > max_products:
         expanded = expanded[:max_products]
     return expanded, [family["id"] for family in matched]
+
+
+def isolated_confusion_reference_names(
+    candidate_a: dict[str, Any],
+    candidate_b: dict[str, Any],
+    families: list[dict[str, Any]],
+    max_products: int,
+) -> tuple[list[str], list[str]]:
+    if max_products <= 0:
+        raise ValueError("--max-targeted-reference-products must be greater than zero")
+    names_a = {item["name"] for item in candidate_a["products"]}
+    names_b = {item["name"] for item in candidate_b["products"]}
+    changed_names = names_a ^ names_b
+    if not changed_names:
+        return [], []
+    matches = [
+        family for family in families if changed_names <= set(family["members"])
+    ]
+    if len(matches) != 1:
+        return [], []
+    family = matches[0]
+    return list(family["members"][:max_products]), [family["id"]]
+
+
+def select_confusion_references(
+    candidate_a: dict[str, Any],
+    candidate_b: dict[str, Any],
+    families: list[dict[str, Any]],
+    max_products: int,
+    *,
+    isolated_only: bool,
+) -> tuple[list[str], list[str]]:
+    if isolated_only:
+        return isolated_confusion_reference_names(
+            candidate_a, candidate_b, families, max_products
+        )
+    candidate_names = sorted(
+        {
+            item["name"]
+            for prediction in (candidate_a, candidate_b)
+            for item in prediction["products"]
+        }
+    )
+    return targeted_reference_names(candidate_names, families, max_products)
 
 
 def crop_data_url(source: Path, reference: dict[str, Any]) -> str:
@@ -346,9 +392,16 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
     allowed_names = set(catalog_names)
     full_catalog = args.full_catalog_adjudication
     confusion_aware = args.confusion_sets is not None
+    isolated_confusion = args.isolated_confusion_only
     if confusion_aware and not full_catalog:
         raise ValueError("--confusion-sets requires --full-catalog-adjudication")
-    if confusion_aware:
+    if isolated_confusion and not confusion_aware:
+        raise ValueError("--isolated-confusion-only requires --confusion-sets")
+    if isolated_confusion:
+        prompt_version = PROMPT_VERSION_V4
+        model_bundle_version = MODEL_BUNDLE_VERSION_V4
+        adjudication_scope = "full_catalog_isolated_confusion"
+    elif confusion_aware:
         prompt_version = PROMPT_VERSION_V3
         model_bundle_version = MODEL_BUNDLE_VERSION_V3
         adjudication_scope = "full_catalog_confusion_aware"
@@ -426,20 +479,12 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
     if confusion_aware:
         assert reference_source is not None
         for sample_id in identity_disagreement_ids:
-            candidate_names = sorted(
-                {
-                    item["name"]
-                    for prediction in (
-                        candidate_a[sample_id][0],
-                        candidate_b[sample_id][0],
-                    )
-                    for item in prediction["data"]["products"]
-                }
-            )
-            targeted_names, matched_families = targeted_reference_names(
-                candidate_names,
+            targeted_names, matched_families = select_confusion_references(
+                candidate_a[sample_id][0]["data"],
+                candidate_b[sample_id][0]["data"],
                 confusion_families,
                 args.max_targeted_reference_products,
+                isolated_only=isolated_confusion,
             )
             crop_count = 0
             for name in targeted_names:
@@ -472,6 +517,13 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
         "reference_sheet_count": len(reference_sheet_paths),
         "confusion_sets": str(args.confusion_sets.resolve()) if confusion_aware else None,
         "confusion_sets_version": confusion_version,
+        "confusion_targeting_policy": (
+            "isolated_identity_symmetric_difference"
+            if isolated_confusion
+            else "any_candidate_family"
+            if confusion_aware
+            else None
+        ),
         "targeted_references_per_product": args.targeted_references_per_product,
         "max_targeted_reference_products": args.max_targeted_reference_products,
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -577,10 +629,12 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
                 if full_catalog:
                     schema_names = catalog_names
                     if confusion_aware:
-                        targeted_names, matched_confusion_families = targeted_reference_names(
-                            candidate_names,
+                        targeted_names, matched_confusion_families = select_confusion_references(
+                            a_prediction["data"],
+                            b_prediction["data"],
                             confusion_families,
                             args.max_targeted_reference_products,
+                            isolated_only=isolated_confusion,
                         )
                         assert reference_source is not None
                         missing_targeted_references = [
@@ -809,6 +863,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help=(
             "Add high-detail crops for catalog-defined confusion families during full-catalog "
             "adjudication. This versions the resolver as the v3 experimental path."
+        ),
+    )
+    parser.add_argument(
+        "--isolated-confusion-only",
+        action="store_true",
+        help=(
+            "Attach targeted crops only when the identity symmetric difference is fully "
+            "contained in exactly one confusion family. Requires --confusion-sets."
         ),
     )
     parser.add_argument("--targeted-references-per-product", type=int, default=1)

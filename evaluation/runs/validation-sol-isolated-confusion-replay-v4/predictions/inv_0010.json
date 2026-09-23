@@ -1,0 +1,108 @@
+{
+  "sample_id": "inv_0010",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-replay-v4",
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0010",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 541,
+        "y": 173,
+        "width": 893,
+        "height": 952
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6259,
+  "estimated_cost_usd": 0.059784,
+  "usage": {
+    "input_tokens": 13986,
+    "output_tokens": 192,
+    "total_tokens": 14178,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 13986,
+        "output_tokens": 192,
+        "total_tokens": 14178
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.059784
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0de0ead59d403760016ab4472603c087d28a58b6c691b5122a",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0010.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0010.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "corny_nussvoll",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "corny_nussvoll"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    },
+    "replay_version": "0.1.0",
+    "replay_policy": "isolated_identity_symmetric_difference",
+    "replay_source": "standard_v2",
+    "replay_source_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-full-catalog-v2\\predictions\\inv_0010.json",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  }
+}

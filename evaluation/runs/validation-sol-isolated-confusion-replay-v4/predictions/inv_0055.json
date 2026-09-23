@@ -1,0 +1,103 @@
+{
+  "sample_id": "inv_0055",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-replay-v4",
+  "data": {
+    "products": [
+      {
+        "name": "lettuce",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0055",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 695,
+        "y": 226,
+        "width": 995,
+        "height": 1033
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2349,
+  "estimated_cost_usd": 0.0028566,
+  "usage": {
+    "input_tokens": 14025,
+    "output_tokens": 43,
+    "total_tokens": 14068,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14025,
+        "output_tokens": 43,
+        "total_tokens": 14068
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028566
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0276d2b85c0de753016ab44700e57887d2b8752f3a651a6d7e",
+    "response_ids": {
+      "localization": "resp_0276d2b85c0de753016ab44700e57887d2b8752f3a651a6d7e"
+    },
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "lettuce"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0055.json",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "agreement",
+    "resolver_model": null,
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0055.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0055.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-luna",
+      "adjudicator": null
+    },
+    "replay_version": "0.1.0",
+    "replay_policy": "isolated_identity_symmetric_difference",
+    "replay_source": "standard_v2",
+    "replay_source_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-full-catalog-v2\\predictions\\inv_0055.json",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  }
+}

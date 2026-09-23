@@ -107,6 +107,11 @@ for one regression, leaving exact accuracy at 10/15 while increasing
 end-to-end cost by 9.27%. See `V1_CONFUSION_PILOT_RESULTS.md`. The next
 hypothesis restricts targeted crops to isolated within-family disagreements.
 
+The isolated-confusion v4 counterfactual replay improved exact accuracy from
+10/15 to 11/15 with no API calls. It is the leading development candidate, but
+the replay is not independent validation evidence. See
+`V1_ISOLATED_CONFUSION_REPLAY_RESULTS.md`.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

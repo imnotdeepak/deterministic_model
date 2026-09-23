@@ -19,6 +19,8 @@ POLICY_VERSION_V2 = "terra-count-sol-full-catalog-v2"
 MODEL_BUNDLE_VERSION_V2 = "terra-luna-sol-full-catalog-routed-v2"
 POLICY_VERSION_V3 = "terra-count-sol-confusion-aware-v3"
 MODEL_BUNDLE_VERSION_V3 = "terra-luna-sol-confusion-aware-routed-v3"
+POLICY_VERSION_V4 = "terra-count-sol-isolated-confusion-v4"
+MODEL_BUNDLE_VERSION_V4 = "terra-luna-sol-isolated-confusion-routed-v4"
 
 
 def identity_signature(data: dict[str, Any]) -> tuple[str, ...]:
@@ -77,11 +79,25 @@ def compose_prediction(
 def run(args: argparse.Namespace) -> dict[str, Any]:
     full_catalog = args.full_catalog_adjudication
     confusion_aware = args.confusion_aware_adjudication
+    isolated_confusion = args.isolated_confusion_adjudication
     if confusion_aware and not full_catalog:
         raise ValueError(
             "--confusion-aware-adjudication requires --full-catalog-adjudication"
         )
-    if confusion_aware:
+    if isolated_confusion and not full_catalog:
+        raise ValueError(
+            "--isolated-confusion-adjudication requires --full-catalog-adjudication"
+        )
+    if isolated_confusion and confusion_aware:
+        raise ValueError(
+            "Choose either --confusion-aware-adjudication or "
+            "--isolated-confusion-adjudication"
+        )
+    if isolated_confusion:
+        policy_version = POLICY_VERSION_V4
+        model_bundle_version = MODEL_BUNDLE_VERSION_V4
+        identity_adjudication_scope = "full_catalog_isolated_confusion"
+    elif confusion_aware:
         policy_version = POLICY_VERSION_V3
         model_bundle_version = MODEL_BUNDLE_VERSION_V3
         identity_adjudication_scope = "full_catalog_confusion_aware"
@@ -255,6 +271,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--confusion-aware-adjudication",
         action="store_true",
         help="Record the experimental v3 policy with targeted confusion-family references.",
+    )
+    parser.add_argument(
+        "--isolated-confusion-adjudication",
+        action="store_true",
+        help="Record the v4 policy that targets only isolated confusion-family differences.",
     )
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--dry-run", action="store_true")

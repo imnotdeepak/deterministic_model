@@ -131,3 +131,38 @@ def test_confusion_aware_mode_versions_v3_policy(tmp_path):
         result["config"]["identity_adjudication_scope"]
         == "full_catalog_confusion_aware"
     )
+
+
+def test_isolated_confusion_mode_versions_v4_policy(tmp_path):
+    evaluation = Path(__file__).parents[1]
+    args = composer.parse_args(
+        [
+            "--dataset", str(evaluation / "datasets" / "inventory-v0"),
+            "--split", "development",
+            "--limit", "20",
+            "--candidate-a",
+            str(evaluation / "runs" / "luna-references-v0" / "predictions"),
+            "--candidate-b",
+            str(evaluation / "runs" / "terra-references-v0" / "predictions"),
+            "--base-predictions",
+            str(evaluation / "runs" / "luna-terra-authoritative-evidence-v0" / "predictions"),
+            "--adjudicated-predictions",
+            str(evaluation / "runs" / "sol-disagreement-v0" / "predictions"),
+            "--output", str(tmp_path / "unused-v4"),
+            "--full-catalog-adjudication",
+            "--isolated-confusion-adjudication",
+            "--dry-run",
+        ]
+    )
+
+    result = composer.run(args)
+
+    assert result["config"]["routing_policy_version"] == composer.POLICY_VERSION_V4
+    assert (
+        result["config"]["model_bundle_version"]
+        == "terra-luna-sol-isolated-confusion-routed-v4"
+    )
+    assert (
+        result["config"]["identity_adjudication_scope"]
+        == "full_catalog_isolated_confusion"
+    )

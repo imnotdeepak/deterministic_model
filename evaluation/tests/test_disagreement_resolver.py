@@ -82,6 +82,46 @@ def test_confusion_sets_expand_candidate_to_full_visual_family():
     ]
 
 
+def test_isolated_confusion_targets_one_family_and_rejects_multi_family_scene():
+    families = [
+        {"id": "coffee", "members": ["coffee_a", "coffee_b"]},
+        {"id": "fruit", "members": ["apple_a", "apple_b"]},
+    ]
+    coffee_a = {
+        "products": [
+            {"name": "shared", "quantity": 1},
+            {"name": "coffee_a", "quantity": 1},
+        ]
+    }
+    coffee_b = {
+        "products": [
+            {"name": "shared", "quantity": 1},
+            {"name": "coffee_b", "quantity": 1},
+        ]
+    }
+    names, family_ids = resolver.isolated_confusion_reference_names(
+        coffee_a, coffee_b, families, max_products=12
+    )
+    assert names == ["coffee_a", "coffee_b"]
+    assert family_ids == ["coffee"]
+
+    multi_a = {
+        "products": [
+            {"name": "coffee_a", "quantity": 1},
+            {"name": "apple_a", "quantity": 1},
+        ]
+    }
+    multi_b = {
+        "products": [
+            {"name": "coffee_b", "quantity": 1},
+            {"name": "apple_b", "quantity": 1},
+        ]
+    }
+    assert resolver.isolated_confusion_reference_names(
+        multi_a, multi_b, families, max_products=12
+    ) == ([], [])
+
+
 def test_adjudicator_request_combines_catalog_sheets_targeted_crops_and_target():
     class FakeResponses:
         def __init__(self):
