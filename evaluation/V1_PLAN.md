@@ -127,6 +127,16 @@ inventory-v0 and the visual reference sources.
 The next model action is a v4 validation run. The 46-image test split must stay
 untouched until the pipeline is selected and frozen from validation results.
 
+Run validation from a PowerShell session containing `OPENAI_API_KEY`:
+
+```powershell
+.\evaluation\run_v1_validation_v4.ps1
+```
+
+The script verifies the dataset lock, processes only the 45-image validation
+split, and produces evaluation, end-to-end economics, and failure-analysis
+reports. It does not access the test split.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.
