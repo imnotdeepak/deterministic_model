@@ -1,0 +1,105 @@
+{
+  "sample_id": "inv_0041",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-v4",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0041",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1352,
+        "y": 608,
+        "width": 407,
+        "height": 247
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4994,
+  "estimated_cost_usd": 0.058468,
+  "usage": {
+    "input_tokens": 14007,
+    "output_tokens": 122,
+    "total_tokens": 14129,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14007,
+        "output_tokens": 122,
+        "total_tokens": 14129
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.058468
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0dc222dbdd41954d016ab45e1704ec87d2b7e4bf5090795bb3",
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0041.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0041.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "augustiner_lagerbraeu_hell_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "augustiner_lagerbraeu_hell_05"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [],
+    "matched_confusion_families": [],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

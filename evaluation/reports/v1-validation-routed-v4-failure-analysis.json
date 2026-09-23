@@ -1,0 +1,624 @@
+{
+  "analyzer_version": "0.1.0",
+  "generated_at_utc": "2026-09-23T23:20:14.454029+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v1",
+  "split": "validation",
+  "tuning_safety": {
+    "frozen_test_override_used": false,
+    "warning": null
+  },
+  "summary": {
+    "samples": 45,
+    "product_exact_samples": 36,
+    "fully_correct_samples": 35,
+    "failed_samples": 10,
+    "whole_image_exact_accuracy": 0.8,
+    "all_dimensions_correct_rate": 0.7777777777777778,
+    "category_counts": {
+      "identity": 9,
+      "localization": 10,
+      "quantity": 2,
+      "routing": 1
+    },
+    "routing_decision_counts": {
+      "agreement": 30,
+      "sol_identity_adjudication": 15
+    }
+  },
+  "stage_metrics": {
+    "luna": {
+      "expected_samples": 45,
+      "present_predictions": 45,
+      "total_cost_usd": 0.1274424,
+      "mean_cost_usd": 0.00283205,
+      "median_cost_usd": 0.0028124,
+      "latency_p50_ms": 2692.0,
+      "latency_p95_ms": 3432.0
+    },
+    "terra": {
+      "expected_samples": 45,
+      "present_predictions": 45,
+      "total_cost_usd": 1.27524,
+      "mean_cost_usd": 0.02833867,
+      "median_cost_usd": 0.028124,
+      "latency_p50_ms": 2412.0,
+      "latency_p95_ms": 4406.6
+    },
+    "evidence": {
+      "expected_samples": 45,
+      "present_predictions": 45,
+      "total_cost_usd": 0.1333178,
+      "mean_cost_usd": 0.00296262,
+      "median_cost_usd": 0.0029192,
+      "latency_p50_ms": 2773.0,
+      "latency_p95_ms": 4644.8
+    },
+    "sol": {
+      "expected_samples": 45,
+      "present_predictions": 45,
+      "total_cost_usd": 1.1052896,
+      "mean_cost_usd": 0.02456199,
+      "median_cost_usd": 0.0029262,
+      "latency_p50_ms": 3182.0,
+      "latency_p95_ms": 14772.6
+    }
+  },
+  "failures": [
+    {
+      "sample_id": "inv_0082",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization",
+        "routing"
+      ],
+      "expected": {
+        "apple_golden_delicious": 3
+      },
+      "predicted": {
+        "apple_golden_delicious": 1,
+        "apple_granny_smith": 1,
+        "pear": 1
+      },
+      "count_deltas": [
+        {
+          "product": "apple_golden_delicious",
+          "expected": 3,
+          "predicted": 1,
+          "delta": -2
+        },
+        {
+          "product": "apple_granny_smith",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "pear",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_3",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.3333333333333333,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": true,
+        "correct_candidate_discarded": true
+      }
+    },
+    {
+      "sample_id": "inv_0207",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "apple_red_boskoop": 1,
+        "cafe_wunderbar_espresso": 1,
+        "cocoba_cocoa": 1,
+        "franken_tafelreiniger": 1,
+        "gepa_bio_und_fair_rooibostee": 1,
+        "kilimanjaro_tea_earl_grey": 1
+      },
+      "predicted": {
+        "cafe_wunderbar_espresso": 1,
+        "gepa_bio_und_fair_rooibostee": 1,
+        "cocoba_cocoa": 1,
+        "apple_red_boskoop": 1,
+        "kilimanjaro_tea_earl_grey": 1
+      },
+      "count_deltas": [
+        {
+          "product": "franken_tafelreiniger",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_5",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.8333333333333334,
+      "routing": {
+        "decision": "agreement",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0215",
+      "categories": [
+        "localization"
+      ],
+      "expected": {
+        "cucumber": 1,
+        "gepa_bio_caffe_crema": 1,
+        "pasta_reggia_fusilli": 1,
+        "pear": 1,
+        "salad_iceberg": 1,
+        "zucchini": 1
+      },
+      "predicted": {
+        "cucumber": 1,
+        "gepa_bio_caffe_crema": 1,
+        "pasta_reggia_fusilli": 1,
+        "pear": 1,
+        "salad_iceberg": 1,
+        "zucchini": 1
+      },
+      "count_deltas": [],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_0",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": true,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0216",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "cucumber": 1,
+        "gepa_bio_caffe_crema": 1,
+        "pasta_reggia_fusilli": 1,
+        "pear": 1,
+        "salad_iceberg": 1,
+        "zucchini": 1
+      },
+      "predicted": {
+        "gepa_bio_caffe_crema": 1,
+        "pasta_reggia_fusilli": 1,
+        "pear": 1,
+        "salad_iceberg": 1,
+        "zucchini": 2
+      },
+      "count_deltas": [
+        {
+          "product": "cucumber",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "zucchini",
+          "expected": 1,
+          "predicted": 2,
+          "delta": 1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_5",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.8333333333333334,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0224",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_naturell_02": 1,
+        "adelholzener_gourmet_mineralwasser_02": 1,
+        "corn_salad": 1,
+        "corny_nussvoll": 1,
+        "gepa_bio_caffe_crema": 1,
+        "gepa_italienischer_bio_espresso": 1
+      },
+      "predicted": {
+        "corn_salad": 1,
+        "adelholzener_alpenquelle_classic_075": 1,
+        "adelholzener_gourmet_mineralwasser_02": 1,
+        "gepa_bio_caffe_crema": 1,
+        "gepa_italienischer_bio_espresso": 1,
+        "corny_nussvoll": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_alpenquelle_classic_075",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "adelholzener_classic_naturell_02",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_9",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.8333333333333334,
+      "routing": {
+        "decision": "agreement",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0225",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_naturell_02": 1,
+        "adelholzener_gourmet_mineralwasser_02": 1,
+        "corn_salad": 1,
+        "corny_nussvoll": 1,
+        "gepa_bio_caffe_crema": 1,
+        "gepa_italienischer_bio_espresso": 1
+      },
+      "predicted": {
+        "adelholzener_alpenquelle_classic_075": 1,
+        "adelholzener_gourmet_mineralwasser_02": 1,
+        "corn_salad": 1,
+        "corny_nussvoll": 1,
+        "gepa_bio_caffe_crema": 1,
+        "gepa_italienischer_bio_espresso": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_alpenquelle_classic_075",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "adelholzener_classic_naturell_02",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_0",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.8333333333333334,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0238",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "gepa_bio_und_fair_fencheltee": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "rocket": 1,
+        "zucchini": 1
+      },
+      "predicted": {
+        "rocket": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "cucumber": 1,
+        "gepa_bio_und_fair_fencheltee": 1
+      },
+      "count_deltas": [
+        {
+          "product": "cucumber",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "zucchini",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_8",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.75,
+      "routing": {
+        "decision": "agreement",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0297",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_naturell_02": 1,
+        "apple_braeburn_bundle": 1,
+        "clementine": 1,
+        "corny_nussvoll_single": 1,
+        "corny_schoko_banane": 1,
+        "ethiquable_gruener_tee_ceylon": 1,
+        "gepa_bio_und_fair_kraeuterteemischung": 1,
+        "gepa_bio_und_fair_pfefferminztee": 1,
+        "gepa_italienischer_bio_espresso": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "koelln_muesli_schoko": 1,
+        "tegernseer_hell_03": 1
+      },
+      "predicted": {
+        "adelholzener_alpenquelle_classic_075": 1,
+        "apple_braeburn_bundle": 1,
+        "clementine": 1,
+        "corny_nussvoll_single": 1,
+        "corny_schoko_banane": 1,
+        "gepa_bio_und_fair_kraeuterteemischung": 1,
+        "gepa_italienischer_bio_espresso": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "koelln_muesli_schoko": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_alpenquelle_classic_075",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "adelholzener_classic_naturell_02",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "ethiquable_gruener_tee_ceylon",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "gepa_bio_und_fair_pfefferminztee",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "tegernseer_hell_03",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_8",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.5833333333333334,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0298",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_naturell_02": 1,
+        "apple_braeburn_bundle": 1,
+        "clementine": 1,
+        "corny_nussvoll_single": 1,
+        "corny_schoko_banane": 1,
+        "ethiquable_gruener_tee_ceylon": 1,
+        "gepa_bio_und_fair_kraeuterteemischung": 1,
+        "gepa_bio_und_fair_pfefferminztee": 1,
+        "gepa_italienischer_bio_espresso": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "koelln_muesli_schoko": 1,
+        "tegernseer_hell_03": 1
+      },
+      "predicted": {
+        "apple_braeburn_bundle": 1,
+        "clementine": 1,
+        "corny_schoko_banane": 1,
+        "gepa_bio_caffe_crema": 1,
+        "gepa_bio_und_fair_kraeuterteemischung": 1,
+        "gepa_bio_und_fair_pfefferminztee": 1,
+        "grapes_green_sugraone_seedless": 1,
+        "koelln_muesli_schoko": 1,
+        "tegernseer_hell_03": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_classic_naturell_02",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "corny_nussvoll_single",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "ethiquable_gruener_tee_ceylon",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "gepa_bio_caffe_crema",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "gepa_italienischer_bio_espresso",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_5",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    },
+    {
+      "sample_id": "inv_0300",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_alpenquelle_naturell_075": 1,
+        "apple_granny_smith": 1,
+        "apple_red_boskoop": 1,
+        "augustiner_weissbier_05": 1,
+        "avocado": 1,
+        "banana_single": 1,
+        "corn_salad": 1,
+        "kiwi": 1,
+        "pasta_reggia_spaghetti": 1,
+        "rocket": 1,
+        "roma_vine_tomatoes": 1,
+        "suntory_gokuri_lemonade": 1,
+        "zucchini": 1
+      },
+      "predicted": {
+        "adelholzener_alpenquelle_naturell_075": 1,
+        "apple_granny_smith": 1,
+        "augustiner_weissbier_05": 1,
+        "avocado": 1,
+        "banana_single": 1,
+        "pasta_reggia_spaghetti": 1,
+        "rocket": 1,
+        "roma_vine_tomatoes": 1,
+        "suntory_gokuri_lemonade": 1,
+        "zucchini": 1
+      },
+      "count_deltas": [
+        {
+          "product": "apple_red_boskoop",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "corn_salad",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "kiwi",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_validation",
+        "rotation_3",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6923076923076923,
+      "routing": {
+        "decision": "sol_identity_adjudication",
+        "candidate_a_exact": false,
+        "candidate_b_exact": false,
+        "correct_candidate_discarded": false
+      }
+    }
+  ]
+}

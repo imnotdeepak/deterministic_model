@@ -1,0 +1,98 @@
+{
+  "sample_id": "inv_0276",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-routed-v4",
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0276",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 499,
+        "y": 75,
+        "width": 1035,
+        "height": 1241
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2388,
+  "estimated_cost_usd": 0.0028594,
+  "usage": {
+    "input_tokens": 14027,
+    "output_tokens": 45,
+    "total_tokens": 14072,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14027,
+        "output_tokens": 45,
+        "total_tokens": 14072
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028594
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0d1f8098bd7fe56c016ab45df65f4087d287b41050cf59bc90",
+    "response_ids": {
+      "localization": "resp_0d1f8098bd7fe56c016ab45df65f4087d287b41050cf59bc90"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "caona_cocoa"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0276.json",
+    "routing_policy_version": "terra-count-sol-isolated-confusion-v4",
+    "routing_decision": "agreement",
+    "identity_adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0276.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0276.json",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-evidence-v4\\predictions\\inv_0276.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-sol-isolated-confusion-v4\\predictions\\inv_0276.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

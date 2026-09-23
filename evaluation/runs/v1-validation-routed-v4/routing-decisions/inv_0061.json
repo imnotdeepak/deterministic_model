@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0061",
+  "routing_policy_version": "terra-count-sol-isolated-confusion-v4",
+  "decision": "agreement",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-evidence-v4\\predictions\\inv_0061.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      }
+    ]
+  }
+}

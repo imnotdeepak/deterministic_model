@@ -1,0 +1,639 @@
+{
+  "sample_id": "inv_0299",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-v4",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      },
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "avocado",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.92,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.92,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.92,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.92,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.87,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.87,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.79,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.79,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/7/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/7/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/8/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/8/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/9/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/9/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/10/name": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/10/quantity": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/11/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/11/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/12/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/12/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 263,
+        "y": 0,
+        "width": 847,
+        "height": 315
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 127,
+        "y": 314,
+        "width": 269,
+        "height": 213
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 733,
+        "y": 207,
+        "width": 171,
+        "height": 182
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 947,
+        "y": 243,
+        "width": 468,
+        "height": 552
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1073,
+        "y": 251,
+        "width": 240,
+        "height": 229
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1223,
+        "y": 0,
+        "width": 355,
+        "height": 909
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1515,
+        "y": 402,
+        "width": 405,
+        "height": 694
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_008",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 0,
+        "y": 821,
+        "width": 528,
+        "height": 517
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_009",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 841,
+        "y": 605,
+        "width": 420,
+        "height": 423
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_010",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 499,
+        "y": 825,
+        "width": 555,
+        "height": 576
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_011",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1219,
+        "y": 1007,
+        "width": 267,
+        "height": 262
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_012",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 924,
+        "y": 1117,
+        "width": 318,
+        "height": 320
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_013",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 781,
+        "y": 1303,
+        "width": 254,
+        "height": 134
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 14331,
+  "estimated_cost_usd": 0.071176,
+  "usage": {
+    "input_tokens": 14349,
+    "output_tokens": 689,
+    "total_tokens": 15038,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14349,
+        "output_tokens": 689,
+        "total_tokens": 15038
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.071176
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_04990d0e987d01ed016ab45e8f06b487d29f73cfef131ab962",
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0299.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0299.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_spaghetti",
+          "quantity": 1
+        },
+        {
+          "name": "kiwi",
+          "quantity": 1
+        },
+        {
+          "name": "banana_single",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 2
+        },
+        {
+          "name": "rocket",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_classic_naturell_02",
+          "quantity": 1
+        },
+        {
+          "name": "augustiner_weissbier_05",
+          "quantity": 1
+        },
+        {
+          "name": "suntory_gokuri_lemonade",
+          "quantity": 1
+        },
+        {
+          "name": "avocado",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "vine_tomatoes",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "roma_vine_tomatoes",
+          "quantity": 1
+        },
+        {
+          "name": "pasta_reggia_spaghetti",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 2
+        },
+        {
+          "name": "banana_single",
+          "quantity": 1
+        },
+        {
+          "name": "apple_red_boskoop",
+          "quantity": 1
+        },
+        {
+          "name": "kiwi",
+          "quantity": 1
+        },
+        {
+          "name": "rocket",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_alpenquelle_naturell_075",
+          "quantity": 1
+        },
+        {
+          "name": "augustiner_weissbier_05",
+          "quantity": 1
+        },
+        {
+          "name": "suntory_gokuri_lemonade",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "avocado",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_naturell_075",
+      "adelholzener_classic_naturell_02",
+      "apple_granny_smith",
+      "apple_red_boskoop",
+      "augustiner_weissbier_05",
+      "avocado",
+      "banana_single",
+      "kiwi",
+      "pasta_reggia_spaghetti",
+      "rocket",
+      "roma_vine_tomatoes",
+      "suntory_gokuri_lemonade",
+      "vine_tomatoes",
+      "zucchini"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [],
+    "matched_confusion_families": [],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

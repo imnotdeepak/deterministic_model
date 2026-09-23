@@ -1,0 +1,316 @@
+{
+  "sample_id": "inv_0216",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-routed-v4",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003",
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 157,
+        "y": 180,
+        "width": 611,
+        "height": 870
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 737,
+        "y": 0,
+        "width": 603,
+        "height": 429
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1079,
+        "y": 274,
+        "width": 346,
+        "height": 694
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1256,
+        "y": 271,
+        "width": 428,
+        "height": 937
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 378,
+        "y": 703,
+        "width": 885,
+        "height": 737
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0216",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1110,
+        "y": 1028,
+        "width": 230,
+        "height": 189
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 7662,
+  "estimated_cost_usd": 0.064996,
+  "usage": {
+    "input_tokens": 14139,
+    "output_tokens": 422,
+    "total_tokens": 14561,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14139,
+        "output_tokens": 422,
+        "total_tokens": 14561
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.064996
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_06786216847956aa016ab45e37bf0887d291a1df4763fb60cf",
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0216.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0216.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "lettuce",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 2
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        },
+        {
+          "name": "pear",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        },
+        {
+          "name": "pear",
+          "quantity": 1
+        },
+        {
+          "name": "salad_iceberg",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 2
+        }
+      ]
+    },
+    "candidate_names": [
+      "gepa_bio_caffe_crema",
+      "lettuce",
+      "pasta_reggia_fusilli",
+      "pear",
+      "salad_iceberg",
+      "zucchini"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [],
+    "matched_confusion_families": [],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-isolated-confusion-v4",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog_isolated_confusion",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-evidence-v4\\predictions\\inv_0216.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-sol-isolated-confusion-v4\\predictions\\inv_0216.json"
+  }
+}

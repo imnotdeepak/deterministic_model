@@ -1,0 +1,122 @@
+{
+  "sample_id": "inv_0233",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0233",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 499,
+        "y": 304,
+        "width": 361,
+        "height": 392
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0233",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 680,
+        "y": 435,
+        "width": 747,
+        "height": 852
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2434,
+  "estimated_cost_usd": 0.0029038,
+  "usage": {
+    "input_tokens": 14045,
+    "output_tokens": 79,
+    "total_tokens": 14124,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14045,
+        "output_tokens": 79,
+        "total_tokens": 14124
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029038
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_091ec8a1a1728964016ab45ddf93e887d2b6ebf1c103b383a7",
+    "response_ids": {
+      "localization": "resp_091ec8a1a1728964016ab45ddf93e887d2b6ebf1c103b383a7"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "pelikan_tintenpatrone_canon",
+      "corn_salad"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0233.json"
+  }
+}

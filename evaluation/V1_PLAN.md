@@ -137,6 +137,16 @@ The script verifies the dataset lock, processes only the 45-image validation
 split, and produces evaluation, end-to-end economics, and failure-analysis
 reports. It does not access the test split.
 
+Result: isolated-confusion v4 was rejected as the release candidate. It
+improved whole-image exact accuracy from Terra's 73.33% to 80.00%, but missed
+the accuracy, precision, recall, localization, cost, and latency gates. Three
+incorrect Luna/Terra agreements also cap any disagreement-only resolver below
+the 95% exact-accuracy gate. See `V1_VALIDATION_V4_RESULTS.md`.
+
+The next experiment is a development-only comparison of Terra aggregate output
+against a one-call Terra instance-localization design. Validation and test stay
+sealed during this pilot.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

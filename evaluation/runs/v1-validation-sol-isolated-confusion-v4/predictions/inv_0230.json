@@ -1,0 +1,134 @@
+{
+  "sample_id": "inv_0230",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-v4",
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_elicoidali",
+        "quantity": 1
+      },
+      {
+        "name": "oranges",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0230",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 242,
+        "y": 243,
+        "width": 518,
+        "height": 791
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0230",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 856,
+        "y": 190,
+        "width": 722,
+        "height": 889
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3228,
+  "estimated_cost_usd": 0.0029024,
+  "usage": {
+    "input_tokens": 14044,
+    "output_tokens": 78,
+    "total_tokens": 14122,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14044,
+        "output_tokens": 78,
+        "total_tokens": 14122
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029024
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0edd72467c193fe7016ab45ddc6cb487d2988cffd547919500",
+    "response_ids": {
+      "localization": "resp_0edd72467c193fe7016ab45ddc6cb487d2988cffd547919500"
+    },
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "pasta_reggia_elicoidali",
+      "oranges"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0230.json",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "agreement",
+    "resolver_model": null,
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0230.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0230.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-luna",
+      "adjudicator": null
+    }
+  }
+}

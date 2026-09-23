@@ -1,0 +1,161 @@
+{
+  "sample_id": "inv_0081",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-routed-v4",
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0081",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 457,
+        "y": 380,
+        "width": 294,
+        "height": 261
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0081",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 922,
+        "y": 465,
+        "width": 265,
+        "height": 278
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0081",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 803,
+        "y": 717,
+        "width": 253,
+        "height": 249
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 8315,
+  "estimated_cost_usd": 0.062332,
+  "usage": {
+    "input_tokens": 14028,
+    "output_tokens": 311,
+    "total_tokens": 14339,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14028,
+        "output_tokens": 311,
+        "total_tokens": 14339
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.062332
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0781abad1a07bc57016ab45e1b529487d2b45f7bcba4fd36ba",
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0081.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0081.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "apple_granny_smith",
+          "quantity": 2
+        },
+        {
+          "name": "pear",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 3
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "pear"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [],
+    "matched_confusion_families": [],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-isolated-confusion-v4",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog_isolated_confusion",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-evidence-v4\\predictions\\inv_0081.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-sol-isolated-confusion-v4\\predictions\\inv_0081.json"
+  }
+}

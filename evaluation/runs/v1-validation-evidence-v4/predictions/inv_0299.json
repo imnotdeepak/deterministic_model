@@ -1,0 +1,512 @@
+{
+  "sample_id": "inv_0299",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 2
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      },
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "avocado",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/7/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/7/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/8/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/8/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/9/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/9/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/10/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/10/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/11/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    },
+    "/products/11/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 309,
+        "y": 0,
+        "width": 789,
+        "height": 310
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1261,
+        "y": 0,
+        "width": 465,
+        "height": 914
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 981,
+        "y": 239,
+        "width": 467,
+        "height": 537
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 956,
+        "y": 255,
+        "width": 526,
+        "height": 523
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1094,
+        "y": 251,
+        "width": 271,
+        "height": 241
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 123,
+        "y": 310,
+        "width": 305,
+        "height": 213
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 735,
+        "y": 204,
+        "width": 175,
+        "height": 185
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_008",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 0,
+        "y": 778,
+        "width": 580,
+        "height": 492
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_009",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 778,
+        "y": 583,
+        "width": 468,
+        "height": 438
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_010",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 509,
+        "y": 827,
+        "width": 539,
+        "height": 609
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_011",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 916,
+        "y": 1096,
+        "width": 345,
+        "height": 344
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_012",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1238,
+        "y": 998,
+        "width": 304,
+        "height": 255
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_013",
+      "media_id": "med_inv_0299",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 714,
+        "y": 1228,
+        "width": 231,
+        "height": 212
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4656,
+  "estimated_cost_usd": 0.0033544,
+  "usage": {
+    "input_tokens": 14204,
+    "output_tokens": 428,
+    "total_tokens": 14632,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14204,
+        "output_tokens": 428,
+        "total_tokens": 14632
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0033544
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f60ddc32589dcc6016ab45e0b57a887d2a1680d1a7bd27700",
+    "response_ids": {
+      "localization": "resp_0f60ddc32589dcc6016ab45e0b57a887d2a1680d1a7bd27700"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 13,
+    "identity_candidates": [
+      "roma_vine_tomatoes",
+      "pasta_reggia_spaghetti",
+      "zucchini",
+      "banana_single",
+      "apple_red_boskoop",
+      "kiwi",
+      "rocket",
+      "adelholzener_alpenquelle_naturell_075",
+      "augustiner_weissbier_05",
+      "suntory_gokuri_lemonade",
+      "apple_granny_smith",
+      "avocado"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0299.json"
+  }
+}

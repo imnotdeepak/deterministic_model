@@ -1,0 +1,122 @@
+{
+  "sample_id": "inv_0192",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0192",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 348,
+        "y": 590,
+        "width": 307,
+        "height": 402
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0192",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 804,
+        "y": 624,
+        "width": 323,
+        "height": 300
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2937,
+  "estimated_cost_usd": 0.0029192,
+  "usage": {
+    "input_tokens": 14056,
+    "output_tokens": 90,
+    "total_tokens": 14146,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14056,
+        "output_tokens": 90,
+        "total_tokens": 14146
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029192
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_03b17e5a8366dd8a016ab45db9ae7087d2a3555bf5cee7436b",
+    "response_ids": {
+      "localization": "resp_03b17e5a8366dd8a016ab45db9ae7087d2a3555bf5cee7436b"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "gepa_bio_und_fair_kamillentee",
+      "adelholzener_alpenquelle_classic_075"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0192.json"
+  }
+}

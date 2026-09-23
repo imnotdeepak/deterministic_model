@@ -1,0 +1,329 @@
+{
+  "sample_id": "inv_0206",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-v4",
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.76,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.76,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 574,
+        "y": 0,
+        "width": 497,
+        "height": 272
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 346,
+        "y": 323,
+        "width": 574,
+        "height": 388
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1121,
+        "y": 192,
+        "width": 240,
+        "height": 234
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 257,
+        "y": 750,
+        "width": 283,
+        "height": 252
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 839,
+        "y": 497,
+        "width": 970,
+        "height": 672
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0206",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 411,
+        "y": 960,
+        "width": 415,
+        "height": 479
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 8278,
+  "estimated_cost_usd": 0.082048,
+  "usage": {
+    "input_tokens": 18317,
+    "output_tokens": 439,
+    "total_tokens": 18756,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 18317,
+        "output_tokens": 439,
+        "total_tokens": 18756
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.082048
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_00fec686ff875dd8016ab45e2a10dc87d2aeea7daaa99f10f9",
+    "prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_prompt_version": "inventory-isolated-confusion-adjudication-v4",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_isolated_confusion",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-luna-v4\\predictions\\inv_0206.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0206.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "kilimanjaro_tea_earl_grey",
+          "quantity": 1
+        },
+        {
+          "name": "cocoba_cocoa",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "apple_red_boskoop",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "kilimanjaro_tea_earl_grey",
+          "quantity": 1
+        },
+        {
+          "name": "cocoba_cocoa",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "cafe_wunderbar_espresso",
+          "quantity": 1
+        },
+        {
+          "name": "apple_red_boskoop",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_red_boskoop",
+      "cafe_wunderbar_espresso",
+      "cocoba_cocoa",
+      "gepa_bio_und_fair_rooibostee",
+      "kilimanjaro_tea_earl_grey"
+    ],
+    "reference_crop_count": 4,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [
+      "cafe_wunderbar_espresso",
+      "douwe_egberts_professional_ground_coffee",
+      "gepa_bio_caffe_crema",
+      "gepa_italienischer_bio_espresso"
+    ],
+    "matched_confusion_families": [
+      "coffee_packages"
+    ],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}
