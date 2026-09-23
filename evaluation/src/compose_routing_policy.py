@@ -12,11 +12,13 @@ import run_baseline as baseline
 from run_disagreement_resolver import canonical_products
 
 
-COMPOSER_VERSION = "0.2.0"
+COMPOSER_VERSION = "0.3.0"
 POLICY_VERSION = "terra-count-sol-identity-v1"
 MODEL_BUNDLE_VERSION = "terra-luna-sol-routed-v1"
 POLICY_VERSION_V2 = "terra-count-sol-full-catalog-v2"
 MODEL_BUNDLE_VERSION_V2 = "terra-luna-sol-full-catalog-routed-v2"
+POLICY_VERSION_V3 = "terra-count-sol-confusion-aware-v3"
+MODEL_BUNDLE_VERSION_V3 = "terra-luna-sol-confusion-aware-routed-v3"
 
 
 def identity_signature(data: dict[str, Any]) -> tuple[str, ...]:
@@ -74,11 +76,23 @@ def compose_prediction(
 
 def run(args: argparse.Namespace) -> dict[str, Any]:
     full_catalog = args.full_catalog_adjudication
-    policy_version = POLICY_VERSION_V2 if full_catalog else POLICY_VERSION
-    model_bundle_version = (
-        MODEL_BUNDLE_VERSION_V2 if full_catalog else MODEL_BUNDLE_VERSION
-    )
-    identity_adjudication_scope = "full_catalog" if full_catalog else "candidate_union"
+    confusion_aware = args.confusion_aware_adjudication
+    if confusion_aware and not full_catalog:
+        raise ValueError(
+            "--confusion-aware-adjudication requires --full-catalog-adjudication"
+        )
+    if confusion_aware:
+        policy_version = POLICY_VERSION_V3
+        model_bundle_version = MODEL_BUNDLE_VERSION_V3
+        identity_adjudication_scope = "full_catalog_confusion_aware"
+    elif full_catalog:
+        policy_version = POLICY_VERSION_V2
+        model_bundle_version = MODEL_BUNDLE_VERSION_V2
+        identity_adjudication_scope = "full_catalog"
+    else:
+        policy_version = POLICY_VERSION
+        model_bundle_version = MODEL_BUNDLE_VERSION
+        identity_adjudication_scope = "candidate_union"
     dataset = args.dataset.resolve()
     manifest = baseline.read_jsonl(dataset / "manifest.jsonl")
     schema = baseline.read_json(dataset / "schema.json")
@@ -236,6 +250,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--full-catalog-adjudication",
         action="store_true",
         help="Record the v2 policy that uses full-catalog Sol identity adjudication.",
+    )
+    parser.add_argument(
+        "--confusion-aware-adjudication",
+        action="store_true",
+        help="Record the experimental v3 policy with targeted confusion-family references.",
     )
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--dry-run", action="store_true")

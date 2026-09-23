@@ -78,6 +78,30 @@ py -3.11 evaluation\src\analyze_failures.py `
 The analyzer refuses `--split test` unless the caller supplies the explicit
 `--allow-frozen-test` override.
 
+## Confusion-aware pilot
+
+The first v1 experiment supplements the four full-catalog reference sheets
+with high-detail crops for catalog-defined visual confusion families. It
+reuses the saved Luna, Terra, and evidence outputs, so only the eight identity
+disagreements invoke Sol.
+
+Validate every input without making API calls:
+
+```powershell
+.\evaluation\run_v1_confusion_pilot.ps1 -DryRun
+```
+
+Run the paid development pilot after setting `OPENAI_API_KEY` in the current
+PowerShell session:
+
+```powershell
+.\evaluation\run_v1_confusion_pilot.ps1
+```
+
+This experiment deliberately uses the old `validation` split as observed v1
+development evidence. Its result is not fresh validation evidence, and the
+script does not access the frozen v0 test split.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

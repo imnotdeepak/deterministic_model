@@ -1,0 +1,51 @@
+{
+  "version": "inventory-confusion-sets-v1",
+  "development_status": "Derived from catalog structure and observed v0 development/validation errors. Do not evaluate this configuration as fresh validation evidence on inventory-v0.",
+  "families": [
+    {
+      "id": "adelholzener_bottles",
+      "members": [
+        "adelholzener_alpenquelle_classic_075",
+        "adelholzener_alpenquelle_naturell_075",
+        "adelholzener_classic_bio_apfelschorle_02",
+        "adelholzener_classic_naturell_02",
+        "adelholzener_gourmet_mineralwasser_02"
+      ]
+    },
+    {
+      "id": "coffee_packages",
+      "members": [
+        "cafe_wunderbar_espresso",
+        "douwe_egberts_professional_ground_coffee",
+        "gepa_bio_caffe_crema",
+        "gepa_italienischer_bio_espresso"
+      ]
+    },
+    {
+      "id": "apples",
+      "members": [
+        "apple_braeburn_bundle",
+        "apple_golden_delicious",
+        "apple_granny_smith",
+        "apple_red_boskoop"
+      ]
+    },
+    {
+      "id": "orange_citrus",
+      "members": [
+        "clementine",
+        "clementine_single",
+        "orange_single",
+        "oranges"
+      ]
+    },
+    {
+      "id": "cereal_boxes",
+      "members": [
+        "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "koelln_muesli_fruechte",
+        "koelln_muesli_schoko"
+      ]
+    }
+  ]
+}
