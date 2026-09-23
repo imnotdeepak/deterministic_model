@@ -147,6 +147,22 @@ The next experiment is a development-only comparison of Terra aggregate output
 against a one-call Terra instance-localization design. Validation and test stay
 sealed during this pilot.
 
+Preview the fixed 20-image development pilot without API calls:
+
+```powershell
+.\evaluation\run_v1_terra_instances_pilot.ps1 -DryRun
+```
+
+Run the paid comparison after configuring `OPENAI_API_KEY`:
+
+```powershell
+.\evaluation\run_v1_terra_instances_pilot.ps1
+```
+
+Both arms use the same development offset and limit. Custom development slices
+can be selected with `-Offset` and `-Limit`; the runner rejects ranges outside
+the 209-image development split.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.
