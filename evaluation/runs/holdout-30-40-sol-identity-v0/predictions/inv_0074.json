@@ -1,0 +1,196 @@
+{
+  "sample_id": "inv_0074",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.86,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.86,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0074",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 557,
+        "y": 259,
+        "width": 651,
+        "height": 398
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0074",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 442,
+        "y": 408,
+        "width": 647,
+        "height": 637
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0074",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1133,
+        "y": 840,
+        "width": 299,
+        "height": 290
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6666,
+  "estimated_cost_usd": 0.039476,
+  "usage": {
+    "input_tokens": 8264,
+    "output_tokens": 321,
+    "total_tokens": 8585,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 8264,
+        "output_tokens": 321,
+        "total_tokens": 8585
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.039476
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_08233f92d1cdff7c016aaf11d688bc87d2b8b429cb50871dc1",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0074.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0074.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "rocket",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 1
+        },
+        {
+          "name": "augustiner_lagerbraeu_hell_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "rocket",
+          "quantity": 1
+        },
+        {
+          "name": "zucchini",
+          "quantity": 1
+        },
+        {
+          "name": "tegernseer_hell_03",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "augustiner_lagerbraeu_hell_05",
+      "rocket",
+      "tegernseer_hell_03",
+      "zucchini"
+    ],
+    "reference_crop_count": 8,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "sample_id": "inv_0080",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 2
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 3
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-sol-full-catalog-v2\\predictions\\inv_0080.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 3
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  }
+}

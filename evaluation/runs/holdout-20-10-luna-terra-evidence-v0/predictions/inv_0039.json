@@ -1,0 +1,85 @@
+{
+  "sample_id": "inv_0039",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0039",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 693,
+        "y": 423,
+        "width": 810,
+        "height": 797
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2152,
+  "estimated_cost_usd": 0.0028748,
+  "usage": {
+    "input_tokens": 14038,
+    "output_tokens": 56,
+    "total_tokens": 14094,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14038,
+        "output_tokens": 56,
+        "total_tokens": 14094
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028748
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_041db5470041899e016aaf0e97f8d487d28ede2eb323ee3c23",
+    "response_ids": {
+      "localization": "resp_041db5470041899e016aaf0e97f8d487d28ede2eb323ee3c23"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "dr_oetker_vitalis_knuspermuesli_klassisch"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-terra-references-v0\\predictions\\inv_0039.json"
+  }
+}

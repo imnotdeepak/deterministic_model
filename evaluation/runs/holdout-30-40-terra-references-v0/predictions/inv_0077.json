@@ -1,0 +1,53 @@
+{
+  "sample_id": "inv_0077",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2213,
+  "estimated_cost_usd": 0.028172,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 42,
+    "total_tokens": 13876,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 42,
+        "total_tokens": 13876
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.028172
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_03078ec034f89ca0016aaf10de5b1487d292a46eed4c9d89d8",
+    "response_ids": {
+      "aggregate": "resp_03078ec034f89ca0016aaf10de5b1487d292a46eed4c9d89d8"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

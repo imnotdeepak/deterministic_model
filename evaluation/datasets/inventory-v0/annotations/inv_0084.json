@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0084",
+  "image": "images/inv_0084.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "banana_single",
+      "bbox": {
+        "x": 603,
+        "y": 788,
+        "width": 569,
+        "height": 251
+      },
+      "source_annotation_id": 50111001,
+      "source_category_id": 31
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 541,
+        "y": 114,
+        "width": 429,
+        "height": 512
+      },
+      "source_annotation_id": 50111002,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 646,
+        "y": 478,
+        "width": 552,
+        "height": 364
+      },
+      "source_annotation_id": 50111003,
+      "source_category_id": 60
+    }
+  ]
+}

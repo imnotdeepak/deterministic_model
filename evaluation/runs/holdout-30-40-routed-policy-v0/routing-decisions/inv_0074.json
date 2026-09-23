@@ -1,0 +1,54 @@
+{
+  "sample_id": "inv_0074",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0074.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  }
+}

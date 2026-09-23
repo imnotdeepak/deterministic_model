@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0009",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "agreement",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-terra-authoritative-evidence-v0\\predictions\\inv_0009.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  }
+}

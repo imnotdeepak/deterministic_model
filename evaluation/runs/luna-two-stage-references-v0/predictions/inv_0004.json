@@ -1,0 +1,110 @@
+{
+  "sample_id": "inv_0004",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0004",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 419,
+        "y": 619,
+        "width": 547,
+        "height": 488
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0004",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1029,
+        "y": 946,
+        "width": 549,
+        "height": 412
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4457,
+  "estimated_cost_usd": 0.0055192,
+  "usage": {
+    "input_tokens": 26864,
+    "output_tokens": 122,
+    "total_tokens": 26986,
+    "by_stage": {
+      "identity": {
+        "input_tokens": 13834,
+        "output_tokens": 32,
+        "total_tokens": 13866
+      },
+      "localization": {
+        "input_tokens": 13030,
+        "output_tokens": 90,
+        "total_tokens": 13120
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "identity": 0.0028052,
+    "localization": 0.002714
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_02111aecd0991a73016aae0db4e32487d2b6aa731f6a4bfb68",
+    "response_ids": {
+      "identity": "resp_04cdb31826532553016aae0db298fc87d2972dcc2da36a7349",
+      "localization": "resp_02111aecd0991a73016aae0db4e32487d2b6aa731f6a4bfb68"
+    },
+    "prompt_version": "inventory-two-stage-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "two_stage_instances",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "douwe_egberts_professional_ground_coffee"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false
+  }
+}

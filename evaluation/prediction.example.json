@@ -1,0 +1,106 @@
+{
+  "sample_id": "inv_0001",
+  "model_bundle_version": "baseline-example-0.1.0",
+  "data": {
+    "products": [
+      {
+        "name": "Coca-Cola Zero 12 oz",
+        "quantity": 2
+      },
+      {
+        "name": "Sprite 12 oz",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "verified",
+      "evidence_refs": [
+        "ev_1",
+        "ev_2"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "verified",
+      "evidence_refs": [
+        "ev_1",
+        "ev_2"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.97,
+      "status": "verified",
+      "evidence_refs": [
+        "ev_3"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.95,
+      "status": "verified",
+      "evidence_refs": [
+        "ev_3"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_1",
+      "media_id": "med_inv_0001",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 122,
+        "y": 84,
+        "width": 80,
+        "height": 206
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "baseline-example-0.1.0",
+      "media_available": true
+    },
+    {
+      "id": "ev_2",
+      "media_id": "med_inv_0001",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 210,
+        "y": 82,
+        "width": 81,
+        "height": 209
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "baseline-example-0.1.0",
+      "media_available": true
+    },
+    {
+      "id": "ev_3",
+      "media_id": "med_inv_0001",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 310,
+        "y": 84,
+        "width": 79,
+        "height": 205
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "baseline-example-0.1.0",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2810,
+  "estimated_cost_usd": 0.018
+}

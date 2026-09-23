@@ -1,0 +1,110 @@
+{
+  "sample_id": "inv_0023",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0023",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 403,
+        "y": 0,
+        "width": 1148,
+        "height": 1210
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 8349,
+  "estimated_cost_usd": 0.043608,
+  "usage": {
+    "input_tokens": 9522,
+    "output_tokens": 276,
+    "total_tokens": 9798,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 9522,
+        "output_tokens": 276,
+        "total_tokens": 9798
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.043608
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0d0900e575d144b9016aaf0b79885087d28a8b62748cd1963b",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions\\inv_0023.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0023.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "caona_cocoa",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "caona_cocoa",
+      "gepa_bio_caffe_crema"
+    ],
+    "reference_crop_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-terra-authoritative-evidence-v0\\predictions\\inv_0023.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions\\inv_0023.json"
+  }
+}

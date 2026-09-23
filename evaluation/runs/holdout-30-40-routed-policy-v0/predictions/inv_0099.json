@@ -1,0 +1,637 @@
+{
+  "sample_id": "inv_0099",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "orange_single",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_009"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_010"
+      ]
+    },
+    "/products/7/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/7/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_012"
+      ]
+    },
+    "/products/8/name": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/8/quantity": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_011"
+      ]
+    },
+    "/products/9/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/9/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/10/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    },
+    "/products/10/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_013"
+      ]
+    },
+    "/products/11/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/11/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/12/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/12/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 102,
+        "y": 49,
+        "width": 439,
+        "height": 498
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 555,
+        "y": 0,
+        "width": 526,
+        "height": 395
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1152,
+        "y": 0,
+        "width": 636,
+        "height": 259
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1169,
+        "y": 138,
+        "width": 279,
+        "height": 264
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1459,
+        "y": 223,
+        "width": 209,
+        "height": 429
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 862,
+        "y": 288,
+        "width": 325,
+        "height": 338
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 40,
+        "y": 397,
+        "width": 716,
+        "height": 646
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_008",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 413,
+        "y": 552,
+        "width": 1027,
+        "height": 380
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_009",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1315,
+        "y": 654,
+        "width": 401,
+        "height": 220
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_010",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 881,
+        "y": 768,
+        "width": 486,
+        "height": 570
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_011",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 511,
+        "y": 926,
+        "width": 437,
+        "height": 514
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_012",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1363,
+        "y": 871,
+        "width": 455,
+        "height": 413
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_013",
+      "media_id": "med_inv_0099",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1265,
+        "y": 1323,
+        "width": 140,
+        "height": 117
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 13292,
+  "estimated_cost_usd": 0.080728,
+  "usage": {
+    "input_tokens": 16007,
+    "output_tokens": 835,
+    "total_tokens": 16842,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 16007,
+        "output_tokens": 835,
+        "total_tokens": 16842
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.080728
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0ff9a2e2316faef7016aaf124129f887d2b74b07d4f5302ab7",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0099.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0099.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "kilimanjaro_tea_earl_grey",
+          "quantity": 1
+        },
+        {
+          "name": "salad_iceberg",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 1
+        },
+        {
+          "name": "suntory_gokuri_lemonade",
+          "quantity": 1
+        },
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 1
+        },
+        {
+          "name": "corny_schoko_banane_single",
+          "quantity": 1
+        },
+        {
+          "name": "cucumber",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 1
+        },
+        {
+          "name": "douwe_egberts_professional_ground_coffee",
+          "quantity": 1
+        },
+        {
+          "name": "grapes_sweet_celebration_seedless",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "orange_single",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 1
+        },
+        {
+          "name": "suntory_gokuri_lemonade",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 1
+        },
+        {
+          "name": "corny_schoko_banane_single",
+          "quantity": 1
+        },
+        {
+          "name": "douwe_egberts_professional_ground_coffee",
+          "quantity": 1
+        },
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 1
+        },
+        {
+          "name": "grapes_sweet_celebration_seedless",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "cucumber",
+          "quantity": 1
+        },
+        {
+          "name": "salad_iceberg",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_gourmet_mineralwasser_02",
+      "apple_golden_delicious",
+      "corny_nussvoll_single",
+      "corny_schoko_banane_single",
+      "cucumber",
+      "douwe_egberts_professional_ground_coffee",
+      "gepa_bio_und_fair_rooibostee",
+      "grapes_sweet_celebration_seedless",
+      "kilimanjaro_tea_earl_grey",
+      "orange_single",
+      "salad_iceberg",
+      "suntory_gokuri_lemonade"
+    ],
+    "reference_crop_count": 26,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-terra-evidence-v0\\predictions\\inv_0099.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0099.json"
+  }
+}

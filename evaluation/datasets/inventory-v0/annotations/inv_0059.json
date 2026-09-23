@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0059",
+  "image": "images/inv_0059.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 743,
+        "y": 943,
+        "width": 391,
+        "height": 223
+      },
+      "source_annotation_id": 1125001,
+      "source_category_id": 20
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 742,
+        "y": 440,
+        "width": 616,
+        "height": 619
+      },
+      "source_annotation_id": 1125002,
+      "source_category_id": 20
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 660,
+        "y": 368,
+        "width": 343,
+        "height": 576
+      },
+      "source_annotation_id": 1125003,
+      "source_category_id": 20
+    }
+  ]
+}

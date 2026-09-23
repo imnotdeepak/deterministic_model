@@ -1,0 +1,100 @@
+{
+  "sample_id": "inv_0041",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.93,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.93,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0041",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 184,
+        "y": 215,
+        "width": 816,
+        "height": 436
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4603,
+  "estimated_cost_usd": 0.022912,
+  "usage": {
+    "input_tokens": 5143,
+    "output_tokens": 117,
+    "total_tokens": 5260,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 5143,
+        "output_tokens": 117,
+        "total_tokens": 5260
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.022912
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0ce1ed9ee8ac0c1a016aaf0ea3b2dc87d2934634e44f962f80",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-luna-references-v0\\predictions\\inv_0041.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-terra-references-v0\\predictions\\inv_0041.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "dr_oetker_vitalis_knuspermuesli_klassisch"
+    ],
+    "reference_crop_count": 2,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sample_id": "inv_0001",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 5539,
+  "estimated_cost_usd": 0.008536,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 26,
+    "total_tokens": 4138
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0a3360c739d29916016aadbcdcd70c87d29f93cb33f93692e3",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

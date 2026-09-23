@@ -1,0 +1,130 @@
+{
+  "sample_id": "inv_0002",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 428,
+        "y": 968,
+        "width": 632,
+        "height": 351
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1379,
+        "y": 495,
+        "width": 324,
+        "height": 602
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 764,
+        "y": 56,
+        "width": 315,
+        "height": 396
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 5508,
+  "estimated_cost_usd": 0.0055486,
+  "usage": {
+    "input_tokens": 26855,
+    "output_tokens": 148,
+    "total_tokens": 27003,
+    "by_stage": {
+      "identity": {
+        "input_tokens": 13834,
+        "output_tokens": 29,
+        "total_tokens": 13863
+      },
+      "localization": {
+        "input_tokens": 13021,
+        "output_tokens": 119,
+        "total_tokens": 13140
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "identity": 0.0028016,
+    "localization": 0.002747
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0ceefe7d57170af0016aae0daf4c5087d29276e5db4564769c",
+    "response_ids": {
+      "identity": "resp_006f53e0de7d468b016aae0dad07f087d2b689f31cf9267d42",
+      "localization": "resp_0ceefe7d57170af0016aae0daf4c5087d29276e5db4564769c"
+    },
+    "prompt_version": "inventory-two-stage-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "two_stage_instances",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "gepa_bio_caffe_crema"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false
+  }
+}

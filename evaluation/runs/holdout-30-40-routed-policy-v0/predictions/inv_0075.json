@@ -1,0 +1,195 @@
+{
+  "sample_id": "inv_0075",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0075",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 852,
+        "y": 167,
+        "width": 553,
+        "height": 508
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0075",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1077,
+        "y": 513,
+        "width": 423,
+        "height": 453
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0075",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 253,
+        "y": 585,
+        "width": 935,
+        "height": 846
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4182,
+  "estimated_cost_usd": 0.037052,
+  "usage": {
+    "input_tokens": 8233,
+    "output_tokens": 206,
+    "total_tokens": 8439,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 8233,
+        "output_tokens": 206,
+        "total_tokens": 8439
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.037052
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_007e8b132ec7c993016aaf11dd55f487d2ba56d0b50b573391",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0075.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0075.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "apple_braeburn_bundle",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_kamillentee",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "gepa_bio_und_fair_kamillentee",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_braeburn_bundle",
+      "gepa_bio_caffe_crema",
+      "gepa_bio_und_fair_kamillentee"
+    ],
+    "reference_crop_count": 6,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-terra-evidence-v0\\predictions\\inv_0075.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0075.json"
+  }
+}

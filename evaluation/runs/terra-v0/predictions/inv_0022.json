@@ -1,0 +1,28 @@
+{
+  "sample_id": "inv_0022",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 1480,
+  "estimated_cost_usd": 0.00862,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 33,
+    "total_tokens": 4145
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0d184d7ff3d9e127016aadbcf5209487d2a65b180711b20998",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

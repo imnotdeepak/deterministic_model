@@ -1,0 +1,53 @@
+{
+  "sample_id": "inv_0078",
+  "image": "images/inv_0078.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "carrot",
+        "quantity": 2
+      },
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "roma_vine_tomatoes",
+      "bbox": {
+        "x": 485,
+        "y": 294,
+        "width": 923,
+        "height": 708
+      },
+      "source_annotation_id": 44027001,
+      "source_category_id": 57
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 1070,
+        "y": 790,
+        "width": 315,
+        "height": 160
+      },
+      "source_annotation_id": 44027002,
+      "source_category_id": 53
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 1178,
+        "y": 907,
+        "width": 332,
+        "height": 269
+      },
+      "source_annotation_id": 44027003,
+      "source_category_id": 53
+    }
+  ]
+}

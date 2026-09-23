@@ -1,0 +1,197 @@
+{
+  "sample_id": "inv_0080",
+  "model_bundle_version": "terra-luna-sol-full-catalog-v2",
+  "data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 3
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0080",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 887,
+        "y": 374,
+        "width": 455,
+        "height": 163
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0080",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 659,
+        "y": 632,
+        "width": 203,
+        "height": 429
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0080",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 916,
+        "y": 696,
+        "width": 466,
+        "height": 277
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0080",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 626,
+        "y": 480,
+        "width": 764,
+        "height": 678
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6734,
+  "estimated_cost_usd": 0.063692,
+  "usage": {
+    "input_tokens": 14078,
+    "output_tokens": 369,
+    "total_tokens": 14447,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14078,
+        "output_tokens": 369,
+        "total_tokens": 14447
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.063692
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_094f053fff34a91e016ab44a40e70887d29a4113525e7acc0c",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-references-v0\\predictions\\inv_0080.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-terra-references-v0\\predictions\\inv_0080.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 2
+        },
+        {
+          "name": "corny_schoko_banane_single",
+          "quantity": 1
+        },
+        {
+          "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "corny_schoko_banane_single",
+          "quantity": 3
+        },
+        {
+          "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "corny_nussvoll_single",
+      "corny_schoko_banane_single",
+      "dr_oetker_vitalis_knuspermuesli_klassisch"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

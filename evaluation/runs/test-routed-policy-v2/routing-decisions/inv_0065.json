@@ -1,0 +1,70 @@
+{
+  "sample_id": "inv_0065",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 2
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-sol-full-catalog-v2\\predictions\\inv_0065.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  }
+}

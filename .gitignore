@@ -1,0 +1,23 @@
+# Local raw MVTec D2S download (approximately 7 GB)
+/data/
+
+# Temporary test and Python artifacts
+/.pytest-*/
+/.pytest_cache/
+**/__pycache__/
+*.py[cod]
+/.venv/
+/venv/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Scratch output pasted during development
+/text.txt
+
+# Provider payloads may contain opaque encrypted response content. Predictions,
+# run configuration, summaries, and evaluator reports remain versioned.
+/evaluation/runs/**/raw-responses/
+/evaluation/runs/**/errors/

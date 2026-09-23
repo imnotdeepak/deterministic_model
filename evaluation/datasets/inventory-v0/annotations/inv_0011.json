@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0011",
+  "image": "images/inv_0011.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 295,
+        "y": 301,
+        "width": 813,
+        "height": 918
+      },
+      "source_annotation_id": 5725001,
+      "source_category_id": 21
+    }
+  ]
+}

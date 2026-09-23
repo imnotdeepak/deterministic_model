@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0085",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2189,
+  "estimated_cost_usd": 0.0284,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 61,
+    "total_tokens": 13895,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 61,
+        "total_tokens": 13895
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.0284
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_05a132a84c4369d1016aaf10e980cc87d2bb14213e41e347d7",
+    "response_ids": {
+      "aggregate": "resp_05a132a84c4369d1016aaf10e980cc87d2bb14213e41e347d7"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

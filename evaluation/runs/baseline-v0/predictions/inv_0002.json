@@ -1,0 +1,28 @@
+{
+  "sample_id": "inv_0002",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2930,
+  "estimated_cost_usd": 0.0008572,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 29,
+    "total_tokens": 4141
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b67bfa71297425a016aada0ed024c87d2972e92b1db8a9c13",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

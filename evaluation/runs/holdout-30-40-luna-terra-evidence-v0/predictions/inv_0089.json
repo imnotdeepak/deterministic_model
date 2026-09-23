@@ -1,0 +1,122 @@
+{
+  "sample_id": "inv_0089",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0089",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1025,
+        "y": 478,
+        "width": 425,
+        "height": 380
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0089",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 943,
+        "y": 845,
+        "width": 228,
+        "height": 287
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2292,
+  "estimated_cost_usd": 0.0028982,
+  "usage": {
+    "input_tokens": 14041,
+    "output_tokens": 75,
+    "total_tokens": 14116,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14041,
+        "output_tokens": 75,
+        "total_tokens": 14116
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028982
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_051bcdf94945a99f016aaf1165ece487d2973322ba25f7c2e6",
+    "response_ids": {
+      "localization": "resp_051bcdf94945a99f016aaf1165ece487d2973322ba25f7c2e6"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "banana_bundle",
+      "apple_golden_delicious"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0089.json"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0055",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "lettuce",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3310,
+  "estimated_cost_usd": 0.0027944,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 23,
+    "total_tokens": 13857,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 23,
+        "total_tokens": 13857
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.0027944
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0ad6c834a5341710016ab4469ee2ec87d29722f6375c6416ef",
+    "response_ids": {
+      "aggregate": "resp_0ad6c834a5341710016ab4469ee2ec87d29722f6375c6416ef"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

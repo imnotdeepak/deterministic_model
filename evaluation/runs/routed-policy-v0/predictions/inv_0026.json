@@ -1,0 +1,157 @@
+{
+  "sample_id": "inv_0026",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 4
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 876,
+        "y": 132,
+        "width": 280,
+        "height": 250
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 505,
+        "y": 629,
+        "width": 265,
+        "height": 244
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1246,
+        "y": 685,
+        "width": 252,
+        "height": 232
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 854,
+        "y": 1031,
+        "width": 217,
+        "height": 233
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2525,
+  "estimated_cost_usd": 0.002976,
+  "usage": {
+    "input_tokens": 14028,
+    "output_tokens": 142,
+    "total_tokens": 14170,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14028,
+        "output_tokens": 142,
+        "total_tokens": 14170
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.002976
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f46a0cd9673e10f016aae108df1d087d295fde21ccb021627",
+    "response_ids": {
+      "localization": "resp_0f46a0cd9673e10f016aae108df1d087d295fde21ccb021627"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 4,
+    "identity_candidates": [
+      "apple_red_boskoop"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0026.json",
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "agreement",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions\\inv_0026.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0026.json",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-terra-authoritative-evidence-v0\\predictions\\inv_0026.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions\\inv_0026.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

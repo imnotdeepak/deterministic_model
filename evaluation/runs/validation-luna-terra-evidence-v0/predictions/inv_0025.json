@@ -1,0 +1,105 @@
+{
+  "sample_id": "inv_0025",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 760,
+        "y": 98,
+        "width": 244,
+        "height": 236
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 764,
+        "y": 985,
+        "width": 271,
+        "height": 265
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6086,
+  "estimated_cost_usd": 0.0028992,
+  "usage": {
+    "input_tokens": 14028,
+    "output_tokens": 78,
+    "total_tokens": 14106,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14028,
+        "output_tokens": 78,
+        "total_tokens": 14106
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028992
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0afe380503cbfb7c016ab446f504b087d2b8c37c4edf5fbc59",
+    "response_ids": {
+      "localization": "resp_0afe380503cbfb7c016ab446f504b087d2b8c37c4edf5fbc59"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "apple_red_boskoop"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0025.json"
+  }
+}

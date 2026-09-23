@@ -1,0 +1,73 @@
+{
+  "sample_id": "inv_0067",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 2
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 2
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2717,
+  "estimated_cost_usd": 0.028952,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 107,
+    "total_tokens": 13941,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 107,
+        "total_tokens": 13941
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.028952
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_00e95c06ebc48ef3016aaf10ce28b087d2afd8014bfcbab642",
+    "response_ids": {
+      "aggregate": "resp_00e95c06ebc48ef3016aaf10ce28b087d2afd8014bfcbab642"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

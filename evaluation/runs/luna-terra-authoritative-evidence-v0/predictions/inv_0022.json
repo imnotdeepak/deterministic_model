@@ -1,0 +1,105 @@
+{
+  "sample_id": "inv_0022",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0022",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 292,
+        "y": 746,
+        "width": 756,
+        "height": 255
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0022",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 618,
+        "y": 528,
+        "width": 438,
+        "height": 672
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6340,
+  "estimated_cost_usd": 0.0029174,
+  "usage": {
+    "input_tokens": 14035,
+    "output_tokens": 92,
+    "total_tokens": 14127,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14035,
+        "output_tokens": 92,
+        "total_tokens": 14127
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029174
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01eaaef91a0e43c4016aae1086583c87d29cba0da290cf9e23",
+    "response_ids": {
+      "localization": "resp_01eaaef91a0e43c4016aae1086583c87d29cba0da290cf9e23"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "adelholzener_gourmet_mineralwasser_02"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0022.json"
+  }
+}

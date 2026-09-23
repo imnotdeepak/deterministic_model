@@ -1,0 +1,105 @@
+{
+  "sample_id": "inv_0007",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0007",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 803,
+        "y": 773,
+        "width": 407,
+        "height": 268
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0007",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1217,
+        "y": 130,
+        "width": 377,
+        "height": 440
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2756,
+  "estimated_cost_usd": 0.0029252,
+  "usage": {
+    "input_tokens": 14038,
+    "output_tokens": 98,
+    "total_tokens": 14136,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14038,
+        "output_tokens": 98,
+        "total_tokens": 14136
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029252
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_00caa9ecc6310404016aae106c111c87d2aea33776b9137db8",
+    "response_ids": {
+      "localization": "resp_00caa9ecc6310404016aae106c111c87d2aea33776b9137db8"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "gepa_bio_und_fair_kraeuterteemischung"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0007.json"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "sample_id": "inv_0006",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0006",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 772,
+        "y": 560,
+        "width": 486,
+        "height": 458
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4149,
+  "estimated_cost_usd": 0.0054856,
+  "usage": {
+    "input_tokens": 26876,
+    "output_tokens": 92,
+    "total_tokens": 26968,
+    "by_stage": {
+      "identity": {
+        "input_tokens": 13834,
+        "output_tokens": 36,
+        "total_tokens": 13870
+      },
+      "localization": {
+        "input_tokens": 13042,
+        "output_tokens": 56,
+        "total_tokens": 13098
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "identity": 0.00281,
+    "localization": 0.0026756
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0154339c50625e90016aae0dbf3d6887d2a4c31a63e898b015",
+    "response_ids": {
+      "identity": "resp_02baaa3f42e82d22016aae0dbd4d4887d288d749bc72e7ae83",
+      "localization": "resp_0154339c50625e90016aae0dbf3d6887d2a4c31a63e898b015"
+    },
+    "prompt_version": "inventory-two-stage-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "two_stage_instances",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "gepa_bio_und_fair_kraeuterteemischung"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false
+  }
+}

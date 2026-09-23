@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0013",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 4
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2466,
+  "estimated_cost_usd": 0.0028052,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 32,
+    "total_tokens": 13866
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_00a04a24617c31cc016aae05024ce887d29a9dc36281a03aa7",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

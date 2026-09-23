@@ -1,0 +1,9 @@
+{
+  "selected": 20,
+  "agreements_copied_this_run": 12,
+  "disagreements_adjudicated_this_run": 8,
+  "resumed": 0,
+  "failed": 0,
+  "estimated_cost_usd_this_run": 0.226828,
+  "predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions"
+}

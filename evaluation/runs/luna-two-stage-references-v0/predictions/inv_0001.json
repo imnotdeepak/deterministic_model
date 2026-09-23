@@ -1,0 +1,90 @@
+{
+  "sample_id": "inv_0001",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0001",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1167,
+        "y": 416,
+        "width": 334,
+        "height": 586
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4934,
+  "estimated_cost_usd": 0.0054526,
+  "usage": {
+    "input_tokens": 26843,
+    "output_tokens": 70,
+    "total_tokens": 26913,
+    "by_stage": {
+      "identity": {
+        "input_tokens": 13834,
+        "output_tokens": 25,
+        "total_tokens": 13859
+      },
+      "localization": {
+        "input_tokens": 13009,
+        "output_tokens": 45,
+        "total_tokens": 13054
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "identity": 0.0027968,
+    "localization": 0.0026558
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_05f0fc3639265743016aae0daa62d087d2bba799b556beeb40",
+    "response_ids": {
+      "identity": "resp_086c8ca020b0901b016aae0da8774887d283b19eeb156aad79",
+      "localization": "resp_05f0fc3639265743016aae0daa62d087d2bba799b556beeb40"
+    },
+    "prompt_version": "inventory-two-stage-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "two_stage_instances",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "caona_cocoa"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false
+  }
+}

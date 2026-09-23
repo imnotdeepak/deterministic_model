@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0022",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions\\inv_0022.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 2
+      }
+    ]
+  }
+}

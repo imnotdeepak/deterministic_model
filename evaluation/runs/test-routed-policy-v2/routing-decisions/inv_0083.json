@@ -1,0 +1,54 @@
+{
+  "sample_id": "inv_0083",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "decision": "agreement",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-terra-evidence-v0\\predictions\\inv_0083.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      }
+    ]
+  }
+}

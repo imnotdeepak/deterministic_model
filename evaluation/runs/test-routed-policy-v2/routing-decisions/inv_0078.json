@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0078",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "decision": "agreement",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "carrot",
+        "quantity": 2
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "carrot",
+        "quantity": 2
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-terra-evidence-v0\\predictions\\inv_0078.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "carrot",
+        "quantity": 2
+      }
+    ]
+  }
+}

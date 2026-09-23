@@ -1,0 +1,166 @@
+{
+  "sample_id": "inv_0012",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 4
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0012",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 689,
+        "y": 361,
+        "width": 263,
+        "height": 270
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0012",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1100,
+        "y": 219,
+        "width": 292,
+        "height": 292
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0012",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 480,
+        "y": 906,
+        "width": 303,
+        "height": 345
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0012",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 597,
+        "y": 1081,
+        "width": 292,
+        "height": 359
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 8907,
+  "estimated_cost_usd": 0.031444,
+  "usage": {
+    "input_tokens": 5376,
+    "output_tokens": 497,
+    "total_tokens": 5873,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 5376,
+        "output_tokens": 497,
+        "total_tokens": 5873
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.031444
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0693abed837e953c016aaf0b5eb4c487d2ae73aad2239fa83a",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions\\inv_0012.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0012.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "tegernseer_hell_03",
+          "quantity": 4
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "augustiner_lagerbraeu_hell_05",
+          "quantity": 4
+        }
+      ]
+    },
+    "candidate_names": [
+      "augustiner_lagerbraeu_hell_05",
+      "tegernseer_hell_03"
+    ],
+    "reference_crop_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

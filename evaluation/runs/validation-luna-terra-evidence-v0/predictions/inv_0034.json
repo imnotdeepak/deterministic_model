@@ -1,0 +1,125 @@
+{
+  "sample_id": "inv_0034",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "avocado",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0034",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 507,
+        "y": 550,
+        "width": 265,
+        "height": 255
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0034",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 975,
+        "y": 402,
+        "width": 275,
+        "height": 226
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0034",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 897,
+        "y": 890,
+        "width": 268,
+        "height": 236
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3766,
+  "estimated_cost_usd": 0.0029262,
+  "usage": {
+    "input_tokens": 14025,
+    "output_tokens": 101,
+    "total_tokens": 14126,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14025,
+        "output_tokens": 101,
+        "total_tokens": 14126
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029262
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0a4db82a23a8fa7a016ab446fa581c87d2a8131d14982f5e1d",
+    "response_ids": {
+      "localization": "resp_0a4db82a23a8fa7a016ab446fa581c87d2a8131d14982f5e1d"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "avocado"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0034.json"
+  }
+}

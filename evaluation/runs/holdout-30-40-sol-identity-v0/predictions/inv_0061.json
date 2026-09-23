@@ -1,0 +1,136 @@
+{
+  "sample_id": "inv_0061",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0061",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 152,
+        "y": 338,
+        "width": 512,
+        "height": 444
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0061",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 415,
+        "y": 446,
+        "width": 535,
+        "height": 447
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0061",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 689,
+        "y": 541,
+        "width": 546,
+        "height": 454
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2558,
+  "estimated_cost_usd": 0.002968,
+  "usage": {
+    "input_tokens": 14036,
+    "output_tokens": 134,
+    "total_tokens": 14170,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14036,
+        "output_tokens": 134,
+        "total_tokens": 14170
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.002968
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0beb16729fe6812e016aaf113092b087d28eca0e77741e167b",
+    "response_ids": {
+      "localization": "resp_0beb16729fe6812e016aaf113092b087d28eca0e77741e167b"
+    },
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "gepa_bio_und_fair_rooibostee"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0061.json",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "agreement",
+    "resolver_model": null,
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0061.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0061.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-luna",
+      "adjudicator": null
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "dataset_id": "inventory-v0",
+  "dataset_version": "0.1.0",
+  "task": "controlled_inventory_image_extraction",
+  "annotation_spec_version": "1.0.0",
+  "bbox_format": "xywh",
+  "coordinate_space": "original_pixels",
+  "bbox_edges": "right_bottom_exclusive",
+  "json_pointer_root": "data",
+  "source_dataset": "MVTec D2S",
+  "source_dataset_version": "1.1",
+  "source_license": "CC BY-NC-SA 4.0",
+  "source_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "importer_version": "0.1.0",
+  "seed": 42,
+  "requested_limit": 100,
+  "imported_samples": 100,
+  "skipped_invalid_samples": 0,
+  "split_strategy": "deterministic scene-grouped 70/15/15",
+  "split_counts": {
+    "development": 70,
+    "test": 15,
+    "validation": 15
+  },
+  "source_split_counts": {
+    "training": 57,
+    "validation": 43
+  },
+  "category_count": 60,
+  "source_files": {
+    "training": {
+      "annotation_file": "annotations/D2S_training.json",
+      "annotation_sha256": "1ef0dcd81f1ba9294c816114456b0f9051a919fe9619392047e29f1bb6014fc1",
+      "images": 4380,
+      "annotations": 6900,
+      "dataset_info": {
+        "description": "This is the MVTec Densely Segmented Supermarket (D2S) Dataset in COCO format.",
+        "url": "https://www.mvtec.com/research",
+        "version": "1.1",
+        "year": "2018",
+        "contributor": "MVTec Software GmbH",
+        "date_created": "2018-07-25"
+      },
+      "licenses": [
+        {
+          "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "id": 1,
+          "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+        }
+      ]
+    },
+    "validation": {
+      "annotation_file": "annotations/D2S_validation.json",
+      "annotation_sha256": "0c2cd563420cc27879310b33ef70ba4b3c24f875212f5cadffd57c984d5c2601",
+      "images": 3600,
+      "annotations": 15683,
+      "dataset_info": {
+        "description": "This is the MVTec Densely Segmented Supermarket (D2S) Dataset in COCO format.",
+        "url": "https://www.mvtec.com/research",
+        "version": "1.1",
+        "year": "2018",
+        "contributor": "MVTec Software GmbH",
+        "date_created": "2018-07-25"
+      },
+      "licenses": [
+        {
+          "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "id": 1,
+          "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+        }
+      ]
+    }
+  },
+  "skipped": []
+}

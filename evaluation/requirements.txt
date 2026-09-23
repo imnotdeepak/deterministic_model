@@ -1,0 +1,4 @@
+jsonschema>=4.23,<5
+Pillow>=10,<12
+pytest>=8,<9
+openai>=1.67,<2

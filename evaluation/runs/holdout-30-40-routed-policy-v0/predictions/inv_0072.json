@@ -1,0 +1,65 @@
+{
+  "sample_id": "inv_0072",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": []
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 4048,
+  "estimated_cost_usd": 0.021188,
+  "usage": {
+    "input_tokens": 4947,
+    "output_tokens": 70,
+    "total_tokens": 5017,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 4947,
+        "output_tokens": 70,
+        "total_tokens": 5017
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.021188
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f3ac5037165ec9e016aaf11c99c3887d2bcd664faf7145005",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0072.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0072.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "coca_cola_light_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "coca_cola_light_05"
+    ],
+    "reference_crop_count": 2,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-terra-evidence-v0\\predictions\\inv_0072.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0072.json"
+  }
+}

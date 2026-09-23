@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0035",
+  "image": "images/inv_0035.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 623,
+        "y": 546,
+        "width": 584,
+        "height": 575
+      },
+      "source_annotation_id": 16403001,
+      "source_category_id": 12
+    }
+  ]
+}

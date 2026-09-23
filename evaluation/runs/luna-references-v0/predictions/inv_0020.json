@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0020",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 1939,
+  "estimated_cost_usd": 0.0027992,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 27,
+    "total_tokens": 13861
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_084774f49ce08266016aae05123e3087d29c632dfc9bf60faf",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

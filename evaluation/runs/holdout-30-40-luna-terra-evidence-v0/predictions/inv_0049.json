@@ -1,0 +1,85 @@
+{
+  "sample_id": "inv_0049",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0049",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 795,
+        "y": 285,
+        "width": 735,
+        "height": 379
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2716,
+  "estimated_cost_usd": 0.0028636,
+  "usage": {
+    "input_tokens": 14030,
+    "output_tokens": 48,
+    "total_tokens": 14078,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14030,
+        "output_tokens": 48,
+        "total_tokens": 14078
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028636
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0a0f1058d910b59e016aaf11210b2487d29757a44fb1225421",
+    "response_ids": {
+      "localization": "resp_0a0f1058d910b59e016aaf11210b2487d29757a44fb1225421"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "pasta_reggia_fusilli"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0049.json"
+  }
+}

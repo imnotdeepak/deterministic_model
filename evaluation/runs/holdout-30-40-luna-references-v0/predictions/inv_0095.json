@@ -1,0 +1,77 @@
+{
+  "sample_id": "inv_0095",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "orange_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3154,
+  "estimated_cost_usd": 0.002912,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 121,
+    "total_tokens": 13955,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 121,
+        "total_tokens": 13955
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.002912
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_014d49c18cde5309016aaf1092f4d087d2bd7a652cb0b87786",
+    "response_ids": {
+      "aggregate": "resp_014d49c18cde5309016aaf1092f4d087d2bd7a652cb0b87786"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "runner_version": "0.1.0",
+  "prompt_version": "inventory-disagreement-adjudication-v1",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "created_at_utc": "2026-09-19T22:23:06.597017+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v0",
+  "split": "development",
+  "requested_limit": 20,
+  "selected_samples": 20,
+  "agreement_samples": 12,
+  "disagreement_samples": 8,
+  "candidate_a": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions",
+  "candidate_b": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions",
+  "base_predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-terra-authoritative-evidence-v0\\predictions",
+  "reference_manifest": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\references\\inventory-v0\\reference-manifest.json",
+  "model": "gpt-5.6-sol",
+  "image_detail": "high",
+  "reference_detail": "high",
+  "reasoning_effort": "low",
+  "input_usd_per_million_tokens": 4.0,
+  "output_usd_per_million_tokens": 20.0,
+  "store": false
+}

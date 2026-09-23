@@ -1,0 +1,11 @@
+{
+  "selected": 40,
+  "agreements_copied_this_run": 18,
+  "count_guards_copied_this_run": 1,
+  "identity_disagreements_adjudicated_this_run": 21,
+  "disagreements_adjudicated_this_run": 21,
+  "resumed": 0,
+  "failed": 0,
+  "estimated_cost_usd_this_run": 1.112988,
+  "predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions"
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0077",
+  "image": "images/inv_0077.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1077,
+        "y": 930,
+        "width": 360,
+        "height": 438
+      },
+      "source_annotation_id": 41427001,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 621,
+        "y": 238,
+        "width": 583,
+        "height": 989
+      },
+      "source_annotation_id": 41427002,
+      "source_category_id": 21
+    }
+  ]
+}

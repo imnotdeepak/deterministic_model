@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0027",
+  "image": "images/inv_0027.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "carrot",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 760,
+        "y": 1028,
+        "width": 286,
+        "height": 167
+      },
+      "source_annotation_id": 13326001,
+      "source_category_id": 53
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 993,
+        "y": 389,
+        "width": 293,
+        "height": 417
+      },
+      "source_annotation_id": 13326002,
+      "source_category_id": 53
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 369,
+        "y": 578,
+        "width": 530,
+        "height": 247
+      },
+      "source_annotation_id": 13326003,
+      "source_category_id": 53
+    }
+  ]
+}

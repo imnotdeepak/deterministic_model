@@ -1,0 +1,151 @@
+{
+  "sample_id": "inv_0077",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0077",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 626,
+        "y": 233,
+        "width": 595,
+        "height": 990
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0077",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1087,
+        "y": 923,
+        "width": 378,
+        "height": 445
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 7042,
+  "estimated_cost_usd": 0.038228,
+  "usage": {
+    "input_tokens": 8112,
+    "output_tokens": 289,
+    "total_tokens": 8401,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 8112,
+        "output_tokens": 289,
+        "total_tokens": 8401
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.038228
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b23f5c5c4840ec2016aaf11e18b9487d2804b54d7fcdda332",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0077.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0077.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "cafe_wunderbar_espresso",
+          "quantity": 1
+        },
+        {
+          "name": "coca_cola_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "cafe_wunderbar_espresso",
+          "quantity": 1
+        },
+        {
+          "name": "coca_cola_light_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "cafe_wunderbar_espresso",
+      "coca_cola_05",
+      "coca_cola_light_05"
+    ],
+    "reference_crop_count": 6,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

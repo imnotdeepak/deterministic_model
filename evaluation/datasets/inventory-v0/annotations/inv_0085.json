@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0085",
+  "image": "images/inv_0085.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 190,
+        "y": 779,
+        "width": 779,
+        "height": 661
+      },
+      "source_annotation_id": 50812001,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 463,
+        "y": 305,
+        "width": 379,
+        "height": 145
+      },
+      "source_annotation_id": 50812002,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 999,
+        "y": 380,
+        "width": 553,
+        "height": 592
+      },
+      "source_annotation_id": 50812003,
+      "source_category_id": 59
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "sample_id": "inv_0021",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3422,
+  "estimated_cost_usd": 0.0028256,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 49,
+    "total_tokens": 13883,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 49,
+        "total_tokens": 13883
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.0028256
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0384773ade1c8499016ab44691c4e087d2b9ecbefaa45d2029",
+    "response_ids": {
+      "aggregate": "resp_0384773ade1c8499016ab44691c4e087d2b9ecbefaa45d2029"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

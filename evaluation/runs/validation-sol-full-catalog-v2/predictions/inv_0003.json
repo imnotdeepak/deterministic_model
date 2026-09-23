@@ -1,0 +1,142 @@
+{
+  "sample_id": "inv_0003",
+  "model_bundle_version": "terra-luna-sol-full-catalog-v2",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 841,
+        "y": 0,
+        "width": 355,
+        "height": 389
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 307,
+        "y": 677,
+        "width": 668,
+        "height": 317
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1121,
+        "y": 432,
+        "width": 473,
+        "height": 708
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 11163,
+  "estimated_cost_usd": 0.065556,
+  "usage": {
+    "input_tokens": 13989,
+    "output_tokens": 480,
+    "total_tokens": 14469,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 13989,
+        "output_tokens": 480,
+        "total_tokens": 14469
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.065556
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_03789bea825b01fb016ab4471aef7c87d299b1597ef13391ce",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0003.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0003.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 3
+        }
+      ]
+    },
+    "candidate_names": [
+      "gepa_bio_caffe_crema"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "sample_id": "inv_0071",
+  "image": "images/inv_0071.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 489,
+        "y": 81,
+        "width": 817,
+        "height": 945
+      },
+      "source_annotation_id": 30909001,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 1108,
+        "y": 0,
+        "width": 392,
+        "height": 388
+      },
+      "source_annotation_id": 30909002,
+      "source_category_id": 1
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 1177,
+        "y": 189,
+        "width": 578,
+        "height": 595
+      },
+      "source_annotation_id": 30909003,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 42,
+        "y": 556,
+        "width": 547,
+        "height": 591
+      },
+      "source_annotation_id": 30909004,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "koelln_muesli_fruechte",
+      "bbox": {
+        "x": 331,
+        "y": 785,
+        "width": 753,
+        "height": 655
+      },
+      "source_annotation_id": 30909005,
+      "source_category_id": 17
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 842,
+        "y": 1162,
+        "width": 380,
+        "height": 278
+      },
+      "source_annotation_id": 30909006,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "banana_bundle",
+      "bbox": {
+        "x": 1052,
+        "y": 786,
+        "width": 685,
+        "height": 498
+      },
+      "source_annotation_id": 30909007,
+      "source_category_id": 30
+    }
+  ]
+}

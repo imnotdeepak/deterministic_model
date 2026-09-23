@@ -1,0 +1,34 @@
+{
+  "sample_id": "inv_0016",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 2
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 3
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions\\inv_0016.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 3
+      }
+    ]
+  }
+}

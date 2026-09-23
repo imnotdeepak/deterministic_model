@@ -1,0 +1,96 @@
+{
+  "sample_id": "inv_0029",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0029",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 674,
+        "y": 315,
+        "width": 866,
+        "height": 818
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2197,
+  "estimated_cost_usd": 0.0028594,
+  "usage": {
+    "input_tokens": 14027,
+    "output_tokens": 45,
+    "total_tokens": 14072,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14027,
+        "output_tokens": 45,
+        "total_tokens": 14072
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028594
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0a1a1eaf7438abfb016aaf0e87981c87d28f228b09103a1fc3",
+    "response_ids": {
+      "localization": "resp_0a1a1eaf7438abfb016aaf0e87981c87d28f228b09103a1fc3"
+    },
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "vine_tomatoes"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-terra-references-v0\\predictions\\inv_0029.json",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "agreement",
+    "resolver_model": null,
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-luna-references-v0\\predictions\\inv_0029.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-terra-references-v0\\predictions\\inv_0029.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-luna",
+      "adjudicator": null
+    }
+  }
+}

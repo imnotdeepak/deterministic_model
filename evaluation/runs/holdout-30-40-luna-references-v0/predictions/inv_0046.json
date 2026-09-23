@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0046",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3086,
+  "estimated_cost_usd": 0.002828,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 51,
+    "total_tokens": 13885,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 51,
+        "total_tokens": 13885
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.002828
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01ec92175df3648a016aaf1041fd4087d298da796bfedee44c",
+    "response_ids": {
+      "aggregate": "resp_01ec92175df3648a016aaf1041fd4087d298da796bfedee44c"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

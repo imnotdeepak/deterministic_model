@@ -1,0 +1,28 @@
+{
+  "sample_id": "inv_0009",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 1253,
+  "estimated_cost_usd": 0.0008536,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 26,
+    "total_tokens": 4138
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0c1500e2daee865a016aadb36cdba087d2b83dc0b29a6d15a6",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

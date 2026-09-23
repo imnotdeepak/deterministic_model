@@ -1,0 +1,11 @@
+{
+  "selected": 15,
+  "agreements_copied_this_run": 9,
+  "count_guards_copied_this_run": 0,
+  "identity_disagreements_adjudicated_this_run": 6,
+  "disagreements_adjudicated_this_run": 6,
+  "resumed": 0,
+  "failed": 0,
+  "estimated_cost_usd_this_run": 0.377444,
+  "predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-sol-full-catalog-v2\\predictions"
+}

@@ -1,0 +1,427 @@
+{
+  "sample_id": "inv_0096",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/7/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/7/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 29,
+        "y": 177,
+        "width": 482,
+        "height": 409
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 516,
+        "y": 30,
+        "width": 252,
+        "height": 886
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 131,
+        "y": 606,
+        "width": 455,
+        "height": 618
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 891,
+        "y": 111,
+        "width": 975,
+        "height": 606
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 756,
+        "y": 720,
+        "width": 692,
+        "height": 720
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1459,
+        "y": 821,
+        "width": 261,
+        "height": 256
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 513,
+        "y": 998,
+        "width": 299,
+        "height": 389
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_008",
+      "media_id": "med_inv_0096",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1283,
+        "y": 1094,
+        "width": 470,
+        "height": 346
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 11024,
+  "estimated_cost_usd": 0.077612,
+  "usage": {
+    "input_tokens": 16183,
+    "output_tokens": 644,
+    "total_tokens": 16827,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 16183,
+        "output_tokens": 644,
+        "total_tokens": 16827
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.077612
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_030d0f51c62fbb9c016aaf121785ac87d2b91daeb5744599c7",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0096.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0096.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_fencheltee",
+          "quantity": 1
+        },
+        {
+          "name": "vine_tomatoes",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 1
+        },
+        {
+          "name": "cocoba_cocoa",
+          "quantity": 1
+        },
+        {
+          "name": "ethiquable_gruener_tee_ceylon",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 1
+        },
+        {
+          "name": "corny_schoko_banane_single",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        },
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 1
+        },
+        {
+          "name": "ethiquable_gruener_tee_ceylon",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_fencheltee",
+          "quantity": 1
+        },
+        {
+          "name": "vine_tomatoes",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_gourmet_mineralwasser_02",
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "cocoba_cocoa",
+      "corny_nussvoll_single",
+      "corny_schoko_banane_single",
+      "ethiquable_gruener_tee_ceylon",
+      "gepa_bio_caffe_crema",
+      "gepa_bio_und_fair_fencheltee",
+      "vine_tomatoes"
+    ],
+    "reference_crop_count": 22,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-terra-evidence-v0\\predictions\\inv_0096.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0096.json"
+  }
+}

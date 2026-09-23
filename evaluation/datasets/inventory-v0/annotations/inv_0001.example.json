@@ -1,0 +1,47 @@
+{
+  "sample_id": "inv_0001",
+  "image": "images/inv_0001.jpg",
+  "width": 1920,
+  "height": 1080,
+  "data": {
+    "products": [
+      {
+        "name": "Coca-Cola Zero 12 oz",
+        "quantity": 2
+      },
+      {
+        "name": "Sprite 12 oz",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "Coca-Cola Zero 12 oz",
+      "bbox": {
+        "x": 122,
+        "y": 84,
+        "width": 80,
+        "height": 206
+      }
+    },
+    {
+      "product_name": "Coca-Cola Zero 12 oz",
+      "bbox": {
+        "x": 210,
+        "y": 82,
+        "width": 81,
+        "height": 209
+      }
+    },
+    {
+      "product_name": "Sprite 12 oz",
+      "bbox": {
+        "x": 310,
+        "y": 84,
+        "width": 79,
+        "height": 205
+      }
+    }
+  ]
+}

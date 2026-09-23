@@ -1,0 +1,196 @@
+{
+  "sample_id": "inv_0085",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0085",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 468,
+        "y": 304,
+        "width": 386,
+        "height": 145
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0085",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 192,
+        "y": 776,
+        "width": 799,
+        "height": 664
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0085",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1062,
+        "y": 389,
+        "width": 495,
+        "height": 587
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 5548,
+  "estimated_cost_usd": 0.040368,
+  "usage": {
+    "input_tokens": 8972,
+    "output_tokens": 224,
+    "total_tokens": 9196,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 8972,
+        "output_tokens": 224,
+        "total_tokens": 9196
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.040368
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_04df8240d716156f016aaf11f0876487d2b8656816470dca35",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-luna-references-v0\\predictions\\inv_0085.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-terra-references-v0\\predictions\\inv_0085.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 1
+        },
+        {
+          "name": "koelln_muesli_fruechte",
+          "quantity": 1
+        },
+        {
+          "name": "salad_iceberg",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "corny_nussvoll_single",
+          "quantity": 1
+        },
+        {
+          "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+          "quantity": 1
+        },
+        {
+          "name": "salad_iceberg",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "corny_nussvoll_single",
+      "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "koelln_muesli_fruechte",
+      "salad_iceberg"
+    ],
+    "reference_crop_count": 8,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

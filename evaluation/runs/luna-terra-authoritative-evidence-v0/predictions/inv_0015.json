@@ -1,0 +1,105 @@
+{
+  "sample_id": "inv_0015",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0015",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 781,
+        "y": 40,
+        "width": 256,
+        "height": 401
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0015",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 916,
+        "y": 850,
+        "width": 274,
+        "height": 391
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2028,
+  "estimated_cost_usd": 0.0029018,
+  "usage": {
+    "input_tokens": 14029,
+    "output_tokens": 80,
+    "total_tokens": 14109,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14029,
+        "output_tokens": 80,
+        "total_tokens": 14109
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029018
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_065f0376938c3940016aae107ad75c87d289257ba4b406fbc2",
+    "response_ids": {
+      "localization": "resp_065f0376938c3940016aae107ad75c87d289257ba4b406fbc2"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 2,
+    "identity_candidates": [
+      "coca_cola_05"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0015.json"
+  }
+}

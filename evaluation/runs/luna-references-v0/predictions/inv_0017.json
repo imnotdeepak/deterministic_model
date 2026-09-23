@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0017",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2485,
+  "estimated_cost_usd": 0.0027968,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 25,
+    "total_tokens": 13859
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f2a64ccd8162639016aae050fe68c87d28157ca6d068b0392",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0006",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3367,
+  "estimated_cost_usd": 0.00281,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 36,
+    "total_tokens": 13870
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01a549eda94ce1bb016aae0358565c87d28ed5a4d7218936f8",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

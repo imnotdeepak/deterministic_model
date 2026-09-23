@@ -1,0 +1,34 @@
+{
+  "sample_id": "inv_0016",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 2
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2296,
+  "estimated_cost_usd": 0.002816,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 41,
+    "total_tokens": 13875
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f734fa74a36f72f016aae050db49c87d2bd8fbcf509b774c0",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

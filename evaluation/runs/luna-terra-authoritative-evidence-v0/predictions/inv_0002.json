@@ -1,0 +1,125 @@
+{
+  "sample_id": "inv_0002",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 467,
+        "y": 984,
+        "width": 620,
+        "height": 336
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1425,
+        "y": 488,
+        "width": 316,
+        "height": 614
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0002",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 770,
+        "y": 58,
+        "width": 307,
+        "height": 403
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3160,
+  "estimated_cost_usd": 0.0029414,
+  "usage": {
+    "input_tokens": 14029,
+    "output_tokens": 113,
+    "total_tokens": 14142,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14029,
+        "output_tokens": 113,
+        "total_tokens": 14142
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029414
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0154979bb4a76977016aae105ea66487d2ad85cdce0da865a5",
+    "response_ids": {
+      "localization": "resp_0154979bb4a76977016aae105ea66487d2ad85cdce0da865a5"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "pasta_reggia_spaghetti"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0002.json"
+  }
+}

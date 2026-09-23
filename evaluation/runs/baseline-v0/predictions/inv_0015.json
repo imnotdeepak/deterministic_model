@@ -1,0 +1,23 @@
+{
+  "sample_id": "inv_0015",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": []
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2580,
+  "estimated_cost_usd": 0.000838,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 13,
+    "total_tokens": 4125
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_06f6cd2f2f1bc0db016aadb3729b0487d292f4593f55469a07",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

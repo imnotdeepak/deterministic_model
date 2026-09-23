@@ -1,0 +1,154 @@
+{
+  "sample_id": "inv_0021",
+  "model_bundle_version": "terra-luna-sol-full-catalog-routed-v2",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.69,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.69,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.88,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0021",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1012,
+        "y": 416,
+        "width": 226,
+        "height": 200
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0021",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 668,
+        "y": 805,
+        "width": 208,
+        "height": 246
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 23653,
+  "estimated_cost_usd": 0.075572,
+  "usage": {
+    "input_tokens": 14033,
+    "output_tokens": 972,
+    "total_tokens": 15005,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14033,
+        "output_tokens": 972,
+        "total_tokens": 15005
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.075572
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_09353a9d25f8122a016ab4472c24f087d282ae638590d0baf0",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0021.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0021.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_alpenquelle_naturell_075",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "adelholzener_classic_naturell_02",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_alpenquelle_naturell_075",
+      "adelholzener_classic_naturell_02"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-full-catalog-v2",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-terra-evidence-v0\\predictions\\inv_0021.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-full-catalog-v2\\predictions\\inv_0021.json"
+  }
+}

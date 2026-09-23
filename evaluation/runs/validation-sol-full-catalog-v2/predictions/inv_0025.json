@@ -1,0 +1,132 @@
+{
+  "sample_id": "inv_0025",
+  "model_bundle_version": "terra-luna-sol-full-catalog-v2",
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 735,
+        "y": 96,
+        "width": 235,
+        "height": 237
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 747,
+        "y": 976,
+        "width": 261,
+        "height": 274
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 5130,
+  "estimated_cost_usd": 0.059528,
+  "usage": {
+    "input_tokens": 14017,
+    "output_tokens": 173,
+    "total_tokens": 14190,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14017,
+        "output_tokens": 173,
+        "total_tokens": 14190
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.059528
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_06963696cd1504c1016ab44743e3e087d2aa9fc0adff770a52",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0025.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0025.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "apple_red_boskoop",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "apple_red_boskoop",
+          "quantity": 2
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_granny_smith",
+      "apple_red_boskoop"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

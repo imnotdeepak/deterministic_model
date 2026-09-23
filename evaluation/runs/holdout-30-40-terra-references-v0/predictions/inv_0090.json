@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0090",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 5782,
+  "estimated_cost_usd": 0.028424,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 63,
+    "total_tokens": 13897,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 63,
+        "total_tokens": 13897
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.028424
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b0777989a378cbd016aaf10f1b1c487d2b5f4484b5945a1db",
+    "response_ids": {
+      "aggregate": "resp_0b0777989a378cbd016aaf10f1b1c487d2b5f4484b5945a1db"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

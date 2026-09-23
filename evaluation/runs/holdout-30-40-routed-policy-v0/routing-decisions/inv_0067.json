@@ -1,0 +1,106 @@
+{
+  "sample_id": "inv_0067",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 2
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 2
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 2
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 2
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 2
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-30-40-sol-identity-v0\\predictions\\inv_0067.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 2
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 2
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 2
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 2
+      }
+    ]
+  }
+}

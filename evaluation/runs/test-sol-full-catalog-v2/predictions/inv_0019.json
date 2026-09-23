@@ -1,0 +1,142 @@
+{
+  "sample_id": "inv_0019",
+  "model_bundle_version": "terra-luna-sol-full-catalog-v2",
+  "data": {
+    "products": [
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0019",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 518,
+        "y": 713,
+        "width": 275,
+        "height": 337
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0019",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 964,
+        "y": 536,
+        "width": 224,
+        "height": 217
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0019",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1129,
+        "y": 886,
+        "width": 250,
+        "height": 247
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 5844,
+  "estimated_cost_usd": 0.06074,
+  "usage": {
+    "input_tokens": 13990,
+    "output_tokens": 239,
+    "total_tokens": 14229,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 13990,
+        "output_tokens": 239,
+        "total_tokens": 14229
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.06074
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_061789041dd9591c016ab44a1848ac87d2b08d0a386e25495f",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-references-v0\\predictions\\inv_0019.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-terra-references-v0\\predictions\\inv_0019.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "suntory_gokuri_lemonade",
+          "quantity": 2
+        }
+      ]
+    },
+    "candidate_names": [
+      "suntory_gokuri_lemonade"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

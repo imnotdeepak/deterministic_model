@@ -1,0 +1,62 @@
+{
+  "sample_id": "inv_0010",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.0,
+      "status": "unverified",
+      "evidence_refs": []
+    },
+    "/products/0/quantity": {
+      "confidence": 0.0,
+      "status": "unverified",
+      "evidence_refs": []
+    }
+  },
+  "evidence": [],
+  "latency_ms": 2092,
+  "estimated_cost_usd": 0.0028212,
+  "usage": {
+    "input_tokens": 14028,
+    "output_tokens": 13,
+    "total_tokens": 14041,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14028,
+        "output_tokens": 13,
+        "total_tokens": 14041
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028212
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01b05beda0c65117016ab446ebaa2c87d299237411b5842e36",
+    "response_ids": {
+      "localization": "resp_01b05beda0c65117016ab446ebaa2c87d299237411b5842e36"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 0,
+    "identity_candidates": [
+      "corny_nussvoll"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0010.json"
+  }
+}

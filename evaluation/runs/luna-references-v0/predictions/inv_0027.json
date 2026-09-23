@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0027",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "carrot",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 1860,
+  "estimated_cost_usd": 0.0027944,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 23,
+    "total_tokens": 13857
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_07220ccab36d5a08016aae051c125087d2be9423c230b1d562",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

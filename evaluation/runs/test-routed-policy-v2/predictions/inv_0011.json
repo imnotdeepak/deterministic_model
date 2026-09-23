@@ -1,0 +1,107 @@
+{
+  "sample_id": "inv_0011",
+  "model_bundle_version": "terra-luna-sol-full-catalog-routed-v2",
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0011",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 300,
+        "y": 304,
+        "width": 800,
+        "height": 910
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4262,
+  "estimated_cost_usd": 0.058092,
+  "usage": {
+    "input_tokens": 13988,
+    "output_tokens": 107,
+    "total_tokens": 14095,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 13988,
+        "output_tokens": 107,
+        "total_tokens": 14095
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.058092
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0e4caf4ad38c5fb5016ab44a1452b887d2a896cd99fd633b77",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-references-v0\\predictions\\inv_0011.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-terra-references-v0\\predictions\\inv_0011.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "cafe_wunderbar_espresso",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "cafe_wunderbar_espresso"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-full-catalog-v2",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-terra-evidence-v0\\predictions\\inv_0011.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-sol-full-catalog-v2\\predictions\\inv_0011.json"
+  }
+}

@@ -1,0 +1,2250 @@
+{
+  "reference_catalog_version": "0.1.0",
+  "builder_version": "0.1.0",
+  "created_at_utc": "2026-09-19T00:01:41.469874+00:00",
+  "source_dataset": "MVTec D2S 1.1",
+  "source_license": "CC BY-NC-SA 4.0",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v0",
+  "source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\data",
+  "leakage_policy": "All scenes present in the benchmark manifest are excluded.",
+  "excluded_source_scene_ids": [
+    7,
+    8,
+    9,
+    11,
+    14,
+    18,
+    19,
+    27,
+    36,
+    40,
+    41,
+    51,
+    53,
+    54,
+    57,
+    62,
+    68,
+    73,
+    76,
+    79,
+    87,
+    99,
+    103,
+    106,
+    108,
+    110,
+    120,
+    122,
+    127,
+    129,
+    130,
+    133,
+    140,
+    142,
+    147,
+    153,
+    157,
+    158,
+    161,
+    162,
+    164,
+    165,
+    171,
+    172,
+    175,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    188,
+    195,
+    196,
+    197,
+    198,
+    199,
+    202,
+    208,
+    212,
+    216,
+    217,
+    251,
+    252,
+    257,
+    259,
+    277,
+    288,
+    300,
+    309,
+    331,
+    333,
+    368,
+    374,
+    382,
+    399,
+    414,
+    440,
+    447,
+    467,
+    480,
+    486,
+    493,
+    501,
+    508,
+    516,
+    565,
+    578,
+    586,
+    619,
+    627,
+    631,
+    641,
+    648,
+    666,
+    670,
+    680,
+    683,
+    684,
+    700
+  ],
+  "references_per_product": 2,
+  "product_count": 60,
+  "sheets": [
+    {
+      "path": "reference-sheet-01.jpg",
+      "sha256": "5f6bbc2856713f12822d10a0ac08ab31623f7f31e59a55cc57749c69fba40a40",
+      "catalog_ids": [
+        "d2s_001",
+        "d2s_002",
+        "d2s_003",
+        "d2s_004",
+        "d2s_005",
+        "d2s_006",
+        "d2s_007",
+        "d2s_008",
+        "d2s_009",
+        "d2s_010",
+        "d2s_011",
+        "d2s_012",
+        "d2s_013",
+        "d2s_014",
+        "d2s_015"
+      ],
+      "product_names": [
+        "adelholzener_alpenquelle_classic_075",
+        "adelholzener_alpenquelle_naturell_075",
+        "adelholzener_classic_bio_apfelschorle_02",
+        "adelholzener_classic_naturell_02",
+        "adelholzener_gourmet_mineralwasser_02",
+        "augustiner_lagerbraeu_hell_05",
+        "augustiner_weissbier_05",
+        "coca_cola_05",
+        "coca_cola_light_05",
+        "suntory_gokuri_lemonade",
+        "tegernseer_hell_03",
+        "corny_nussvoll",
+        "corny_nussvoll_single",
+        "corny_schoko_banane",
+        "corny_schoko_banane_single"
+      ]
+    },
+    {
+      "path": "reference-sheet-02.jpg",
+      "sha256": "e8bbc27f3eaf431834a5ced9085c0236f16c7115426f638ab43fc111d722a4b0",
+      "catalog_ids": [
+        "d2s_016",
+        "d2s_017",
+        "d2s_018",
+        "d2s_019",
+        "d2s_020",
+        "d2s_021",
+        "d2s_022",
+        "d2s_023",
+        "d2s_024",
+        "d2s_025",
+        "d2s_026",
+        "d2s_027",
+        "d2s_028",
+        "d2s_029",
+        "d2s_030"
+      ],
+      "product_names": [
+        "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "koelln_muesli_fruechte",
+        "koelln_muesli_schoko",
+        "caona_cocoa",
+        "cocoba_cocoa",
+        "cafe_wunderbar_espresso",
+        "douwe_egberts_professional_ground_coffee",
+        "gepa_bio_caffe_crema",
+        "gepa_italienischer_bio_espresso",
+        "apple_braeburn_bundle",
+        "apple_golden_delicious",
+        "apple_granny_smith",
+        "apple_red_boskoop",
+        "avocado",
+        "banana_bundle"
+      ]
+    },
+    {
+      "path": "reference-sheet-03.jpg",
+      "sha256": "63f2c1b7dd3c982af5459cba91d6517e93a283a3e52a12adb6f6eab68d232c5a",
+      "catalog_ids": [
+        "d2s_031",
+        "d2s_032",
+        "d2s_033",
+        "d2s_034",
+        "d2s_035",
+        "d2s_036",
+        "d2s_037",
+        "d2s_038",
+        "d2s_039",
+        "d2s_040",
+        "d2s_041",
+        "d2s_042",
+        "d2s_043",
+        "d2s_044",
+        "d2s_045"
+      ],
+      "product_names": [
+        "banana_single",
+        "clementine",
+        "clementine_single",
+        "grapes_green_sugraone_seedless",
+        "grapes_sweet_celebration_seedless",
+        "kiwi",
+        "orange_single",
+        "oranges",
+        "pear",
+        "pasta_reggia_elicoidali",
+        "pasta_reggia_fusilli",
+        "pasta_reggia_spaghetti",
+        "franken_tafelreiniger",
+        "pelikan_tintenpatrone_canon",
+        "ethiquable_gruener_tee_ceylon"
+      ]
+    },
+    {
+      "path": "reference-sheet-04.jpg",
+      "sha256": "6fd4a495d13b1dd9c17acd1557ca6f3e0c6f61c0e95955b25eecf132f843adb6",
+      "catalog_ids": [
+        "d2s_046",
+        "d2s_047",
+        "d2s_048",
+        "d2s_049",
+        "d2s_050",
+        "d2s_051",
+        "d2s_052",
+        "d2s_053",
+        "d2s_054",
+        "d2s_055",
+        "d2s_056",
+        "d2s_057",
+        "d2s_058",
+        "d2s_059",
+        "d2s_060"
+      ],
+      "product_names": [
+        "gepa_bio_und_fair_fencheltee",
+        "gepa_bio_und_fair_kamillentee",
+        "gepa_bio_und_fair_kraeuterteemischung",
+        "gepa_bio_und_fair_pfefferminztee",
+        "gepa_bio_und_fair_rooibostee",
+        "kilimanjaro_tea_earl_grey",
+        "cucumber",
+        "carrot",
+        "corn_salad",
+        "lettuce",
+        "vine_tomatoes",
+        "roma_vine_tomatoes",
+        "rocket",
+        "salad_iceberg",
+        "zucchini"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "catalog_id": "d2s_001",
+      "name": "adelholzener_alpenquelle_classic_075",
+      "source_category_id": 1,
+      "references": [
+        {
+          "source_image_id": 28000,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028000.jpg",
+          "source_annotation_id": 28000006,
+          "rotation": 0,
+          "crop_xyxy": [
+            361,
+            76,
+            809,
+            522
+          ]
+        },
+        {
+          "source_image_id": 28005,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028005.jpg",
+          "source_annotation_id": 28005006,
+          "rotation": 5,
+          "crop_xyxy": [
+            1083,
+            885,
+            1546,
+            1402
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_002",
+      "name": "adelholzener_alpenquelle_naturell_075",
+      "source_category_id": 2,
+      "references": [
+        {
+          "source_image_id": 8100,
+          "source_scene_id": 81,
+          "source_filename": "D2S_008100.jpg",
+          "source_annotation_id": 8100002,
+          "rotation": 0,
+          "crop_xyxy": [
+            583,
+            213,
+            1322,
+            1117
+          ]
+        },
+        {
+          "source_image_id": 8105,
+          "source_scene_id": 81,
+          "source_filename": "D2S_008105.jpg",
+          "source_annotation_id": 8105002,
+          "rotation": 5,
+          "crop_xyxy": [
+            578,
+            299,
+            1316,
+            1208
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_003",
+      "name": "adelholzener_classic_bio_apfelschorle_02",
+      "source_category_id": 3,
+      "references": [
+        {
+          "source_image_id": 28000,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028000.jpg",
+          "source_annotation_id": 28000004,
+          "rotation": 0,
+          "crop_xyxy": [
+            761,
+            271,
+            1178,
+            996
+          ]
+        },
+        {
+          "source_image_id": 28005,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028005.jpg",
+          "source_annotation_id": 28005004,
+          "rotation": 5,
+          "crop_xyxy": [
+            720,
+            413,
+            1137,
+            1148
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_004",
+      "name": "adelholzener_classic_naturell_02",
+      "source_category_id": 4,
+      "references": [
+        {
+          "source_image_id": 28000,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028000.jpg",
+          "source_annotation_id": 28000005,
+          "rotation": 0,
+          "crop_xyxy": [
+            496,
+            198,
+            1053,
+            849
+          ]
+        },
+        {
+          "source_image_id": 28005,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028005.jpg",
+          "source_annotation_id": 28005005,
+          "rotation": 5,
+          "crop_xyxy": [
+            844,
+            575,
+            1404,
+            1208
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_005",
+      "name": "adelholzener_gourmet_mineralwasser_02",
+      "source_category_id": 5,
+      "references": [
+        {
+          "source_image_id": 55900,
+          "source_scene_id": 559,
+          "source_filename": "D2S_055900.jpg",
+          "source_annotation_id": 55900001,
+          "rotation": 0,
+          "crop_xyxy": [
+            196,
+            0,
+            794,
+            615
+          ]
+        },
+        {
+          "source_image_id": 28005,
+          "source_scene_id": 280,
+          "source_filename": "D2S_028005.jpg",
+          "source_annotation_id": 28005002,
+          "rotation": 5,
+          "crop_xyxy": [
+            511,
+            266,
+            1108,
+            916
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_006",
+      "name": "augustiner_lagerbraeu_hell_05",
+      "source_category_id": 6,
+      "references": [
+        {
+          "source_image_id": 6300,
+          "source_scene_id": 63,
+          "source_filename": "D2S_006300.jpg",
+          "source_annotation_id": 6300004,
+          "rotation": 0,
+          "crop_xyxy": [
+            543,
+            0,
+            1201,
+            697
+          ]
+        },
+        {
+          "source_image_id": 6305,
+          "source_scene_id": 63,
+          "source_filename": "D2S_006305.jpg",
+          "source_annotation_id": 6305004,
+          "rotation": 5,
+          "crop_xyxy": [
+            718,
+            712,
+            1365,
+            1405
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_007",
+      "name": "augustiner_weissbier_05",
+      "source_category_id": 7,
+      "references": [
+        {
+          "source_image_id": 38100,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038100.jpg",
+          "source_annotation_id": 38100002,
+          "rotation": 0,
+          "crop_xyxy": [
+            722,
+            59,
+            1394,
+            752
+          ]
+        },
+        {
+          "source_image_id": 38105,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038105.jpg",
+          "source_annotation_id": 38105002,
+          "rotation": 5,
+          "crop_xyxy": [
+            506,
+            673,
+            1171,
+            1351
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_008",
+      "name": "coca_cola_05",
+      "source_category_id": 8,
+      "references": [
+        {
+          "source_image_id": 69700,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069700.jpg",
+          "source_annotation_id": 69700001,
+          "rotation": 0,
+          "crop_xyxy": [
+            1208,
+            1082,
+            1632,
+            1440
+          ]
+        },
+        {
+          "source_image_id": 69705,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069705.jpg",
+          "source_annotation_id": 69705001,
+          "rotation": 5,
+          "crop_xyxy": [
+            263,
+            0,
+            686,
+            322
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_009",
+      "name": "coca_cola_light_05",
+      "source_category_id": 9,
+      "references": [
+        {
+          "source_image_id": 47700,
+          "source_scene_id": 477,
+          "source_filename": "D2S_047700.jpg",
+          "source_annotation_id": 47700002,
+          "rotation": 0,
+          "crop_xyxy": [
+            351,
+            163,
+            1209,
+            958
+          ]
+        },
+        {
+          "source_image_id": 47705,
+          "source_scene_id": 477,
+          "source_filename": "D2S_047705.jpg",
+          "source_annotation_id": 47705002,
+          "rotation": 5,
+          "crop_xyxy": [
+            691,
+            457,
+            1536,
+            1242
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_010",
+      "name": "suntory_gokuri_lemonade",
+      "source_category_id": 10,
+      "references": [
+        {
+          "source_image_id": 10500,
+          "source_scene_id": 105,
+          "source_filename": "D2S_010500.jpg",
+          "source_annotation_id": 10500009,
+          "rotation": 0,
+          "crop_xyxy": [
+            879,
+            786,
+            1285,
+            1153
+          ]
+        },
+        {
+          "source_image_id": 10505,
+          "source_scene_id": 105,
+          "source_filename": "D2S_010505.jpg",
+          "source_annotation_id": 10505009,
+          "rotation": 5,
+          "crop_xyxy": [
+            607,
+            259,
+            1021,
+            631
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_011",
+      "name": "tegernseer_hell_03",
+      "source_category_id": 11,
+      "references": [
+        {
+          "source_image_id": 7000,
+          "source_scene_id": 70,
+          "source_filename": "D2S_007000.jpg",
+          "source_annotation_id": 7000002,
+          "rotation": 0,
+          "crop_xyxy": [
+            933,
+            564,
+            1749,
+            979
+          ]
+        },
+        {
+          "source_image_id": 7005,
+          "source_scene_id": 70,
+          "source_filename": "D2S_007005.jpg",
+          "source_annotation_id": 7005002,
+          "rotation": 5,
+          "crop_xyxy": [
+            138,
+            447,
+            961,
+            867
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_012",
+      "name": "corny_nussvoll",
+      "source_category_id": 12,
+      "references": [
+        {
+          "source_image_id": 43200,
+          "source_scene_id": 432,
+          "source_filename": "D2S_043200.jpg",
+          "source_annotation_id": 43200001,
+          "rotation": 0,
+          "crop_xyxy": [
+            501,
+            537,
+            1310,
+            1339
+          ]
+        },
+        {
+          "source_image_id": 43205,
+          "source_scene_id": 432,
+          "source_filename": "D2S_043205.jpg",
+          "source_annotation_id": 43205001,
+          "rotation": 5,
+          "crop_xyxy": [
+            583,
+            77,
+            1404,
+            897
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_013",
+      "name": "corny_nussvoll_single",
+      "source_category_id": 13,
+      "references": [
+        {
+          "source_image_id": 22500,
+          "source_scene_id": 225,
+          "source_filename": "D2S_022500.jpg",
+          "source_annotation_id": 22500003,
+          "rotation": 0,
+          "crop_xyxy": [
+            937,
+            461,
+            1362,
+            831
+          ]
+        },
+        {
+          "source_image_id": 22505,
+          "source_scene_id": 225,
+          "source_filename": "D2S_022505.jpg",
+          "source_annotation_id": 22505003,
+          "rotation": 5,
+          "crop_xyxy": [
+            530,
+            578,
+            954,
+            946
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_014",
+      "name": "corny_schoko_banane",
+      "source_category_id": 14,
+      "references": [
+        {
+          "source_image_id": 56600,
+          "source_scene_id": 566,
+          "source_filename": "D2S_056600.jpg",
+          "source_annotation_id": 56600001,
+          "rotation": 0,
+          "crop_xyxy": [
+            275,
+            80,
+            1015,
+            843
+          ]
+        },
+        {
+          "source_image_id": 56605,
+          "source_scene_id": 566,
+          "source_filename": "D2S_056605.jpg",
+          "source_annotation_id": 56605001,
+          "rotation": 5,
+          "crop_xyxy": [
+            887,
+            573,
+            1618,
+            1326
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_015",
+      "name": "corny_schoko_banane_single",
+      "source_category_id": 15,
+      "references": [
+        {
+          "source_image_id": 27900,
+          "source_scene_id": 279,
+          "source_filename": "D2S_027900.jpg",
+          "source_annotation_id": 27900008,
+          "rotation": 0,
+          "crop_xyxy": [
+            50,
+            501,
+            432,
+            1000
+          ]
+        },
+        {
+          "source_image_id": 27905,
+          "source_scene_id": 279,
+          "source_filename": "D2S_027905.jpg",
+          "source_annotation_id": 27905008,
+          "rotation": 5,
+          "crop_xyxy": [
+            1466,
+            422,
+            1846,
+            919
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_016",
+      "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "source_category_id": 16,
+      "references": [
+        {
+          "source_image_id": 66200,
+          "source_scene_id": 662,
+          "source_filename": "D2S_066200.jpg",
+          "source_annotation_id": 66200003,
+          "rotation": 0,
+          "crop_xyxy": [
+            571,
+            0,
+            1482,
+            797
+          ]
+        },
+        {
+          "source_image_id": 66205,
+          "source_scene_id": 662,
+          "source_filename": "D2S_066205.jpg",
+          "source_annotation_id": 66205003,
+          "rotation": 5,
+          "crop_xyxy": [
+            424,
+            621,
+            1323,
+            1440
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_017",
+      "name": "koelln_muesli_fruechte",
+      "source_category_id": 17,
+      "references": [
+        {
+          "source_image_id": 23000,
+          "source_scene_id": 230,
+          "source_filename": "D2S_023000.jpg",
+          "source_annotation_id": 23000002,
+          "rotation": 0,
+          "crop_xyxy": [
+            240,
+            0,
+            1105,
+            778
+          ]
+        },
+        {
+          "source_image_id": 27905,
+          "source_scene_id": 279,
+          "source_filename": "D2S_027905.jpg",
+          "source_annotation_id": 27905003,
+          "rotation": 5,
+          "crop_xyxy": [
+            883,
+            127,
+            1800,
+            985
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_018",
+      "name": "koelln_muesli_schoko",
+      "source_category_id": 18,
+      "references": [
+        {
+          "source_image_id": 25300,
+          "source_scene_id": 253,
+          "source_filename": "D2S_025300.jpg",
+          "source_annotation_id": 25300005,
+          "rotation": 0,
+          "crop_xyxy": [
+            303,
+            513,
+            1252,
+            1388
+          ]
+        },
+        {
+          "source_image_id": 25305,
+          "source_scene_id": 253,
+          "source_filename": "D2S_025305.jpg",
+          "source_annotation_id": 25305005,
+          "rotation": 5,
+          "crop_xyxy": [
+            643,
+            19,
+            1599,
+            908
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_019",
+      "name": "caona_cocoa",
+      "source_category_id": 19,
+      "references": [
+        {
+          "source_image_id": 27000,
+          "source_scene_id": 270,
+          "source_filename": "D2S_027000.jpg",
+          "source_annotation_id": 27000002,
+          "rotation": 0,
+          "crop_xyxy": [
+            0,
+            504,
+            1396,
+            1440
+          ]
+        },
+        {
+          "source_image_id": 5205,
+          "source_scene_id": 52,
+          "source_filename": "D2S_005205.jpg",
+          "source_annotation_id": 5205001,
+          "rotation": 5,
+          "crop_xyxy": [
+            427,
+            0,
+            1443,
+            1401
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_020",
+      "name": "cocoba_cocoa",
+      "source_category_id": 20,
+      "references": [
+        {
+          "source_image_id": 38100,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038100.jpg",
+          "source_annotation_id": 38100003,
+          "rotation": 0,
+          "crop_xyxy": [
+            537,
+            314,
+            1275,
+            1039
+          ]
+        },
+        {
+          "source_image_id": 38105,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038105.jpg",
+          "source_annotation_id": 38105003,
+          "rotation": 5,
+          "crop_xyxy": [
+            619,
+            377,
+            1356,
+            1095
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_021",
+      "name": "cafe_wunderbar_espresso",
+      "source_category_id": 21,
+      "references": [
+        {
+          "source_image_id": 35400,
+          "source_scene_id": 354,
+          "source_filename": "D2S_035400.jpg",
+          "source_annotation_id": 35400002,
+          "rotation": 0,
+          "crop_xyxy": [
+            6,
+            0,
+            1078,
+            999
+          ]
+        },
+        {
+          "source_image_id": 35405,
+          "source_scene_id": 354,
+          "source_filename": "D2S_035405.jpg",
+          "source_annotation_id": 35405002,
+          "rotation": 5,
+          "crop_xyxy": [
+            814,
+            416,
+            1889,
+            1440
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_022",
+      "name": "douwe_egberts_professional_ground_coffee",
+      "source_category_id": 22,
+      "references": [
+        {
+          "source_image_id": 66800,
+          "source_scene_id": 668,
+          "source_filename": "D2S_066800.jpg",
+          "source_annotation_id": 66800003,
+          "rotation": 0,
+          "crop_xyxy": [
+            1283,
+            735,
+            1920,
+            1394
+          ]
+        },
+        {
+          "source_image_id": 66805,
+          "source_scene_id": 668,
+          "source_filename": "D2S_066805.jpg",
+          "source_annotation_id": 66805003,
+          "rotation": 5,
+          "crop_xyxy": [
+            0,
+            3,
+            607,
+            677
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_023",
+      "name": "gepa_bio_caffe_crema",
+      "source_category_id": 23,
+      "references": [
+        {
+          "source_image_id": 12300,
+          "source_scene_id": 123,
+          "source_filename": "D2S_012300.jpg",
+          "source_annotation_id": 12300001,
+          "rotation": 0,
+          "crop_xyxy": [
+            435,
+            11,
+            1468,
+            1153
+          ]
+        },
+        {
+          "source_image_id": 12305,
+          "source_scene_id": 123,
+          "source_filename": "D2S_012305.jpg",
+          "source_annotation_id": 12305001,
+          "rotation": 5,
+          "crop_xyxy": [
+            429,
+            261,
+            1461,
+            1406
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_024",
+      "name": "gepa_italienischer_bio_espresso",
+      "source_category_id": 24,
+      "references": [
+        {
+          "source_image_id": 69700,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069700.jpg",
+          "source_annotation_id": 69700010,
+          "rotation": 0,
+          "crop_xyxy": [
+            543,
+            735,
+            1388,
+            1440
+          ]
+        },
+        {
+          "source_image_id": 69705,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069705.jpg",
+          "source_annotation_id": 69705010,
+          "rotation": 5,
+          "crop_xyxy": [
+            509,
+            0,
+            1363,
+            679
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_025",
+      "name": "apple_braeburn_bundle",
+      "source_category_id": 25,
+      "references": [
+        {
+          "source_image_id": 44500,
+          "source_scene_id": 445,
+          "source_filename": "D2S_044500.jpg",
+          "source_annotation_id": 44500001,
+          "rotation": 0,
+          "crop_xyxy": [
+            648,
+            205,
+            1266,
+            841
+          ]
+        },
+        {
+          "source_image_id": 44505,
+          "source_scene_id": 445,
+          "source_filename": "D2S_044505.jpg",
+          "source_annotation_id": 44505001,
+          "rotation": 5,
+          "crop_xyxy": [
+            631,
+            579,
+            1248,
+            1209
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_026",
+      "name": "apple_golden_delicious",
+      "source_category_id": 26,
+      "references": [
+        {
+          "source_image_id": 38100,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038100.jpg",
+          "source_annotation_id": 38100001,
+          "rotation": 0,
+          "crop_xyxy": [
+            1264,
+            752,
+            1571,
+            1084
+          ]
+        },
+        {
+          "source_image_id": 38105,
+          "source_scene_id": 381,
+          "source_filename": "D2S_038105.jpg",
+          "source_annotation_id": 38105001,
+          "rotation": 5,
+          "crop_xyxy": [
+            314,
+            324,
+            633,
+            662
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_027",
+      "name": "apple_granny_smith",
+      "source_category_id": 27,
+      "references": [
+        {
+          "source_image_id": 25300,
+          "source_scene_id": 253,
+          "source_filename": "D2S_025300.jpg",
+          "source_annotation_id": 25300006,
+          "rotation": 0,
+          "crop_xyxy": [
+            454,
+            769,
+            783,
+            1092
+          ]
+        },
+        {
+          "source_image_id": 25305,
+          "source_scene_id": 253,
+          "source_filename": "D2S_025305.jpg",
+          "source_annotation_id": 25305006,
+          "rotation": 5,
+          "crop_xyxy": [
+            1120,
+            339,
+            1450,
+            665
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_028",
+      "name": "apple_red_boskoop",
+      "source_category_id": 28,
+      "references": [
+        {
+          "source_image_id": 26000,
+          "source_scene_id": 260,
+          "source_filename": "D2S_026000.jpg",
+          "source_annotation_id": 26000002,
+          "rotation": 0,
+          "crop_xyxy": [
+            659,
+            922,
+            983,
+            1225
+          ]
+        },
+        {
+          "source_image_id": 26005,
+          "source_scene_id": 260,
+          "source_filename": "D2S_026005.jpg",
+          "source_annotation_id": 26005002,
+          "rotation": 5,
+          "crop_xyxy": [
+            916,
+            190,
+            1240,
+            494
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_029",
+      "name": "avocado",
+      "source_category_id": 29,
+      "references": [
+        {
+          "source_image_id": 39700,
+          "source_scene_id": 397,
+          "source_filename": "D2S_039700.jpg",
+          "source_annotation_id": 39700002,
+          "rotation": 0,
+          "crop_xyxy": [
+            1086,
+            442,
+            1394,
+            719
+          ]
+        },
+        {
+          "source_image_id": 63405,
+          "source_scene_id": 634,
+          "source_filename": "D2S_063405.jpg",
+          "source_annotation_id": 63405002,
+          "rotation": 5,
+          "crop_xyxy": [
+            735,
+            401,
+            1077,
+            661
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_030",
+      "name": "banana_bundle",
+      "source_category_id": 30,
+      "references": [
+        {
+          "source_image_id": 9500,
+          "source_scene_id": 95,
+          "source_filename": "D2S_009500.jpg",
+          "source_annotation_id": 9500002,
+          "rotation": 0,
+          "crop_xyxy": [
+            735,
+            487,
+            1350,
+            1262
+          ]
+        },
+        {
+          "source_image_id": 9505,
+          "source_scene_id": 95,
+          "source_filename": "D2S_009505.jpg",
+          "source_annotation_id": 9505002,
+          "rotation": 5,
+          "crop_xyxy": [
+            547,
+            160,
+            1169,
+            933
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_031",
+      "name": "banana_single",
+      "source_category_id": 31,
+      "references": [
+        {
+          "source_image_id": 9500,
+          "source_scene_id": 95,
+          "source_filename": "D2S_009500.jpg",
+          "source_annotation_id": 9500001,
+          "rotation": 0,
+          "crop_xyxy": [
+            929,
+            432,
+            1434,
+            1089
+          ]
+        },
+        {
+          "source_image_id": 9505,
+          "source_scene_id": 95,
+          "source_filename": "D2S_009505.jpg",
+          "source_annotation_id": 9505001,
+          "rotation": 5,
+          "crop_xyxy": [
+            458,
+            317,
+            971,
+            984
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_032",
+      "name": "clementine",
+      "source_category_id": 32,
+      "references": [
+        {
+          "source_image_id": 31600,
+          "source_scene_id": 316,
+          "source_filename": "D2S_031600.jpg",
+          "source_annotation_id": 31600002,
+          "rotation": 0,
+          "crop_xyxy": [
+            216,
+            491,
+            967,
+            1186
+          ]
+        },
+        {
+          "source_image_id": 31605,
+          "source_scene_id": 316,
+          "source_filename": "D2S_031605.jpg",
+          "source_annotation_id": 31605002,
+          "rotation": 5,
+          "crop_xyxy": [
+            940,
+            233,
+            1676,
+            921
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_033",
+      "name": "clementine_single",
+      "source_category_id": 33,
+      "references": [
+        {
+          "source_image_id": 22700,
+          "source_scene_id": 227,
+          "source_filename": "D2S_022700.jpg",
+          "source_annotation_id": 22700002,
+          "rotation": 0,
+          "crop_xyxy": [
+            431,
+            625,
+            706,
+            889
+          ]
+        },
+        {
+          "source_image_id": 22705,
+          "source_scene_id": 227,
+          "source_filename": "D2S_022705.jpg",
+          "source_annotation_id": 22705002,
+          "rotation": 5,
+          "crop_xyxy": [
+            1195,
+            526,
+            1468,
+            789
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_034",
+      "name": "grapes_green_sugraone_seedless",
+      "source_category_id": 34,
+      "references": [
+        {
+          "source_image_id": 15400,
+          "source_scene_id": 154,
+          "source_filename": "D2S_015400.jpg",
+          "source_annotation_id": 15400001,
+          "rotation": 0,
+          "crop_xyxy": [
+            473,
+            256,
+            1517,
+            1312
+          ]
+        },
+        {
+          "source_image_id": 15405,
+          "source_scene_id": 154,
+          "source_filename": "D2S_015405.jpg",
+          "source_annotation_id": 15405001,
+          "rotation": 5,
+          "crop_xyxy": [
+            380,
+            103,
+            1415,
+            1160
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_035",
+      "name": "grapes_sweet_celebration_seedless",
+      "source_category_id": 35,
+      "references": [
+        {
+          "source_image_id": 15900,
+          "source_scene_id": 159,
+          "source_filename": "D2S_015900.jpg",
+          "source_annotation_id": 15900001,
+          "rotation": 0,
+          "crop_xyxy": [
+            277,
+            0,
+            1254,
+            899
+          ]
+        },
+        {
+          "source_image_id": 15905,
+          "source_scene_id": 159,
+          "source_filename": "D2S_015905.jpg",
+          "source_annotation_id": 15905001,
+          "rotation": 5,
+          "crop_xyxy": [
+            660,
+            529,
+            1608,
+            1423
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_036",
+      "name": "kiwi",
+      "source_category_id": 36,
+      "references": [
+        {
+          "source_image_id": 8300,
+          "source_scene_id": 83,
+          "source_filename": "D2S_008300.jpg",
+          "source_annotation_id": 8300002,
+          "rotation": 0,
+          "crop_xyxy": [
+            1025,
+            573,
+            1236,
+            805
+          ]
+        },
+        {
+          "source_image_id": 8305,
+          "source_scene_id": 83,
+          "source_filename": "D2S_008305.jpg",
+          "source_annotation_id": 8305002,
+          "rotation": 5,
+          "crop_xyxy": [
+            659,
+            606,
+            871,
+            841
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_037",
+      "name": "orange_single",
+      "source_category_id": 37,
+      "references": [
+        {
+          "source_image_id": 22700,
+          "source_scene_id": 227,
+          "source_filename": "D2S_022700.jpg",
+          "source_annotation_id": 22700001,
+          "rotation": 0,
+          "crop_xyxy": [
+            950,
+            234,
+            1246,
+            523
+          ]
+        },
+        {
+          "source_image_id": 22705,
+          "source_scene_id": 227,
+          "source_filename": "D2S_022705.jpg",
+          "source_annotation_id": 22705001,
+          "rotation": 5,
+          "crop_xyxy": [
+            649,
+            893,
+            950,
+            1180
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_038",
+      "name": "oranges",
+      "source_category_id": 38,
+      "references": [
+        {
+          "source_image_id": 18500,
+          "source_scene_id": 185,
+          "source_filename": "D2S_018500.jpg",
+          "source_annotation_id": 18500001,
+          "rotation": 0,
+          "crop_xyxy": [
+            305,
+            121,
+            1362,
+            1260
+          ]
+        },
+        {
+          "source_image_id": 18505,
+          "source_scene_id": 185,
+          "source_filename": "D2S_018505.jpg",
+          "source_annotation_id": 18505001,
+          "rotation": 5,
+          "crop_xyxy": [
+            537,
+            153,
+            1589,
+            1302
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_039",
+      "name": "pear",
+      "source_category_id": 39,
+      "references": [
+        {
+          "source_image_id": 9200,
+          "source_scene_id": 92,
+          "source_filename": "D2S_009200.jpg",
+          "source_annotation_id": 9200002,
+          "rotation": 0,
+          "crop_xyxy": [
+            950,
+            444,
+            1228,
+            829
+          ]
+        },
+        {
+          "source_image_id": 9205,
+          "source_scene_id": 92,
+          "source_filename": "D2S_009205.jpg",
+          "source_annotation_id": 9205002,
+          "rotation": 5,
+          "crop_xyxy": [
+            671,
+            589,
+            950,
+            973
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_040",
+      "name": "pasta_reggia_elicoidali",
+      "source_category_id": 40,
+      "references": [
+        {
+          "source_image_id": 20100,
+          "source_scene_id": 201,
+          "source_filename": "D2S_020100.jpg",
+          "source_annotation_id": 20100001,
+          "rotation": 0,
+          "crop_xyxy": [
+            390,
+            106,
+            1457,
+            1174
+          ]
+        },
+        {
+          "source_image_id": 20105,
+          "source_scene_id": 201,
+          "source_filename": "D2S_020105.jpg",
+          "source_annotation_id": 20105001,
+          "rotation": 5,
+          "crop_xyxy": [
+            443,
+            237,
+            1503,
+            1302
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_041",
+      "name": "pasta_reggia_fusilli",
+      "source_category_id": 41,
+      "references": [
+        {
+          "source_image_id": 31500,
+          "source_scene_id": 315,
+          "source_filename": "D2S_031500.jpg",
+          "source_annotation_id": 31500001,
+          "rotation": 0,
+          "crop_xyxy": [
+            716,
+            0,
+            1794,
+            1057
+          ]
+        },
+        {
+          "source_image_id": 31505,
+          "source_scene_id": 315,
+          "source_filename": "D2S_031505.jpg",
+          "source_annotation_id": 31505001,
+          "rotation": 5,
+          "crop_xyxy": [
+            101,
+            356,
+            1181,
+            1416
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_042",
+      "name": "pasta_reggia_spaghetti",
+      "source_category_id": 42,
+      "references": [
+        {
+          "source_image_id": 51800,
+          "source_scene_id": 518,
+          "source_filename": "D2S_051800.jpg",
+          "source_annotation_id": 51800003,
+          "rotation": 0,
+          "crop_xyxy": [
+            254,
+            362,
+            1175,
+            1269
+          ]
+        },
+        {
+          "source_image_id": 51805,
+          "source_scene_id": 518,
+          "source_filename": "D2S_051805.jpg",
+          "source_annotation_id": 51805003,
+          "rotation": 5,
+          "crop_xyxy": [
+            721,
+            129,
+            1637,
+            1048
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_043",
+      "name": "franken_tafelreiniger",
+      "source_category_id": 43,
+      "references": [
+        {
+          "source_image_id": 65200,
+          "source_scene_id": 652,
+          "source_filename": "D2S_065200.jpg",
+          "source_annotation_id": 65200002,
+          "rotation": 0,
+          "crop_xyxy": [
+            912,
+            436,
+            1474,
+            956
+          ]
+        },
+        {
+          "source_image_id": 55905,
+          "source_scene_id": 559,
+          "source_filename": "D2S_055905.jpg",
+          "source_annotation_id": 55905003,
+          "rotation": 5,
+          "crop_xyxy": [
+            436,
+            349,
+            947,
+            936
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_044",
+      "name": "pelikan_tintenpatrone_canon",
+      "source_category_id": 44,
+      "references": [
+        {
+          "source_image_id": 27000,
+          "source_scene_id": 270,
+          "source_filename": "D2S_027000.jpg",
+          "source_annotation_id": 27000005,
+          "rotation": 0,
+          "crop_xyxy": [
+            704,
+            916,
+            1236,
+            1440
+          ]
+        },
+        {
+          "source_image_id": 27005,
+          "source_scene_id": 270,
+          "source_filename": "D2S_027005.jpg",
+          "source_annotation_id": 27005005,
+          "rotation": 5,
+          "crop_xyxy": [
+            668,
+            0,
+            1207,
+            524
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_045",
+      "name": "ethiquable_gruener_tee_ceylon",
+      "source_category_id": 45,
+      "references": [
+        {
+          "source_image_id": 3200,
+          "source_scene_id": 32,
+          "source_filename": "D2S_003200.jpg",
+          "source_annotation_id": 3200002,
+          "rotation": 0,
+          "crop_xyxy": [
+            907,
+            0,
+            1568,
+            556
+          ]
+        },
+        {
+          "source_image_id": 3205,
+          "source_scene_id": 32,
+          "source_filename": "D2S_003205.jpg",
+          "source_annotation_id": 3205002,
+          "rotation": 5,
+          "crop_xyxy": [
+            346,
+            873,
+            996,
+            1440
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_046",
+      "name": "gepa_bio_und_fair_fencheltee",
+      "source_category_id": 46,
+      "references": [
+        {
+          "source_image_id": 5000,
+          "source_scene_id": 50,
+          "source_filename": "D2S_005000.jpg",
+          "source_annotation_id": 5000001,
+          "rotation": 0,
+          "crop_xyxy": [
+            929,
+            178,
+            1474,
+            707
+          ]
+        },
+        {
+          "source_image_id": 23505,
+          "source_scene_id": 235,
+          "source_filename": "D2S_023505.jpg",
+          "source_annotation_id": 23505005,
+          "rotation": 5,
+          "crop_xyxy": [
+            595,
+            23,
+            1124,
+            577
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_047",
+      "name": "gepa_bio_und_fair_kamillentee",
+      "source_category_id": 47,
+      "references": [
+        {
+          "source_image_id": 27000,
+          "source_scene_id": 270,
+          "source_filename": "D2S_027000.jpg",
+          "source_annotation_id": 27000004,
+          "rotation": 0,
+          "crop_xyxy": [
+            1157,
+            608,
+            1759,
+            1180
+          ]
+        },
+        {
+          "source_image_id": 27005,
+          "source_scene_id": 270,
+          "source_filename": "D2S_027005.jpg",
+          "source_annotation_id": 27005004,
+          "rotation": 5,
+          "crop_xyxy": [
+            130,
+            235,
+            746,
+            825
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_048",
+      "name": "gepa_bio_und_fair_kraeuterteemischung",
+      "source_category_id": 48,
+      "references": [
+        {
+          "source_image_id": 69700,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069700.jpg",
+          "source_annotation_id": 69700002,
+          "rotation": 0,
+          "crop_xyxy": [
+            1401,
+            750,
+            1920,
+            1272
+          ]
+        },
+        {
+          "source_image_id": 69705,
+          "source_scene_id": 697,
+          "source_filename": "D2S_069705.jpg",
+          "source_annotation_id": 69705002,
+          "rotation": 5,
+          "crop_xyxy": [
+            0,
+            133,
+            496,
+            672
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_049",
+      "name": "gepa_bio_und_fair_pfefferminztee",
+      "source_category_id": 49,
+      "references": [
+        {
+          "source_image_id": 4800,
+          "source_scene_id": 48,
+          "source_filename": "D2S_004800.jpg",
+          "source_annotation_id": 4800001,
+          "rotation": 0,
+          "crop_xyxy": [
+            153,
+            398,
+            707,
+            895
+          ]
+        },
+        {
+          "source_image_id": 31605,
+          "source_scene_id": 316,
+          "source_filename": "D2S_031605.jpg",
+          "source_annotation_id": 31605001,
+          "rotation": 5,
+          "crop_xyxy": [
+            447,
+            494,
+            941,
+            1035
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_050",
+      "name": "gepa_bio_und_fair_rooibostee",
+      "source_category_id": 50,
+      "references": [
+        {
+          "source_image_id": 2600,
+          "source_scene_id": 26,
+          "source_filename": "D2S_002600.jpg",
+          "source_annotation_id": 2600001,
+          "rotation": 0,
+          "crop_xyxy": [
+            996,
+            177,
+            1539,
+            723
+          ]
+        },
+        {
+          "source_image_id": 2605,
+          "source_scene_id": 26,
+          "source_filename": "D2S_002605.jpg",
+          "source_annotation_id": 2605001,
+          "rotation": 5,
+          "crop_xyxy": [
+            362,
+            703,
+            902,
+            1247
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_051",
+      "name": "kilimanjaro_tea_earl_grey",
+      "source_category_id": 51,
+      "references": [
+        {
+          "source_image_id": 3800,
+          "source_scene_id": 38,
+          "source_filename": "D2S_003800.jpg",
+          "source_annotation_id": 3800001,
+          "rotation": 0,
+          "crop_xyxy": [
+            185,
+            51,
+            758,
+            722
+          ]
+        },
+        {
+          "source_image_id": 3805,
+          "source_scene_id": 38,
+          "source_filename": "D2S_003805.jpg",
+          "source_annotation_id": 3805001,
+          "rotation": 5,
+          "crop_xyxy": [
+            1140,
+            703,
+            1713,
+            1375
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_052",
+      "name": "cucumber",
+      "source_category_id": 52,
+      "references": [
+        {
+          "source_image_id": 55300,
+          "source_scene_id": 553,
+          "source_filename": "D2S_055300.jpg",
+          "source_annotation_id": 55300002,
+          "rotation": 0,
+          "crop_xyxy": [
+            598,
+            254,
+            1551,
+            1188
+          ]
+        },
+        {
+          "source_image_id": 55305,
+          "source_scene_id": 553,
+          "source_filename": "D2S_055305.jpg",
+          "source_annotation_id": 55305002,
+          "rotation": 5,
+          "crop_xyxy": [
+            349,
+            222,
+            1303,
+            1156
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_053",
+      "name": "carrot",
+      "source_category_id": 53,
+      "references": [
+        {
+          "source_image_id": 13500,
+          "source_scene_id": 135,
+          "source_filename": "D2S_013500.jpg",
+          "source_annotation_id": 13500004,
+          "rotation": 0,
+          "crop_xyxy": [
+            1092,
+            132,
+            1454,
+            711
+          ]
+        },
+        {
+          "source_image_id": 13505,
+          "source_scene_id": 135,
+          "source_filename": "D2S_013505.jpg",
+          "source_annotation_id": 13505004,
+          "rotation": 5,
+          "crop_xyxy": [
+            438,
+            705,
+            808,
+            1275
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_054",
+      "name": "corn_salad",
+      "source_category_id": 54,
+      "references": [
+        {
+          "source_image_id": 66700,
+          "source_scene_id": 667,
+          "source_filename": "D2S_066700.jpg",
+          "source_annotation_id": 66700007,
+          "rotation": 0,
+          "crop_xyxy": [
+            128,
+            6,
+            1032,
+            1074
+          ]
+        },
+        {
+          "source_image_id": 66705,
+          "source_scene_id": 667,
+          "source_filename": "D2S_066705.jpg",
+          "source_annotation_id": 66705007,
+          "rotation": 5,
+          "crop_xyxy": [
+            848,
+            337,
+            1764,
+            1405
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_055",
+      "name": "lettuce",
+      "source_category_id": 55,
+      "references": [
+        {
+          "source_image_id": 27900,
+          "source_scene_id": 279,
+          "source_filename": "D2S_027900.jpg",
+          "source_annotation_id": 27900002,
+          "rotation": 0,
+          "crop_xyxy": [
+            767,
+            218,
+            1806,
+            1244
+          ]
+        },
+        {
+          "source_image_id": 27905,
+          "source_scene_id": 279,
+          "source_filename": "D2S_027905.jpg",
+          "source_annotation_id": 27905002,
+          "rotation": 5,
+          "crop_xyxy": [
+            86,
+            166,
+            1129,
+            1194
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_056",
+      "name": "vine_tomatoes",
+      "source_category_id": 56,
+      "references": [
+        {
+          "source_image_id": 14600,
+          "source_scene_id": 146,
+          "source_filename": "D2S_014600.jpg",
+          "source_annotation_id": 14600001,
+          "rotation": 0,
+          "crop_xyxy": [
+            219,
+            153,
+            1431,
+            1246
+          ]
+        },
+        {
+          "source_image_id": 14605,
+          "source_scene_id": 146,
+          "source_filename": "D2S_014605.jpg",
+          "source_annotation_id": 14605001,
+          "rotation": 5,
+          "crop_xyxy": [
+            466,
+            170,
+            1669,
+            1262
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_057",
+      "name": "roma_vine_tomatoes",
+      "source_category_id": 57,
+      "references": [
+        {
+          "source_image_id": 14900,
+          "source_scene_id": 149,
+          "source_filename": "D2S_014900.jpg",
+          "source_annotation_id": 14900001,
+          "rotation": 0,
+          "crop_xyxy": [
+            360,
+            0,
+            1711,
+            827
+          ]
+        },
+        {
+          "source_image_id": 14905,
+          "source_scene_id": 149,
+          "source_filename": "D2S_014905.jpg",
+          "source_annotation_id": 14905001,
+          "rotation": 5,
+          "crop_xyxy": [
+            190,
+            593,
+            1531,
+            1416
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_058",
+      "name": "rocket",
+      "source_category_id": 58,
+      "references": [
+        {
+          "source_image_id": 23500,
+          "source_scene_id": 235,
+          "source_filename": "D2S_023500.jpg",
+          "source_annotation_id": 23500002,
+          "rotation": 0,
+          "crop_xyxy": [
+            48,
+            157,
+            938,
+            1082
+          ]
+        },
+        {
+          "source_image_id": 23505,
+          "source_scene_id": 235,
+          "source_filename": "D2S_023505.jpg",
+          "source_annotation_id": 23505002,
+          "rotation": 5,
+          "crop_xyxy": [
+            962,
+            344,
+            1839,
+            1255
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_059",
+      "name": "salad_iceberg",
+      "source_category_id": 59,
+      "references": [
+        {
+          "source_image_id": 34100,
+          "source_scene_id": 341,
+          "source_filename": "D2S_034100.jpg",
+          "source_annotation_id": 34100001,
+          "rotation": 0,
+          "crop_xyxy": [
+            1059,
+            320,
+            1778,
+            1098
+          ]
+        },
+        {
+          "source_image_id": 34105,
+          "source_scene_id": 341,
+          "source_filename": "D2S_034105.jpg",
+          "source_annotation_id": 34105001,
+          "rotation": 5,
+          "crop_xyxy": [
+            112,
+            321,
+            845,
+            1110
+          ]
+        }
+      ]
+    },
+    {
+      "catalog_id": "d2s_060",
+      "name": "zucchini",
+      "source_category_id": 60,
+      "references": [
+        {
+          "source_image_id": 43400,
+          "source_scene_id": 434,
+          "source_filename": "D2S_043400.jpg",
+          "source_annotation_id": 43400004,
+          "rotation": 0,
+          "crop_xyxy": [
+            820,
+            0,
+            1311,
+            637
+          ]
+        },
+        {
+          "source_image_id": 65205,
+          "source_scene_id": 652,
+          "source_filename": "D2S_065205.jpg",
+          "source_annotation_id": 65205003,
+          "rotation": 5,
+          "crop_xyxy": [
+            75,
+            179,
+            759,
+            663
+          ]
+        }
+      ]
+    }
+  ]
+}

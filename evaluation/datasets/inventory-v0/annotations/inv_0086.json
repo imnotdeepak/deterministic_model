@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0086",
+  "image": "images/inv_0086.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 1248,
+        "y": 224,
+        "width": 215,
+        "height": 364
+      },
+      "source_annotation_id": 51605001,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "koelln_muesli_schoko",
+      "bbox": {
+        "x": 513,
+        "y": 264,
+        "width": 758,
+        "height": 833
+      },
+      "source_annotation_id": 51605002,
+      "source_category_id": 18
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 195,
+        "y": 641,
+        "width": 607,
+        "height": 735
+      },
+      "source_annotation_id": 51605003,
+      "source_category_id": 24
+    }
+  ]
+}

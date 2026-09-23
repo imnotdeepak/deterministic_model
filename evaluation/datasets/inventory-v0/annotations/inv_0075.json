@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0075",
+  "image": "images/inv_0075.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 250,
+        "y": 581,
+        "width": 943,
+        "height": 859
+      },
+      "source_annotation_id": 38220001,
+      "source_category_id": 23
+    },
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 854,
+        "y": 167,
+        "width": 548,
+        "height": 511
+      },
+      "source_annotation_id": 38220002,
+      "source_category_id": 25
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 1091,
+        "y": 542,
+        "width": 412,
+        "height": 426
+      },
+      "source_annotation_id": 38220003,
+      "source_category_id": 47
+    }
+  ]
+}

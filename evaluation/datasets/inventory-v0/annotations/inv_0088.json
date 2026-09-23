@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0088",
+  "image": "images/inv_0088.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 605,
+        "y": 147,
+        "width": 476,
+        "height": 444
+      },
+      "source_annotation_id": 57811001,
+      "source_category_id": 49
+    },
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 946,
+        "y": 935,
+        "width": 225,
+        "height": 306
+      },
+      "source_annotation_id": 57811002,
+      "source_category_id": 39
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "sample_id": "inv_0065",
+  "model_bundle_version": "terra-luna-sol-full-catalog-v2",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.76,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.76,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005",
+        "ev_006"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.95,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005",
+        "ev_006"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.7,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.7,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 532,
+        "y": 0,
+        "width": 280,
+        "height": 288
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1175,
+        "y": 66,
+        "width": 421,
+        "height": 380
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 132,
+        "y": 621,
+        "width": 408,
+        "height": 260
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 778,
+        "y": 550,
+        "width": 213,
+        "height": 209
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1348,
+        "y": 829,
+        "width": 537,
+        "height": 365
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0065",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 674,
+        "y": 1096,
+        "width": 251,
+        "height": 344
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 17654,
+  "estimated_cost_usd": 0.073288,
+  "usage": {
+    "input_tokens": 14117,
+    "output_tokens": 841,
+    "total_tokens": 14958,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14117,
+        "output_tokens": 841,
+        "total_tokens": 14958
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.073288
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_088e8bec56508116016ab44a2f2fd087d2814dcdea98a988de",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-references-v0\\predictions\\inv_0065.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-terra-references-v0\\predictions\\inv_0065.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "coca_cola_05",
+          "quantity": 2
+        },
+        {
+          "name": "coca_cola_light_05",
+          "quantity": 2
+        },
+        {
+          "name": "augustiner_lagerbraeu_hell_05",
+          "quantity": 1
+        },
+        {
+          "name": "augustiner_weissbier_05",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "coca_cola_05",
+          "quantity": 1
+        },
+        {
+          "name": "coca_cola_light_05",
+          "quantity": 1
+        },
+        {
+          "name": "augustiner_weissbier_05",
+          "quantity": 1
+        },
+        {
+          "name": "tegernseer_hell_03",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "augustiner_lagerbraeu_hell_05",
+      "augustiner_weissbier_05",
+      "coca_cola_05",
+      "coca_cola_light_05",
+      "tegernseer_hell_03"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

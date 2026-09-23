@@ -1,0 +1,166 @@
+{
+  "sample_id": "inv_0022",
+  "model_bundle_version": "terra-luna-sol-disagreement-v1",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0022",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 292,
+        "y": 736,
+        "width": 326,
+        "height": 226
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0022",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 597,
+        "y": 628,
+        "width": 227,
+        "height": 635
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0022",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 653,
+        "y": 540,
+        "width": 365,
+        "height": 618
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6809,
+  "estimated_cost_usd": 0.026988,
+  "usage": {
+    "input_tokens": 4947,
+    "output_tokens": 360,
+    "total_tokens": 5307,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 4947,
+        "output_tokens": 360,
+        "total_tokens": 5307
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.026988
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_03b002b9f4afd823016aaf0b727d1087d2892c1e2bc0896d4f",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions\\inv_0022.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\terra-references-v0\\predictions\\inv_0022.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "adelholzener_gourmet_mineralwasser_02",
+          "quantity": 2
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_gourmet_mineralwasser_02"
+    ],
+    "reference_crop_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

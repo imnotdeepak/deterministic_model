@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0009",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2280,
+  "estimated_cost_usd": 0.027968,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 25,
+    "total_tokens": 13859
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_052b24f925995868016aae06d3259887d28f41e7d457eb1e05",
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

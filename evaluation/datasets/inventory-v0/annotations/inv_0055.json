@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0055",
+  "image": "images/inv_0055.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "lettuce",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "lettuce",
+      "bbox": {
+        "x": 659,
+        "y": 228,
+        "width": 995,
+        "height": 1042
+      },
+      "source_annotation_id": 21609001,
+      "source_category_id": 55
+    }
+  ]
+}

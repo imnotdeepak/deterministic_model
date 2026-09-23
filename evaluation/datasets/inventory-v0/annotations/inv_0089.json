@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0089",
+  "image": "images/inv_0089.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 938,
+        "y": 889,
+        "width": 229,
+        "height": 243
+      },
+      "source_annotation_id": 58613001,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "banana_bundle",
+      "bbox": {
+        "x": 1023,
+        "y": 476,
+        "width": 413,
+        "height": 380
+      },
+      "source_annotation_id": 58613002,
+      "source_category_id": 30
+    }
+  ]
+}

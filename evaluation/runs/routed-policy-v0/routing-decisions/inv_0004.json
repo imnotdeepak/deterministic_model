@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0004",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "terra_count_guard",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 2
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 3
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-terra-authoritative-evidence-v0\\predictions\\inv_0004.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 3
+      }
+    ]
+  }
+}

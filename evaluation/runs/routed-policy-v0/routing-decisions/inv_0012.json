@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0012",
+  "routing_policy_version": "terra-count-sol-identity-v1",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 4
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 4
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\sol-disagreement-v0\\predictions\\inv_0012.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0053",
+  "image": "images/inv_0053.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pasta_reggia_spaghetti",
+      "bbox": {
+        "x": 343,
+        "y": 543,
+        "width": 878,
+        "height": 255
+      },
+      "source_annotation_id": 20811001,
+      "source_category_id": 42
+    }
+  ]
+}

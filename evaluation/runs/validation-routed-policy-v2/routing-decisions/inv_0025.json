@@ -1,0 +1,34 @@
+{
+  "sample_id": "inv_0025",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "decision": "sol_identity_adjudication",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 2
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-full-catalog-v2\\predictions\\inv_0025.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 2
+      }
+    ]
+  }
+}

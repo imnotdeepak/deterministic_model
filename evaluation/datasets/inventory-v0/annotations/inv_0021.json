@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0021",
+  "image": "images/inv_0021.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_classic_naturell_02",
+      "bbox": {
+        "x": 1013,
+        "y": 417,
+        "width": 223,
+        "height": 198
+      },
+      "source_annotation_id": 11023001,
+      "source_category_id": 4
+    },
+    {
+      "product_name": "adelholzener_classic_naturell_02",
+      "bbox": {
+        "x": 671,
+        "y": 806,
+        "width": 199,
+        "height": 244
+      },
+      "source_annotation_id": 11023002,
+      "source_category_id": 4
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "summary_version": "0.1.0",
+  "created_at_utc": "2026-09-23T22:04:25.556901+00:00",
+  "report": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\reports\\test-routed-policy-v2.json",
+  "samples": 15,
+  "routing_decisions": {
+    "agreement": 9,
+    "sol_identity_adjudication": 6
+  },
+  "evaluation_metrics": {
+    "samples": 15,
+    "schema_valid_rate_over_expected_samples": 1.0,
+    "schema_valid_rate_among_present_predictions": 1.0,
+    "prediction_contract_valid_rate": 1.0,
+    "product_precision": 1.0,
+    "product_recall": 1.0,
+    "mean_exact_pair_accuracy_over_union": 0.9333333333333333,
+    "whole_image_exact_accuracy": 0.9333333333333333,
+    "mean_total_absolute_count_error_per_image": 0.06666666666666667,
+    "mean_absolute_count_error_per_product": 0.041666666666666664,
+    "mean_evidence_reference_coverage": 1.0,
+    "mean_evidence_localization_accuracy": 0.9666666666666667,
+    "mean_evidence_localization_precision": 0.9777777777777777,
+    "mean_evidence_localization_recall": 0.9666666666666667,
+    "p50_latency_ms": 3615.0,
+    "p95_latency_ms": 12155.499999999993,
+    "median_cost_usd": 0.0029344
+  },
+  "end_to_end_model_cost": {
+    "total_usd": 0.884347,
+    "mean_per_image_usd": 0.05895647,
+    "median_per_image_usd": 0.0338444
+  },
+  "model_call_latency": {
+    "serial_p50_ms": 9367.0,
+    "serial_p95_ms": 21064.09999999999,
+    "parallel_candidates_p50_ms": 6714.0,
+    "parallel_candidates_p95_ms": 18384.999999999993,
+    "notes": "Model-call latency only. Serial sums all stage latencies. Parallel-candidates uses max(Luna aggregate, Terra aggregate), then adds Luna evidence and Sol when routed."
+  },
+  "per_sample": [
+    {
+      "sample_id": "inv_0011",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.09174199999999999,
+      "serial_model_latency_ms": 14150.0,
+      "parallel_candidate_model_latency_ms": 11392.0
+    },
+    {
+      "sample_id": "inv_0019",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.09446,
+      "serial_model_latency_ms": 14712.0,
+      "parallel_candidate_model_latency_ms": 11907.0
+    },
+    {
+      "sample_id": "inv_0024",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.033595,
+      "serial_model_latency_ms": 8522.0,
+      "parallel_candidate_model_latency_ms": 5541.0
+    },
+    {
+      "sample_id": "inv_0032",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.0337118,
+      "serial_model_latency_ms": 9367.0,
+      "parallel_candidate_model_latency_ms": 6714.0
+    },
+    {
+      "sample_id": "inv_0033",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.0337118,
+      "serial_model_latency_ms": 8491.0,
+      "parallel_candidate_model_latency_ms": 6358.0
+    },
+    {
+      "sample_id": "inv_0045",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.0927202,
+      "serial_model_latency_ms": 14817.0,
+      "parallel_candidate_model_latency_ms": 12637.0
+    },
+    {
+      "sample_id": "inv_0051",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.033580399999999996,
+      "serial_model_latency_ms": 7956.0,
+      "parallel_candidate_model_latency_ms": 5401.0
+    },
+    {
+      "sample_id": "inv_0053",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.0336534,
+      "serial_model_latency_ms": 7637.0,
+      "parallel_candidate_model_latency_ms": 5315.0
+    },
+    {
+      "sample_id": "inv_0054",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.033638799999999996,
+      "serial_model_latency_ms": 7288.0,
+      "parallel_candidate_model_latency_ms": 5204.0
+    },
+    {
+      "sample_id": "inv_0062",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.0962238,
+      "serial_model_latency_ms": 18536.0,
+      "parallel_candidate_model_latency_ms": 15970.0
+    },
+    {
+      "sample_id": "inv_0065",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.1076484,
+      "serial_model_latency_ms": 26963.0,
+      "parallel_candidate_model_latency_ms": 24020.0
+    },
+    {
+      "sample_id": "inv_0078",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.0338444,
+      "serial_model_latency_ms": 7840.0,
+      "parallel_candidate_model_latency_ms": 5329.0
+    },
+    {
+      "sample_id": "inv_0080",
+      "decision": "sol_identity_adjudication",
+      "estimated_cost_usd": 0.0978372,
+      "serial_model_latency_ms": 15226.0,
+      "parallel_candidate_model_latency_ms": 12801.0
+    },
+    {
+      "sample_id": "inv_0083",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.034141,
+      "serial_model_latency_ms": 11158.0,
+      "parallel_candidate_model_latency_ms": 7327.0
+    },
+    {
+      "sample_id": "inv_0087",
+      "decision": "agreement",
+      "estimated_cost_usd": 0.0338388,
+      "serial_model_latency_ms": 8328.0,
+      "parallel_candidate_model_latency_ms": 5904.0
+    }
+  ]
+}

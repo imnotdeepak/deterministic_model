@@ -1,0 +1,125 @@
+{
+  "sample_id": "inv_0005",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0005",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 724,
+        "y": 0,
+        "width": 382,
+        "height": 389
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0005",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1369,
+        "y": 454,
+        "width": 347,
+        "height": 460
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0005",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 580,
+        "y": 946,
+        "width": 495,
+        "height": 364
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2267,
+  "estimated_cost_usd": 0.0029604,
+  "usage": {
+    "input_tokens": 14034,
+    "output_tokens": 128,
+    "total_tokens": 14162,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14034,
+        "output_tokens": 128,
+        "total_tokens": 14162
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029604
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_080339153143c894016aae0f6ac7c487d2bdb23e44d07d54bb",
+    "response_ids": {
+      "localization": "resp_080339153143c894016aae0f6ac7c487d2bdb23e44d07d54bb"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "kilimanjaro_tea_earl_grey"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\luna-references-v0\\predictions\\inv_0005.json"
+  }
+}

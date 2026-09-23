@@ -1,0 +1,28 @@
+{
+  "sample_id": "inv_0028",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 1532,
+  "estimated_cost_usd": 0.008548,
+  "usage": {
+    "input_tokens": 4112,
+    "output_tokens": 27,
+    "total_tokens": 4139
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b740e54065e1890016aadbcfbb6e887d2ac687e457ee33d76",
+    "prompt_version": "inventory-catalog-v1",
+    "image_detail": "high",
+    "reasoning_effort": "none"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "composer_version": "0.2.0",
+  "routing_policy_version": "terra-count-sol-full-catalog-v2",
+  "model_bundle_version": "terra-luna-sol-full-catalog-routed-v2",
+  "identity_adjudication_scope": "full_catalog",
+  "created_at_utc": "2026-09-23T21:53:10.954920+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v0",
+  "split": "test",
+  "requested_limit": null,
+  "requested_offset": 0,
+  "selected_samples": 15,
+  "candidate_a": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-references-v0\\predictions",
+  "candidate_b": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-terra-references-v0\\predictions",
+  "base_predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-luna-terra-evidence-v0\\predictions",
+  "adjudicated_predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\test-sol-full-catalog-v2\\predictions",
+  "decision_counts": {
+    "agreement": 9,
+    "terra_count_guard": 0,
+    "sol_identity_adjudication": 6
+  },
+  "api_calls": 0
+}

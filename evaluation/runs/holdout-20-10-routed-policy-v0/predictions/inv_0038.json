@@ -1,0 +1,104 @@
+{
+  "sample_id": "inv_0038",
+  "model_bundle_version": "terra-luna-sol-routed-v1",
+  "data": {
+    "products": [
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.97,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0038",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 566,
+        "y": 343,
+        "width": 790,
+        "height": 616
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3768,
+  "estimated_cost_usd": 0.024,
+  "usage": {
+    "input_tokens": 5355,
+    "output_tokens": 129,
+    "total_tokens": 5484,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 5355,
+        "output_tokens": 129,
+        "total_tokens": 5484
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.024
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_00584af2e3cdbe75016aaf0ea0173887d2898ae5e449a6dd77",
+    "prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_prompt_version": "inventory-disagreement-adjudication-v1",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-luna-references-v0\\predictions\\inv_0038.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-terra-references-v0\\predictions\\inv_0038.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "koelln_muesli_schoko",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "koelln_muesli_schoko"
+    ],
+    "reference_crop_count": 2,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-identity-v1",
+    "routing_decision": "sol_identity_adjudication",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-luna-terra-evidence-v0\\predictions\\inv_0038.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\holdout-20-10-sol-identity-v0\\predictions\\inv_0038.json"
+  }
+}

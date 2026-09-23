@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0062",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2942,
+  "estimated_cost_usd": 0.027992,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 27,
+    "total_tokens": 13861,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 27,
+        "total_tokens": 13861
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.027992
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0763b91a936f931a016ab449d13f3087d2bb3c671e7ae0f00b",
+    "response_ids": {
+      "aggregate": "resp_0763b91a936f931a016ab449d13f3087d2bb3c671e7ae0f00b"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}
