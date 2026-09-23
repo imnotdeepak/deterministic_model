@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0255",
+  "image": "images/inv_0255.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "avocado",
+        "quantity": 1
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 780,
+        "y": 761,
+        "width": 288,
+        "height": 188
+      },
+      "source_annotation_id": 50428001,
+      "source_category_id": 29
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 638,
+        "y": 193,
+        "width": 355,
+        "height": 412
+      },
+      "source_annotation_id": 50428002,
+      "source_category_id": 53
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 1330,
+        "y": 313,
+        "width": 246,
+        "height": 576
+      },
+      "source_annotation_id": 50428003,
+      "source_category_id": 43
+    }
+  ]
+}

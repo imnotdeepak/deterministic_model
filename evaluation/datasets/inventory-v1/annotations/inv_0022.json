@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0022",
+  "image": "images/inv_0022.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 741,
+        "y": 200,
+        "width": 442,
+        "height": 367
+      },
+      "source_annotation_id": 4501001,
+      "source_category_id": 49
+    }
+  ]
+}

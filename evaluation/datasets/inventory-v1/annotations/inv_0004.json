@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0004",
+  "image": "images/inv_0004.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 1059,
+        "y": 143,
+        "width": 453,
+        "height": 466
+      },
+      "source_annotation_id": 319001,
+      "source_category_id": 47
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 355,
+        "y": 486,
+        "width": 294,
+        "height": 418
+      },
+      "source_annotation_id": 319002,
+      "source_category_id": 47
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 1027,
+        "y": 951,
+        "width": 332,
+        "height": 398
+      },
+      "source_annotation_id": 319003,
+      "source_category_id": 47
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0164",
+  "image": "images/inv_0164.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 706,
+        "y": 469,
+        "width": 569,
+        "height": 664
+      },
+      "source_annotation_id": 21315001,
+      "source_category_id": 59
+    }
+  ]
+}

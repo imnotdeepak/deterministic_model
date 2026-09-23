@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0293",
+  "image": "images/inv_0293.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 922,
+        "y": 601,
+        "width": 468,
+        "height": 495
+      },
+      "source_annotation_id": 64524001,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 552,
+        "y": 280,
+        "width": 177,
+        "height": 406
+      },
+      "source_annotation_id": 64524002,
+      "source_category_id": 5
+    }
+  ]
+}

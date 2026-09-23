@@ -199,3 +199,66 @@ def test_generated_output_schema_validity(tmp_path):
     for path in (output / "annotations").glob("inv_*.json"):
         annotation = json.loads(path.read_text(encoding="utf-8"))
         assert not list(validator.iter_errors(annotation["data"]))
+
+
+def test_exclusion_manifests_remove_dataset_and_reference_scenes(tmp_path):
+    source = make_source(tmp_path)
+    manifest = tmp_path / "previous.jsonl"
+    manifest.write_text(
+        json.dumps({"session_id": "d2s_scene_0001"}) + "\n",
+        encoding="utf-8",
+    )
+    references = tmp_path / "references.json"
+    references.write_text(
+        json.dumps(
+            {
+                "entries": [
+                    {
+                        "name": "product_two",
+                        "references": [{"source_scene_id": 2}],
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    excluded, sources = import_d2s.load_excluded_sessions(
+        [manifest], [references]
+    )
+    candidates, categories, _ = import_d2s.load_source(source)
+    selected, _ = import_d2s.select_valid_candidates(
+        candidates,
+        source,
+        {int(item["id"]): item for item in categories},
+        4,
+        42,
+        excluded,
+    )
+
+    assert excluded == {"d2s_scene_0001", "d2s_scene_0002"}
+    assert {candidate.session_id for candidate in selected}.isdisjoint(excluded)
+    assert [item["type"] for item in sources] == [
+        "dataset_manifest",
+        "reference_manifest",
+    ]
+
+
+def test_new_dataset_uses_external_schema_and_requested_version(tmp_path):
+    source = make_source(tmp_path)
+    output = tmp_path / "inventory-v1"
+    schema = tmp_path / "schema.json"
+    schema.write_text(json.dumps(SCHEMA), encoding="utf-8")
+    args = importer_args(source, output, limit=4)
+    args.schema = schema
+    args.dataset_id = "inventory-v1"
+    args.dataset_version = "1.0.0"
+
+    import_d2s.import_dataset(args)
+
+    metadata = json.loads(
+        (output / "dataset_metadata.json").read_text(encoding="utf-8")
+    )
+    assert metadata["dataset_id"] == "inventory-v1"
+    assert metadata["dataset_version"] == "1.0.0"
+    assert (output / "schema.json").is_file()

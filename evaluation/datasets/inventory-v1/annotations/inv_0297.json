@@ -1,0 +1,192 @@
+{
+  "sample_id": "inv_0297",
+  "image": "images/inv_0297.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 1043,
+        "y": 573,
+        "width": 485,
+        "height": 449
+      },
+      "source_annotation_id": 68118001,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "clementine",
+      "bbox": {
+        "x": 869,
+        "y": 133,
+        "width": 570,
+        "height": 568
+      },
+      "source_annotation_id": 68118002,
+      "source_category_id": 32
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 587,
+        "y": 307,
+        "width": 272,
+        "height": 798
+      },
+      "source_annotation_id": 68118003,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 987,
+        "y": 0,
+        "width": 419,
+        "height": 47
+      },
+      "source_annotation_id": 68118004,
+      "source_category_id": 49
+    },
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 189,
+        "y": 919,
+        "width": 450,
+        "height": 435
+      },
+      "source_annotation_id": 68118005,
+      "source_category_id": 25
+    },
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 382,
+        "y": 1356,
+        "width": 580,
+        "height": 84
+      },
+      "source_annotation_id": 68118006,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "grapes_green_sugraone_seedless",
+      "bbox": {
+        "x": 413,
+        "y": 0,
+        "width": 525,
+        "height": 319
+      },
+      "source_annotation_id": 68118007,
+      "source_category_id": 34
+    },
+    {
+      "product_name": "corny_schoko_banane",
+      "bbox": {
+        "x": 0,
+        "y": 123,
+        "width": 594,
+        "height": 645
+      },
+      "source_annotation_id": 68118008,
+      "source_category_id": 14
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 0,
+        "y": 610,
+        "width": 267,
+        "height": 319
+      },
+      "source_annotation_id": 68118009,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "adelholzener_classic_naturell_02",
+      "bbox": {
+        "x": 1457,
+        "y": 201,
+        "width": 292,
+        "height": 633
+      },
+      "source_annotation_id": 68118010,
+      "source_category_id": 4
+    },
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 1538,
+        "y": 805,
+        "width": 333,
+        "height": 242
+      },
+      "source_annotation_id": 68118011,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "koelln_muesli_schoko",
+      "bbox": {
+        "x": 759,
+        "y": 906,
+        "width": 539,
+        "height": 534
+      },
+      "source_annotation_id": 68118012,
+      "source_category_id": 18
+    }
+  ]
+}

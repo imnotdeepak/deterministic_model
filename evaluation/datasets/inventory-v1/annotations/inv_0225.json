@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0225",
+  "image": "images/inv_0225.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 1230,
+        "y": 320,
+        "width": 504,
+        "height": 494
+      },
+      "source_annotation_id": 30220001,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 583,
+        "y": 493,
+        "width": 970,
+        "height": 810
+      },
+      "source_annotation_id": 30220002,
+      "source_category_id": 23
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 276,
+        "y": 762,
+        "width": 598,
+        "height": 678
+      },
+      "source_annotation_id": 30220003,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 238,
+        "y": 0,
+        "width": 722,
+        "height": 885
+      },
+      "source_annotation_id": 30220004,
+      "source_category_id": 54
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 1153,
+        "y": 0,
+        "width": 216,
+        "height": 178
+      },
+      "source_annotation_id": 30220005,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "adelholzener_classic_naturell_02",
+      "bbox": {
+        "x": 968,
+        "y": 41,
+        "width": 195,
+        "height": 314
+      },
+      "source_annotation_id": 30220006,
+      "source_category_id": 4
+    }
+  ]
+}

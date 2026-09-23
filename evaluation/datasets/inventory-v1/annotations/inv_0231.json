@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0231",
+  "image": "images/inv_0231.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 857,
+        "y": 138,
+        "width": 562,
+        "height": 556
+      },
+      "source_annotation_id": 33401001,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "koelln_muesli_schoko",
+      "bbox": {
+        "x": 319,
+        "y": 469,
+        "width": 754,
+        "height": 821
+      },
+      "source_annotation_id": 33401002,
+      "source_category_id": 18
+    }
+  ]
+}

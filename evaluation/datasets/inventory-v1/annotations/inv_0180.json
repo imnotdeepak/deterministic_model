@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0180",
+  "image": "images/inv_0180.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 986,
+        "y": 701,
+        "width": 376,
+        "height": 192
+      },
+      "source_annotation_id": 22329001,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 720,
+        "y": 355,
+        "width": 264,
+        "height": 398
+      },
+      "source_annotation_id": 22329002,
+      "source_category_id": 13
+    }
+  ]
+}

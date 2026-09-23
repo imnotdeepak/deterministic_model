@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0283",
+  "image": "images/inv_0283.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 1102,
+        "y": 653,
+        "width": 425,
+        "height": 496
+      },
+      "source_annotation_id": 57329001,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 446,
+        "y": 55,
+        "width": 591,
+        "height": 1032
+      },
+      "source_annotation_id": 57329002,
+      "source_category_id": 56
+    }
+  ]
+}

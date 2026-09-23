@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0287",
+  "image": "images/inv_0287.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 595,
+        "y": 827,
+        "width": 402,
+        "height": 352
+      },
+      "source_annotation_id": 58700001,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 585,
+        "y": 48,
+        "width": 219,
+        "height": 274
+      },
+      "source_annotation_id": 58700002,
+      "source_category_id": 13
+    }
+  ]
+}

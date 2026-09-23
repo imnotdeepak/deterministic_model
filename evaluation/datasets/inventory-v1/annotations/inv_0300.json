@@ -1,0 +1,207 @@
+{
+  "sample_id": "inv_0300",
+  "image": "images/inv_0300.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      },
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "avocado",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "roma_vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 376,
+        "y": 89,
+        "width": 446,
+        "height": 662
+      },
+      "source_annotation_id": 68223001,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 194,
+        "y": 297,
+        "width": 190,
+        "height": 266
+      },
+      "source_annotation_id": 68223002,
+      "source_category_id": 29
+    },
+    {
+      "product_name": "banana_single",
+      "bbox": {
+        "x": 1116,
+        "y": 917,
+        "width": 176,
+        "height": 247
+      },
+      "source_annotation_id": 68223003,
+      "source_category_id": 31
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 732,
+        "y": 820,
+        "width": 629,
+        "height": 311
+      },
+      "source_annotation_id": 68223004,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "pasta_reggia_spaghetti",
+      "bbox": {
+        "x": 598,
+        "y": 1132,
+        "width": 917,
+        "height": 266
+      },
+      "source_annotation_id": 68223005,
+      "source_category_id": 42
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 1275,
+        "y": 635,
+        "width": 191,
+        "height": 152
+      },
+      "source_annotation_id": 68223006,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 1322,
+        "y": 14,
+        "width": 221,
+        "height": 259
+      },
+      "source_annotation_id": 68223007,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_naturell_075",
+      "bbox": {
+        "x": 582,
+        "y": 574,
+        "width": 452,
+        "height": 379
+      },
+      "source_annotation_id": 68223008,
+      "source_category_id": 2
+    },
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 280,
+        "y": 828,
+        "width": 255,
+        "height": 263
+      },
+      "source_annotation_id": 68223009,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 163,
+        "y": 520,
+        "width": 356,
+        "height": 255
+      },
+      "source_annotation_id": 68223010,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "roma_vine_tomatoes",
+      "bbox": {
+        "x": 1453,
+        "y": 99,
+        "width": 372,
+        "height": 1086
+      },
+      "source_annotation_id": 68223011,
+      "source_category_id": 57
+    },
+    {
+      "product_name": "rocket",
+      "bbox": {
+        "x": 603,
+        "y": 0,
+        "width": 392,
+        "height": 202
+      },
+      "source_annotation_id": 68223012,
+      "source_category_id": 58
+    },
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 336,
+        "y": 1220,
+        "width": 741,
+        "height": 220
+      },
+      "source_annotation_id": 68223013,
+      "source_category_id": 54
+    }
+  ]
+}

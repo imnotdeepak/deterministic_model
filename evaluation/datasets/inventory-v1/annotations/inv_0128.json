@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0128",
+  "image": "images/inv_0128.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "koelln_muesli_fruechte",
+      "bbox": {
+        "x": 632,
+        "y": 239,
+        "width": 510,
+        "height": 734
+      },
+      "source_annotation_id": 17800001,
+      "source_category_id": 17
+    }
+  ]
+}

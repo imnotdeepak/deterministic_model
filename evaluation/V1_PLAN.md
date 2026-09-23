@@ -112,6 +112,21 @@ The isolated-confusion v4 counterfactual replay improved exact accuracy from
 the replay is not independent validation evidence. See
 `V1_ISOLATED_CONFUSION_REPLAY_RESULTS.md`.
 
+## Locked v1 benchmark
+
+`datasets/inventory-v1` is now locked before any v1 validation or test model
+run. It contains 300 images from 116 scenes with zero scene overlap against
+inventory-v0 and the visual reference sources.
+
+- development: 209 images / 81 scenes
+- validation: 45 images / 17 scenes
+- test: 46 images / 18 scenes
+- immutable content SHA-256:
+  `7d5852644d069cb7163b6242677fc1ff7f863be950d4b4bfa7908cf3a9b19863`
+
+The next model action is a v4 validation run. The 46-image test split must stay
+untouched until the pipeline is selected and frozen from validation results.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

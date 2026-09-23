@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0274",
+  "image": "images/inv_0274.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 180,
+        "y": 452,
+        "width": 709,
+        "height": 791
+      },
+      "source_annotation_id": 56715001,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 1261,
+        "y": 497,
+        "width": 309,
+        "height": 742
+      },
+      "source_annotation_id": 56715002,
+      "source_category_id": 24
+    }
+  ]
+}

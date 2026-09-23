@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0134",
+  "image": "images/inv_0134.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "zucchini",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 621,
+        "y": 311,
+        "width": 607,
+        "height": 388
+      },
+      "source_annotation_id": 19102001,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 466,
+        "y": 874,
+        "width": 615,
+        "height": 171
+      },
+      "source_annotation_id": 19102002,
+      "source_category_id": 60
+    }
+  ]
+}

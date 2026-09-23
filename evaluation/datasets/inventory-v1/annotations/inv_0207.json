@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0207",
+  "image": "images/inv_0207.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 209,
+        "y": 34,
+        "width": 1015,
+        "height": 705
+      },
+      "source_annotation_id": 23325001,
+      "source_category_id": 21
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 1287,
+        "y": 332,
+        "width": 471,
+        "height": 322
+      },
+      "source_annotation_id": 23325002,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 1374,
+        "y": 758,
+        "width": 267,
+        "height": 254
+      },
+      "source_annotation_id": 23325003,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 798,
+        "y": 771,
+        "width": 605,
+        "height": 565
+      },
+      "source_annotation_id": 23325004,
+      "source_category_id": 20
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 365,
+        "y": 776,
+        "width": 272,
+        "height": 214
+      },
+      "source_annotation_id": 23325005,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 456,
+        "y": 1060,
+        "width": 495,
+        "height": 380
+      },
+      "source_annotation_id": 23325006,
+      "source_category_id": 51
+    }
+  ]
+}

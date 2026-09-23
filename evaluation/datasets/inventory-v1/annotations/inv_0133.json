@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0133",
+  "image": "images/inv_0133.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "oranges",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "oranges",
+      "bbox": {
+        "x": 888,
+        "y": 421,
+        "width": 905,
+        "height": 820
+      },
+      "source_annotation_id": 18727001,
+      "source_category_id": 38
+    }
+  ]
+}

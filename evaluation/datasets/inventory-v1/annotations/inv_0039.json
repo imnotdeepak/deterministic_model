@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0039",
+  "image": "images/inv_0039.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 624,
+        "y": 1080,
+        "width": 265,
+        "height": 360
+      },
+      "source_annotation_id": 6114001,
+      "source_category_id": 6
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0250",
+  "image": "images/inv_0250.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 538,
+        "y": 156,
+        "width": 457,
+        "height": 401
+      },
+      "source_annotation_id": 45113001,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "corny_schoko_banane",
+      "bbox": {
+        "x": 360,
+        "y": 913,
+        "width": 565,
+        "height": 360
+      },
+      "source_annotation_id": 45113002,
+      "source_category_id": 14
+    }
+  ]
+}

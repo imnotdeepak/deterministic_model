@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0191",
+  "image": "images/inv_0191.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 945,
+        "y": 912,
+        "width": 450,
+        "height": 413
+      },
+      "source_annotation_id": 33208001,
+      "source_category_id": 47
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 851,
+        "y": 564,
+        "width": 313,
+        "height": 317
+      },
+      "source_annotation_id": 33208002,
+      "source_category_id": 1
+    }
+  ]
+}

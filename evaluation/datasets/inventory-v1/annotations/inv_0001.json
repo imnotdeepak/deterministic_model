@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0001",
+  "image": "images/inv_0001.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 807,
+        "y": 55,
+        "width": 442,
+        "height": 378
+      },
+      "source_annotation_id": 200001,
+      "source_category_id": 47
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0062",
+  "image": "images/inv_0062.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "banana_single",
+      "bbox": {
+        "x": 791,
+        "y": 244,
+        "width": 608,
+        "height": 306
+      },
+      "source_annotation_id": 9418001,
+      "source_category_id": 31
+    },
+    {
+      "product_name": "banana_bundle",
+      "bbox": {
+        "x": 734,
+        "y": 624,
+        "width": 568,
+        "height": 589
+      },
+      "source_annotation_id": 9418002,
+      "source_category_id": 30
+    }
+  ]
+}

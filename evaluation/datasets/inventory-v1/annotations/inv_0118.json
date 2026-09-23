@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0118",
+  "image": "images/inv_0118.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_schoko_banane",
+      "bbox": {
+        "x": 1070,
+        "y": 344,
+        "width": 523,
+        "height": 421
+      },
+      "source_annotation_id": 17008001,
+      "source_category_id": 14
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0266",
+  "image": "images/inv_0266.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pear",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 937,
+        "y": 610,
+        "width": 187,
+        "height": 267
+      },
+      "source_annotation_id": 54214001,
+      "source_category_id": 39
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "sample_id": "inv_0196",
+  "image": "images/inv_0196.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 4
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 645,
+        "y": 124,
+        "width": 268,
+        "height": 323
+      },
+      "source_annotation_id": 6611001,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 441,
+        "y": 477,
+        "width": 311,
+        "height": 255
+      },
+      "source_annotation_id": 6611002,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 209,
+        "y": 648,
+        "width": 389,
+        "height": 255
+      },
+      "source_annotation_id": 6611003,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 873,
+        "y": 804,
+        "width": 258,
+        "height": 307
+      },
+      "source_annotation_id": 6611004,
+      "source_category_id": 7
+    }
+  ]
+}

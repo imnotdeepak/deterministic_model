@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0008",
+  "image": "images/inv_0008.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 779,
+        "y": 130,
+        "width": 561,
+        "height": 546
+      },
+      "source_annotation_id": 1701001,
+      "source_category_id": 22
+    }
+  ]
+}

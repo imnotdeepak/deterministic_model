@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0174",
+  "image": "images/inv_0174.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 722,
+        "y": 857,
+        "width": 344,
+        "height": 366
+      },
+      "source_annotation_id": 21915001,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 536,
+        "y": 490,
+        "width": 415,
+        "height": 257
+      },
+      "source_annotation_id": 21915002,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 1048,
+        "y": 561,
+        "width": 319,
+        "height": 394
+      },
+      "source_annotation_id": 21915003,
+      "source_category_id": 15
+    }
+  ]
+}

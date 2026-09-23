@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0016",
+  "image": "images/inv_0016.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 1201,
+        "y": 876,
+        "width": 414,
+        "height": 487
+      },
+      "source_annotation_id": 3115001,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 348,
+        "y": 662,
+        "width": 471,
+        "height": 483
+      },
+      "source_annotation_id": 3115002,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 857,
+        "y": 67,
+        "width": 297,
+        "height": 375
+      },
+      "source_annotation_id": 3115003,
+      "source_category_id": 45
+    }
+  ]
+}
