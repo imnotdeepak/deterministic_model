@@ -102,6 +102,11 @@ This experiment deliberately uses the old `validation` split as observed v1
 development evidence. Its result is not fresh validation evidence, and the
 script does not access the frozen v0 test split.
 
+Result: the broad v3 strategy was rejected. It exchanged one corrected sample
+for one regression, leaving exact accuracy at 10/15 while increasing
+end-to-end cost by 9.27%. See `V1_CONFUSION_PILOT_RESULTS.md`. The next
+hypothesis restricts targeted crops to isolated within-family disagreements.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

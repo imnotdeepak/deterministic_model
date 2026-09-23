@@ -1,0 +1,414 @@
+{
+  "sample_id": "inv_0071",
+  "model_bundle_version": "terra-luna-sol-confusion-aware-routed-v3",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 2
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004",
+        "ev_005"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004",
+        "ev_005"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_008"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 490,
+        "y": 76,
+        "width": 827,
+        "height": 941
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1102,
+        "y": 0,
+        "width": 413,
+        "height": 397
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1185,
+        "y": 184,
+        "width": 579,
+        "height": 596
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 46,
+        "y": 557,
+        "width": 549,
+        "height": 395
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 180,
+        "y": 763,
+        "width": 429,
+        "height": 375
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 336,
+        "y": 785,
+        "width": 749,
+        "height": 655
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1044,
+        "y": 776,
+        "width": 709,
+        "height": 532
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_008",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 922,
+        "y": 1205,
+        "width": 307,
+        "height": 235
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 17920,
+  "estimated_cost_usd": 0.114168,
+  "usage": {
+    "input_tokens": 23762,
+    "output_tokens": 956,
+    "total_tokens": 24718,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 23762,
+        "output_tokens": 956,
+        "total_tokens": 24718
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.114168
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0de7702aea4157ca016ab45524dd6087d29ef794adcaeaedc9",
+    "prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_confusion_aware",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0071.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0071.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 1
+        },
+        {
+          "name": "koelln_muesli_fruechte",
+          "quantity": 1
+        },
+        {
+          "name": "banana_bundle",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "adelholzener_alpenquelle_classic_075",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll",
+          "quantity": 1
+        },
+        {
+          "name": "koelln_muesli_fruechte",
+          "quantity": 1
+        },
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "pelikan_tintenpatrone_canon",
+          "quantity": 1
+        },
+        {
+          "name": "banana_bundle",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "banana_bundle",
+      "corny_nussvoll",
+      "gepa_bio_caffe_crema",
+      "koelln_muesli_fruechte",
+      "pasta_reggia_fusilli",
+      "pelikan_tintenpatrone_canon"
+    ],
+    "reference_crop_count": 12,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_alpenquelle_naturell_075",
+      "adelholzener_classic_bio_apfelschorle_02",
+      "adelholzener_classic_naturell_02",
+      "adelholzener_gourmet_mineralwasser_02",
+      "cafe_wunderbar_espresso",
+      "douwe_egberts_professional_ground_coffee",
+      "gepa_bio_caffe_crema",
+      "gepa_italienischer_bio_espresso",
+      "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "koelln_muesli_fruechte",
+      "koelln_muesli_schoko"
+    ],
+    "matched_confusion_families": [
+      "adelholzener_bottles",
+      "coffee_packages",
+      "cereal_boxes"
+    ],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "routing_policy_version": "terra-count-sol-confusion-aware-v3",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog_confusion_aware",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-terra-evidence-v0\\predictions\\inv_0071.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-confusion-aware-v3\\predictions\\inv_0071.json"
+  }
+}

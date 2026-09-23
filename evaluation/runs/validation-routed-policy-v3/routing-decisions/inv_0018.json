@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0018",
+  "routing_policy_version": "terra-count-sol-confusion-aware-v3",
+  "decision": "agreement",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 3
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 3
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-terra-evidence-v0\\predictions\\inv_0018.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 3
+      }
+    ]
+  }
+}

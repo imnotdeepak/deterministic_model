@@ -1,0 +1,164 @@
+{
+  "sample_id": "inv_0076",
+  "model_bundle_version": "terra-luna-sol-confusion-aware-v3",
+  "data": {
+    "products": [
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0076",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 685,
+        "y": 183,
+        "width": 813,
+        "height": 511
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0076",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1244,
+        "y": 251,
+        "width": 154,
+        "height": 155
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 6820,
+  "estimated_cost_usd": 0.070024,
+  "usage": {
+    "input_tokens": 16486,
+    "output_tokens": 204,
+    "total_tokens": 16690,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 16486,
+        "output_tokens": 204,
+        "total_tokens": 16690
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.070024
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0c76b5fb1db44971016ab45536c2ac87d2a50dcbe8b38cac7e",
+    "prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_confusion_aware",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0076.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0076.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "rocket",
+          "quantity": 1
+        },
+        {
+          "name": "orange_single",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "corn_salad",
+          "quantity": 1
+        },
+        {
+          "name": "clementine_single",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "clementine_single",
+      "corn_salad",
+      "orange_single",
+      "rocket"
+    ],
+    "reference_crop_count": 4,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [
+      "clementine",
+      "clementine_single",
+      "orange_single",
+      "oranges"
+    ],
+    "matched_confusion_families": [
+      "orange_citrus"
+    ],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}
