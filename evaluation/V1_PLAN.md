@@ -163,6 +163,20 @@ Both arms use the same development offset and limit. Custom development slices
 can be selected with `-Offset` and `-Limit`; the runner rejects ranges outside
 the 209-image development split.
 
+Result: the first 20-image pilot supported the hypothesis. Both arms reached
+19/20 exact images, while instance localization improved product precision and
+recall to 100%, achieved 98.33% evidence localization accuracy, and stayed
+inside the cost and latency gates. See
+`V1_TERRA_INSTANCES_PILOT_RESULTS.md`.
+
+The next check runs only the promising instance arm on a larger, non-overlapping
+development slice:
+
+```powershell
+.\evaluation\run_v1_terra_instances_pilot.ps1 `
+  -Offset 20 -Limit 40 -InstancesOnly
+```
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

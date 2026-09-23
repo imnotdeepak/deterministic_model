@@ -5,6 +5,8 @@ param(
     [ValidateRange(0, 208)]
     [int]$Offset = 0,
 
+    [switch]$InstancesOnly,
+
     [switch]$DryRun
 )
 
@@ -61,26 +63,38 @@ if ($DryRun) {
     $instancesArguments += "--dry-run"
 }
 
-Write-Output "Stage 2/5: Terra aggregate control on locked development slice"
-& py -3.11 @aggregateArguments
-Assert-LastCommand "Terra aggregate control"
+if (-not $InstancesOnly) {
+    Write-Output "Stage 2/5: Terra aggregate control on locked development slice"
+    & py -3.11 @aggregateArguments
+    Assert-LastCommand "Terra aggregate control"
+} else {
+    Write-Output "Stage 2/5: Skip aggregate control (-InstancesOnly)"
+}
 
 Write-Output "Stage 3/5: Terra one-call instance localization on the same slice"
 & py -3.11 @instancesArguments
 Assert-LastCommand "Terra instance-localization pilot"
 
 if ($DryRun) {
-    Write-Output "Dry run complete. Both selections used development offset $Offset and limit $Limit."
+    if ($InstancesOnly) {
+        Write-Output "Dry run complete. The instance arm used development offset $Offset and limit $Limit."
+    } else {
+        Write-Output "Dry run complete. Both selections used development offset $Offset and limit $Limit."
+    }
     Write-Output "Validation and test were untouched. No API calls or output files were created."
     exit 0
 }
 
-Write-Output "Stage 4/5: Evaluate the aggregate control"
-& py -3.11 evaluation\src\evaluate.py `
-    --dataset $dataset --predictions "$aggregateRun\predictions" `
-    --split development --offset $Offset --limit $Limit `
-    --output $aggregateReport | Out-Null
-Assert-LastCommand "Aggregate control evaluation"
+if (-not $InstancesOnly) {
+    Write-Output "Stage 4/5: Evaluate the aggregate control"
+    & py -3.11 evaluation\src\evaluate.py `
+        --dataset $dataset --predictions "$aggregateRun\predictions" `
+        --split development --offset $Offset --limit $Limit `
+        --output $aggregateReport | Out-Null
+    Assert-LastCommand "Aggregate control evaluation"
+} else {
+    Write-Output "Stage 4/5: Skip aggregate evaluation (-InstancesOnly)"
+}
 
 Write-Output "Stage 5/5: Evaluate the instance-localization pilot"
 & py -3.11 evaluation\src\evaluate.py `
@@ -89,23 +103,12 @@ Write-Output "Stage 5/5: Evaluate the instance-localization pilot"
     --output $instancesReport | Out-Null
 Assert-LastCommand "Instance-localization evaluation"
 
-$aggregate = Get-Content -LiteralPath $aggregateReport -Raw | ConvertFrom-Json
 $instances = Get-Content -LiteralPath $instancesReport -Raw | ConvertFrom-Json
-$aggregateCost = ($aggregate.samples.estimated_cost_usd | Measure-Object -Sum).Sum
 $instancesCost = ($instances.samples.estimated_cost_usd | Measure-Object -Sum).Sum
 $summary = [ordered]@{
     split = "development"
     offset = $Offset
     samples = $instances.summary.samples
-    aggregate = [ordered]@{
-        exact_accuracy = $aggregate.summary.whole_image_exact_accuracy
-        product_precision = $aggregate.summary.product_precision
-        product_recall = $aggregate.summary.product_recall
-        evidence_localization_accuracy = $aggregate.summary.mean_evidence_localization_accuracy
-        median_cost_per_image_usd = $aggregate.summary.median_cost_usd
-        total_cost_usd = $aggregateCost
-        latency_p95_ms = $aggregate.summary.p95_latency_ms
-    }
     instance_localization = [ordered]@{
         exact_accuracy = $instances.summary.whole_image_exact_accuracy
         product_precision = $instances.summary.product_precision
@@ -117,6 +120,19 @@ $summary = [ordered]@{
         latency_p95_ms = $instances.summary.p95_latency_ms
         contract_valid_rate = $instances.summary.prediction_contract_valid_rate
         missing_predictions = $instances.coverage.missing_predictions
+    }
+}
+if (-not $InstancesOnly) {
+    $aggregate = Get-Content -LiteralPath $aggregateReport -Raw | ConvertFrom-Json
+    $aggregateCost = ($aggregate.samples.estimated_cost_usd | Measure-Object -Sum).Sum
+    $summary["aggregate"] = [ordered]@{
+        exact_accuracy = $aggregate.summary.whole_image_exact_accuracy
+        product_precision = $aggregate.summary.product_precision
+        product_recall = $aggregate.summary.product_recall
+        evidence_localization_accuracy = $aggregate.summary.mean_evidence_localization_accuracy
+        median_cost_per_image_usd = $aggregate.summary.median_cost_usd
+        total_cost_usd = $aggregateCost
+        latency_p95_ms = $aggregate.summary.p95_latency_ms
     }
 }
 
