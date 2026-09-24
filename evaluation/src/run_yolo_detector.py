@@ -12,6 +12,12 @@ from typing import Any, Iterable
 
 RUNNER_VERSION = "0.1.0"
 ALLOWED_SPLIT = "development"
+FROZEN_VALIDATION_CHECKPOINT_SHA256 = (
+    "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e"
+)
+FROZEN_VALIDATION_CONFIDENCE = 0.35
+FROZEN_VALIDATION_IOU = 0.70
+FROZEN_VALIDATION_IMAGE_SIZE = 960
 
 
 def read_json(path: Path) -> Any:
@@ -42,13 +48,23 @@ def sha256_file(path: Path) -> str:
 
 
 def selected_rows(
-    manifest: list[dict[str, Any]], split: str, offset: int, limit: int | None
+    manifest: list[dict[str, Any]],
+    split: str,
+    offset: int,
+    limit: int | None,
+    allow_locked_validation: bool = False,
 ) -> list[dict[str, Any]]:
-    if split != ALLOWED_SPLIT:
+    if split == "test":
+        raise ValueError("The frozen test split is intentionally unavailable.")
+    if split == "validation" and not allow_locked_validation:
         raise ValueError(
             "The YOLO detector runner is development-only; locked validation and test "
-            "splits are intentionally unavailable."
+            "splits require a separate explicit workflow."
         )
+    if split not in {ALLOWED_SPLIT, "validation"}:
+        raise ValueError(f"Unsupported split: {split!r}")
+    if split == "validation" and (offset != 0 or limit is not None):
+        raise ValueError("Locked validation must run once over the complete split")
     if offset < 0:
         raise ValueError("--offset must be zero or greater")
     if limit is not None and limit <= 0:
@@ -62,6 +78,35 @@ def selected_rows(
     if not rows:
         raise ValueError(f"No manifest samples selected for split {split!r}")
     return rows
+
+
+def validate_frozen_validation_config(
+    *,
+    split: str,
+    checkpoint_sha256: str,
+    confidence: float,
+    iou: float,
+    image_size: int,
+) -> None:
+    if split != "validation":
+        return
+    actual = {
+        "checkpoint_sha256": checkpoint_sha256,
+        "confidence": confidence,
+        "iou": iou,
+        "image_size": image_size,
+    }
+    expected = {
+        "checkpoint_sha256": FROZEN_VALIDATION_CHECKPOINT_SHA256,
+        "confidence": FROZEN_VALIDATION_CONFIDENCE,
+        "iou": FROZEN_VALIDATION_IOU,
+        "image_size": FROZEN_VALIDATION_IMAGE_SIZE,
+    }
+    if actual != expected:
+        raise ValueError(
+            "Validation configuration differs from the frozen development selection; "
+            f"expected={expected}, actual={actual}"
+        )
 
 
 def catalog_names(catalog: list[dict[str, Any]]) -> list[str]:
@@ -215,12 +260,23 @@ def run(args: argparse.Namespace, model: Any | None = None) -> dict[str, Any]:
     checkpoint = args.checkpoint.resolve()
     output = args.output.resolve()
     rows = selected_rows(
-        read_jsonl(dataset / "manifest.jsonl"), args.split, args.offset, args.limit
+        read_jsonl(dataset / "manifest.jsonl"),
+        args.split,
+        args.offset,
+        args.limit,
+        getattr(args, "allow_locked_validation", False),
     )
     expected_names = catalog_names(read_json(dataset / "catalog.json"))
     if not checkpoint.is_file():
         raise ValueError(f"Checkpoint does not exist: {checkpoint}")
     checkpoint_hash = sha256_file(checkpoint)
+    validate_frozen_validation_config(
+        split=args.split,
+        checkpoint_sha256=checkpoint_hash,
+        confidence=args.confidence,
+        iou=args.iou,
+        image_size=args.imgsz,
+    )
     model_version = f"yolo11s-d2s-pilot5-{checkpoint_hash[:12]}"
 
     if model is None:
@@ -335,6 +391,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--max-detections", type=int, default=300)
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument(
+        "--allow-locked-validation",
+        action="store_true",
+        help="Run the complete validation split with the frozen detector configuration.",
+    )
     args = parser.parse_args(argv)
     if not 0.0 < args.confidence < 1.0:
         parser.error("--confidence must be greater than 0 and less than 1")

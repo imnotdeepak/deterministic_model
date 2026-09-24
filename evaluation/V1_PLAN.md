@@ -217,9 +217,16 @@ product recall, and 98.21% evidence-localization accuracy at zero API cost.
 Validation and test were not accessed during detector selection. See
 `V1_YOLO_DEVELOPMENT_RESULTS.md`.
 
-The next model action is one validation run using this frozen checkpoint and
-configuration. The test split remains sealed until the validation decision is
-recorded.
+The frozen detector was run once on all 45 validation images and rejected. It
+reached 30/45 whole-image exact matches (66.67%), 86.52% product precision,
+79.74% product recall, and 80.90% evidence-localization accuracy. Coverage,
+contract validity, cost, and latency passed, but the four quality gates failed.
+The test split remains sealed. See `V1_YOLO_VALIDATION_RESULTS.md`.
+
+Because these validation labels are now observed, they must not be used to tune
+the detector. The next iteration must train and select from training/development
+evidence, reserve a fresh validation slice before candidate evaluation, and
+continue to leave the 46-image test split untouched.
 
 ## Definition of done
 

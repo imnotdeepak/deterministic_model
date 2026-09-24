@@ -160,3 +160,11 @@ whole-image exact matches (96.17%), 97.13% product precision, 97.93% product
 recall, and 98.21% evidence-localization accuracy. Confidence `0.40` produced
 identical task metrics, so the lower edge of the plateau was selected. See
 `V1_YOLO_DEVELOPMENT_RESULTS.md`.
+
+## Frozen validation result
+
+The selected configuration was run once on the complete 45-image validation
+split. It was rejected after reaching 66.67% whole-image exact accuracy, 86.52%
+product precision, 79.74% product recall, and 80.90% evidence-localization
+accuracy. No threshold or checkpoint was changed after observing validation.
+The test split remains untouched. See `V1_YOLO_VALIDATION_RESULTS.md`.
