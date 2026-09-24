@@ -1,0 +1,126 @@
+{
+  "sample_id": "inv_0205",
+  "model_bundle_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 4
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9649469256401062,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9649469256401062,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0205",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 947,
+        "y": 402,
+        "width": 240,
+        "height": 232
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0205",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 681,
+        "y": 465,
+        "width": 279,
+        "height": 261
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0205",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 879,
+        "y": 622,
+        "width": 230,
+        "height": 233
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0205",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 647,
+        "y": 722,
+        "width": 253,
+        "height": 248
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 272.16,
+  "estimated_cost_usd": 0.0,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "provider_metadata": {
+    "provider": "local_ultralytics",
+    "runner_version": "0.1.0",
+    "output_mode": "instances",
+    "checkpoint_sha256": "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e",
+    "confidence_threshold": 0.4,
+    "iou_threshold": 0.7,
+    "detected_instance_count": 4,
+    "image_width": 1920,
+    "image_height": 1440
+  }
+}

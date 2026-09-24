@@ -1,0 +1,166 @@
+{
+  "sample_id": "inv_0201",
+  "model_bundle_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 6
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9487450122833252,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004",
+        "ev_005",
+        "ev_006"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9487450122833252,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004",
+        "ev_005",
+        "ev_006"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 685,
+        "y": 293,
+        "width": 518,
+        "height": 529
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 620,
+        "y": 407,
+        "width": 219,
+        "height": 194
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 858,
+        "y": 551,
+        "width": 640,
+        "height": 285
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 962,
+        "y": 696,
+        "width": 631,
+        "height": 290
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 384,
+        "y": 815,
+        "width": 642,
+        "height": 271
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0201",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1221,
+        "y": 927,
+        "width": 301,
+        "height": 288
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 240.955,
+  "estimated_cost_usd": 0.0,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "provider_metadata": {
+    "provider": "local_ultralytics",
+    "runner_version": "0.1.0",
+    "output_mode": "instances",
+    "checkpoint_sha256": "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e",
+    "confidence_threshold": 0.35,
+    "iou_threshold": 0.7,
+    "detected_instance_count": 6,
+    "image_width": 1920,
+    "image_height": 1440
+  }
+}

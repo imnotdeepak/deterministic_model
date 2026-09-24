@@ -133,3 +133,30 @@ The pilot writes to
 `evaluation/training-runs/inventory-yolo-v1-pilot-5e`. Download that directory
 before stopping or deleting the pod. Stop the pod as soon as the artifacts are
 safe; persistent storage may continue accruing charges until it is deleted.
+
+## Development detector evaluation
+
+The five-epoch pilot checkpoint is the selected detector. A longer batch-16
+run stopped after 39 epochs but regressed internal mAP50-95 from 0.860 to 0.822
+and collapsed several class recalls, so it is retained only as a rejected
+experiment.
+
+Run the selected detector against development only:
+
+```powershell
+py -3.11 evaluation\src\run_yolo_detector.py `
+  --dataset evaluation\datasets\inventory-v1 `
+  --checkpoint evaluation\training-runs\inventory-yolo-v1-pilot-5e\weights\best.pt `
+  --output evaluation\runs\v1-development-yolo-pilot5-conf035 `
+  --split development --confidence 0.35 --imgsz 960 --device cpu
+```
+
+The runner deliberately refuses the locked validation and test splits. It
+converts every detection to an original-pixel evidence box and aggregates
+instances into schema-valid product quantities.
+
+Confidence `0.35` is frozen from a development-only sweep. It reached 201/209
+whole-image exact matches (96.17%), 97.13% product precision, 97.93% product
+recall, and 98.21% evidence-localization accuracy. Confidence `0.40` produced
+identical task metrics, so the lower edge of the plateau was selected. See
+`V1_YOLO_DEVELOPMENT_RESULTS.md`.

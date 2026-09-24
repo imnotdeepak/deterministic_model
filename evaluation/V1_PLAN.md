@@ -209,6 +209,18 @@ The local RX 6600 is not supported by the selected Ultralytics backend on
 Windows, so training requires a supported CUDA/ROCm environment or a deliberate
 custom DirectML implementation. See `YOLO_TRAINING.md`.
 
+The five-epoch YOLO pilot is now the selected supervised checkpoint. A longer
+run stopped at epoch 39 and regressed internal mAP50-95, so it was rejected.
+On all 209 development images, the frozen confidence-0.35 detector reached
+201/209 whole-image exact matches (96.17%), 97.13% product precision, 97.93%
+product recall, and 98.21% evidence-localization accuracy at zero API cost.
+Validation and test were not accessed during detector selection. See
+`V1_YOLO_DEVELOPMENT_RESULTS.md`.
+
+The next model action is one validation run using this frozen checkpoint and
+configuration. The test split remains sealed until the validation decision is
+recorded.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

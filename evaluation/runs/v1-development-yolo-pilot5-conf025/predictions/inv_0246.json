@@ -1,0 +1,138 @@
+{
+  "sample_id": "inv_0246",
+  "model_bundle_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9740043878555298,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9740043878555298,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.9818663001060486,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.9818663001060486,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.9414364099502563,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.9414364099502563,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0246",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 711,
+        "y": 1005,
+        "width": 729,
+        "height": 435
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0246",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 140,
+        "y": 284,
+        "width": 776,
+        "height": 797
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0246",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 913,
+        "y": 0,
+        "width": 744,
+        "height": 813
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 232.885,
+  "estimated_cost_usd": 0.0,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "provider_metadata": {
+    "provider": "local_ultralytics",
+    "runner_version": "0.1.0",
+    "output_mode": "instances",
+    "checkpoint_sha256": "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.7,
+    "detected_instance_count": 3,
+    "image_width": 1920,
+    "image_height": 1440
+  }
+}
