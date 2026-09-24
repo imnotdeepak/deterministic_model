@@ -94,3 +94,42 @@ Training artifacts are written to
 `evaluation\training-runs\inventory-yolo-v1`. Do not evaluate the locked v1
 validation or test split until training and internal model-validation choices
 are complete.
+
+## RunPod A5000 pilot
+
+Create a RunPod GPU Pod with an RTX A5000 and a current PyTorch template. Give
+the pod at least 20 GB of persistent volume storage. In its terminal:
+
+```bash
+git clone https://github.com/imnotdeepak/deterministic_model.git worldao
+cd worldao
+git switch inventory-v1
+python -m pip install ultralytics==8.3.95
+```
+
+Upload the local `data/yolo-inventory-v1` directory into the cloned repository's
+`data` directory. The resulting cloud path must be
+`worldao/data/yolo-inventory-v1/dataset.yaml`.
+
+Validate the GPU, dataset, and leakage guard without starting training:
+
+```bash
+chmod +x evaluation/run_yolo_training.sh
+./evaluation/run_yolo_training.sh --dry-run
+```
+
+The output must identify the A5000, report CUDA as available, report 5,880
+training images and 1,050 internal-validation images, and confirm 35 protected
+scenes. Then run the timing pilot:
+
+```bash
+./evaluation/run_yolo_training.sh \
+  --epochs 5 \
+  --batch 16 \
+  --name inventory-yolo-v1-pilot-5e
+```
+
+The pilot writes to
+`evaluation/training-runs/inventory-yolo-v1-pilot-5e`. Download that directory
+before stopping or deleting the pod. Stop the pod as soon as the artifacts are
+safe; persistent storage may continue accruing charges until it is deleted.
