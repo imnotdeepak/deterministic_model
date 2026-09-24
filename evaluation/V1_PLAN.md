@@ -202,6 +202,11 @@ is a supervised detector trained from D2S bounding-box annotations with locked
 validation/test scene exclusions. This is a deliberate architecture change and
 must be selected before implementation.
 
+The supervised path is now prepared. The deterministic YOLO export contains
+5,880 training images and 1,050 internal-validation images, covers all 60
+classes in both splits, and excludes all 35 locked v1 validation/test scenes.
+See `YOLO_TRAINING.md` for GPU setup and launch commands.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.
