@@ -192,6 +192,16 @@ development data:
 .\evaluation\run_v1_exhaustive_instances_pilot.ps1 -Offset 54 -Limit 6
 ```
 
+Result: v6 was rejected. It improved the same-sample exact result from 9/14 to
+10/14 and reached 100% product recall, but precision fell to 72.73% and 85.71%
+on the two slices because uncertain objects were forced into incorrect catalog
+classes. See `V1_EXHAUSTIVE_INSTANCES_RESULTS.md`.
+
+Further prompt-only API experiments are paused. The next proposed architecture
+is a supervised detector trained from D2S bounding-box annotations with locked
+validation/test scene exclusions. This is a deliberate architecture change and
+must be selected before implementation.
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

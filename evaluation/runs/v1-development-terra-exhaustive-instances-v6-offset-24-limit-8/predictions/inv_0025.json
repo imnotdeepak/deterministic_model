@@ -1,0 +1,155 @@
+{
+  "sample_id": "inv_0025",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.62,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.62,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 730,
+        "y": 864,
+        "width": 428,
+        "height": 341
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 580,
+        "y": 118,
+        "width": 363,
+        "height": 380
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0025",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1275,
+        "y": 410,
+        "width": 415,
+        "height": 442
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4126,
+  "estimated_cost_usd": 0.029756,
+  "usage": {
+    "input_tokens": 14080,
+    "output_tokens": 133,
+    "total_tokens": 14213,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14080,
+        "output_tokens": 133,
+        "total_tokens": 14213
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.029756
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b9b78a2154e7776016ab48f576da887d288da9e70d6f9f843",
+    "response_ids": {
+      "localization": "resp_0b9b78a2154e7776016ab48f576da887d288da9e70d6f9f843"
+    },
+    "prompt_version": "inventory-exhaustive-instance-localization-references-v2",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 3,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}
