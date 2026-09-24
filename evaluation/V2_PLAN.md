@@ -59,3 +59,13 @@ nohup env PYTHONUNBUFFERED=1 bash evaluation/run_yolo_training.sh \
 
 Do not run inventory-v2 validation until the selected checkpoint and inference
 configuration have been frozen from training/internal-validation evidence.
+
+## Multiclass training result
+
+The predeclared YOLO11m candidate stopped after 26 epochs. Its best internal
+epoch reached 82.52% precision, 76.48% recall, and 78.35% mAP50-95. A YOLO11s
+960px control reached only 68.39% mAP50-95. Both are rejected before external
+validation; inventory-v2 validation and both test sets remain untouched.
+
+The next internal experiment separates class-agnostic localization from crop
+classification. See `V2_TWO_STAGE_PLAN.md`.
