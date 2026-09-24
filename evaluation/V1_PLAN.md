@@ -205,7 +205,9 @@ must be selected before implementation.
 The supervised path is now prepared. The deterministic YOLO export contains
 5,880 training images and 1,050 internal-validation images, covers all 60
 classes in both splits, and excludes all 35 locked v1 validation/test scenes.
-See `YOLO_TRAINING.md` for GPU setup and launch commands.
+The local RX 6600 is not supported by the selected Ultralytics backend on
+Windows, so training requires a supported CUDA/ROCm environment or a deliberate
+custom DirectML implementation. See `YOLO_TRAINING.md`.
 
 ## Definition of done
 

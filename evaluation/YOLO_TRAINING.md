@@ -35,8 +35,20 @@ non-commercial license.
 
 ## GPU environment
 
-The current local Python environment has CPU-only PyTorch. On the GPU machine,
-install the appropriate GPU-enabled PyTorch build for that hardware, then:
+The current workstation has an AMD Radeon RX 6600 with 8 GB VRAM. It is not a
+supported accelerator for this Ultralytics training workflow on Windows:
+
+- Ultralytics' Python package does not provide a DirectML training backend.
+- Official PyTorch ROCm wheels are Linux-only.
+- The RX 6600 is not in AMD's current officially supported Radeon ROCm compute
+  list for native Linux training.
+
+Do not launch the default `device=0` command in the current CPU-only Python
+environment. It will stop before training rather than silently fall back to
+CPU.
+
+Use a supported NVIDIA CUDA or AMD ROCm GPU environment, locally or in the
+cloud. Install the matching GPU-enabled PyTorch build first, then:
 
 ```powershell
 py -3.11 -m pip install ultralytics==8.3.95
@@ -47,6 +59,10 @@ Copy these items to the GPU machine while preserving their relative paths:
 - the repository;
 - `data\yolo-inventory-v1`.
 
+The default YOLO11s configuration targets a supported GPU with roughly 8 GB or
+more of usable VRAM. Start with `-Batch 4`; increase to 8 only after confirming
+memory headroom.
+
 ## Verify without training
 
 ```powershell
@@ -55,16 +71,17 @@ Copy these items to the GPU machine while preserving their relative paths:
 
 ## Train
 
-The default uses YOLO11s, 960-pixel inputs, batch size 8, and CUDA device 0:
-
-```powershell
-.\evaluation\run_yolo_training.ps1
-```
-
-For a smaller GPU, reduce the batch size:
+The default uses YOLO11s, 960-pixel inputs, and GPU device 0. For an 8 GB
+supported accelerator, begin with batch size 4:
 
 ```powershell
 .\evaluation\run_yolo_training.ps1 -Batch 4
+```
+
+If that runs out of memory, reduce the image size before switching to CPU:
+
+```powershell
+.\evaluation\run_yolo_training.ps1 -Batch 4 -ImageSize 768
 ```
 
 For a larger GPU, increase it:
