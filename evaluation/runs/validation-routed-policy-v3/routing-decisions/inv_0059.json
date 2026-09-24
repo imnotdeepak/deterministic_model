@@ -1,0 +1,30 @@
+{
+  "sample_id": "inv_0059",
+  "routing_policy_version": "terra-count-sol-confusion-aware-v3",
+  "decision": "terra_count_guard",
+  "candidate_a_data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 2
+      }
+    ]
+  },
+  "candidate_b_data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 3
+      }
+    ]
+  },
+  "selected_source": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-terra-evidence-v0\\predictions\\inv_0059.json",
+  "selected_data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 3
+      }
+    ]
+  }
+}

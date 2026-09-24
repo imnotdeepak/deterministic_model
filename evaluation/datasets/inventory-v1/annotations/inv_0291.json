@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0291",
+  "image": "images/inv_0291.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 258,
+        "y": 373,
+        "width": 557,
+        "height": 313
+      },
+      "source_annotation_id": 60128001,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 631,
+        "y": 733,
+        "width": 753,
+        "height": 629
+      },
+      "source_annotation_id": 60128002,
+      "source_category_id": 16
+    }
+  ]
+}

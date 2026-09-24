@@ -1,0 +1,114 @@
+{
+  "analyzer_version": "0.2.0",
+  "generated_at_utc": "2026-09-24T02:48:20.559675+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v1",
+  "split": "development",
+  "selection": {
+    "offset": 24,
+    "limit": 8,
+    "split_samples": 209,
+    "selected_samples": 8
+  },
+  "tuning_safety": {
+    "frozen_test_override_used": false,
+    "warning": null
+  },
+  "summary": {
+    "samples": 8,
+    "product_exact_samples": 6,
+    "fully_correct_samples": 6,
+    "failed_samples": 2,
+    "whole_image_exact_accuracy": 0.75,
+    "all_dimensions_correct_rate": 0.75,
+    "category_counts": {
+      "identity": 2,
+      "localization": 2,
+      "quantity": 2
+    },
+    "routing_decision_counts": {}
+  },
+  "stage_metrics": {},
+  "failures": [
+    {
+      "sample_id": "inv_0025",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "gepa_bio_und_fair_pfefferminztee": 3
+      },
+      "predicted": {
+        "gepa_bio_und_fair_fencheltee": 1,
+        "gepa_bio_und_fair_kamillentee": 1,
+        "gepa_bio_und_fair_pfefferminztee": 1
+      },
+      "count_deltas": [
+        {
+          "product": "gepa_bio_und_fair_fencheltee",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "gepa_bio_und_fair_kamillentee",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "gepa_bio_und_fair_pfefferminztee",
+          "expected": 3,
+          "predicted": 1,
+          "delta": -2
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_6",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.3333333333333333
+    },
+    {
+      "sample_id": "inv_0026",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "gepa_bio_und_fair_pfefferminztee": 3
+      },
+      "predicted": {
+        "gepa_bio_und_fair_pfefferminztee": 2,
+        "gepa_bio_und_fair_rooibostee": 1
+      },
+      "count_deltas": [
+        {
+          "product": "gepa_bio_und_fair_pfefferminztee",
+          "expected": 3,
+          "predicted": 2,
+          "delta": -1
+        },
+        {
+          "product": "gepa_bio_und_fair_rooibostee",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_4",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "sample_id": "inv_0003",
+  "model_bundle_version": "terra-luna-sol-confusion-aware-v3",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.84,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 839,
+        "y": 0,
+        "width": 342,
+        "height": 390
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 311,
+        "y": 678,
+        "width": 662,
+        "height": 313
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0003",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1121,
+        "y": 438,
+        "width": 467,
+        "height": 701
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 9708,
+  "estimated_cost_usd": 0.081392,
+  "usage": {
+    "input_tokens": 18163,
+    "output_tokens": 437,
+    "total_tokens": 18600,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 18163,
+        "output_tokens": 437,
+        "total_tokens": 18600
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.081392
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_059baf276108bf46016ab454ed23a887d28233175b1af9026a",
+    "prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_confusion_aware",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0003.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0003.json",
+    "candidate_a_data": {
+      "products": []
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "gepa_bio_caffe_crema",
+          "quantity": 3
+        }
+      ]
+    },
+    "candidate_names": [
+      "gepa_bio_caffe_crema"
+    ],
+    "reference_crop_count": 4,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [
+      "cafe_wunderbar_espresso",
+      "douwe_egberts_professional_ground_coffee",
+      "gepa_bio_caffe_crema",
+      "gepa_italienischer_bio_espresso"
+    ],
+    "matched_confusion_families": [
+      "coffee_packages"
+    ],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "sample_id": "inv_0057",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "pear",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0057",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 591,
+        "y": 454,
+        "width": 238,
+        "height": 314
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0057",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 996,
+        "y": 677,
+        "width": 202,
+        "height": 226
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2718,
+  "estimated_cost_usd": 0.028752,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 70,
+    "total_tokens": 14026,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 70,
+        "total_tokens": 14026
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.028752
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0f325af2b59dec24016ab4636b689087d2ad6c61a0eda759a1",
+    "response_ids": {
+      "localization": "resp_0f325af2b59dec24016ab4636b689087d2ad6c61a0eda759a1"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 2,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

@@ -18,11 +18,15 @@ from PIL import Image
 import run_baseline as baseline
 
 
-RUNNER_VERSION = "0.2.0"
+RUNNER_VERSION = "0.3.0"
 PROMPT_VERSION = "inventory-disagreement-adjudication-v1"
 MODEL_BUNDLE_VERSION = "terra-luna-sol-disagreement-v1"
 PROMPT_VERSION_V2 = "inventory-full-catalog-adjudication-v2"
 MODEL_BUNDLE_VERSION_V2 = "terra-luna-sol-full-catalog-v2"
+PROMPT_VERSION_V3 = "inventory-confusion-aware-adjudication-v3"
+MODEL_BUNDLE_VERSION_V3 = "terra-luna-sol-confusion-aware-v3"
+PROMPT_VERSION_V4 = "inventory-isolated-confusion-adjudication-v4"
+MODEL_BUNDLE_VERSION_V4 = "terra-luna-sol-isolated-confusion-v4"
 DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_INPUT_USD_PER_MILLION = 4.0
 DEFAULT_OUTPUT_USD_PER_MILLION = 20.0
@@ -66,6 +70,117 @@ def reference_index(manifest_path: Path) -> tuple[dict[str, list[dict[str, Any]]
     return indexed, source
 
 
+def load_confusion_sets(
+    path: Path, allowed_names: set[str]
+) -> tuple[str, list[dict[str, Any]]]:
+    document = baseline.read_json(path.resolve())
+    version = document.get("version")
+    families = document.get("families")
+    if not isinstance(version, str) or not version:
+        raise ValueError("Confusion sets must contain a non-empty version")
+    if not isinstance(families, list) or not families:
+        raise ValueError("Confusion sets must contain a non-empty families array")
+
+    seen_ids: set[str] = set()
+    seen_members: set[str] = set()
+    validated: list[dict[str, Any]] = []
+    for family in families:
+        family_id = family.get("id") if isinstance(family, dict) else None
+        members = family.get("members") if isinstance(family, dict) else None
+        if not isinstance(family_id, str) or not family_id:
+            raise ValueError("Every confusion family must contain a non-empty id")
+        if family_id in seen_ids:
+            raise ValueError(f"Duplicate confusion family id: {family_id}")
+        if (
+            not isinstance(members, list)
+            or len(members) < 2
+            or not all(isinstance(name, str) and name for name in members)
+        ):
+            raise ValueError(
+                f"Confusion family {family_id!r} must contain at least two product names"
+            )
+        if len(set(members)) != len(members):
+            raise ValueError(f"Confusion family {family_id!r} contains duplicate members")
+        unknown = sorted(set(members) - allowed_names)
+        if unknown:
+            raise ValueError(
+                f"Confusion family {family_id!r} contains unknown catalog names: {unknown}"
+            )
+        overlap = sorted(set(members) & seen_members)
+        if overlap:
+            raise ValueError(
+                "A product may belong to only one confusion family; repeated: "
+                + ", ".join(overlap)
+            )
+        seen_ids.add(family_id)
+        seen_members.update(members)
+        validated.append({"id": family_id, "members": list(members)})
+    return version, validated
+
+
+def targeted_reference_names(
+    candidate_names: list[str],
+    families: list[dict[str, Any]],
+    max_products: int,
+) -> tuple[list[str], list[str]]:
+    if max_products <= 0:
+        raise ValueError("--max-targeted-reference-products must be greater than zero")
+    candidates = set(candidate_names)
+    matched = [family for family in families if candidates & set(family["members"])]
+    expanded: list[str] = []
+    for family in matched:
+        for name in family["members"]:
+            if name not in expanded:
+                expanded.append(name)
+    if len(expanded) > max_products:
+        expanded = expanded[:max_products]
+    return expanded, [family["id"] for family in matched]
+
+
+def isolated_confusion_reference_names(
+    candidate_a: dict[str, Any],
+    candidate_b: dict[str, Any],
+    families: list[dict[str, Any]],
+    max_products: int,
+) -> tuple[list[str], list[str]]:
+    if max_products <= 0:
+        raise ValueError("--max-targeted-reference-products must be greater than zero")
+    names_a = {item["name"] for item in candidate_a["products"]}
+    names_b = {item["name"] for item in candidate_b["products"]}
+    changed_names = names_a ^ names_b
+    if not changed_names:
+        return [], []
+    matches = [
+        family for family in families if changed_names <= set(family["members"])
+    ]
+    if len(matches) != 1:
+        return [], []
+    family = matches[0]
+    return list(family["members"][:max_products]), [family["id"]]
+
+
+def select_confusion_references(
+    candidate_a: dict[str, Any],
+    candidate_b: dict[str, Any],
+    families: list[dict[str, Any]],
+    max_products: int,
+    *,
+    isolated_only: bool,
+) -> tuple[list[str], list[str]]:
+    if isolated_only:
+        return isolated_confusion_reference_names(
+            candidate_a, candidate_b, families, max_products
+        )
+    candidate_names = sorted(
+        {
+            item["name"]
+            for prediction in (candidate_a, candidate_b)
+            for item in prediction["products"]
+        }
+    )
+    return targeted_reference_names(candidate_names, families, max_products)
+
+
 def crop_data_url(source: Path, reference: dict[str, Any]) -> str:
     filename = reference.get("source_filename")
     crop = reference.get("crop_xyxy")
@@ -107,15 +222,26 @@ def build_prompt(
 
 
 def build_full_catalog_prompt(
-    candidate_a: dict[str, Any], candidate_b: dict[str, Any], catalog_names: list[str]
+    candidate_a: dict[str, Any],
+    candidate_b: dict[str, Any],
+    catalog_names: list[str],
+    targeted_names: list[str] | None = None,
 ) -> str:
+    targeted_note = ""
+    if targeted_names:
+        targeted_note = (
+            "\nHigh-detail reference crops are supplied for these easily confused products: "
+            f"{json.dumps(targeted_names, ensure_ascii=False)}. Compare fine-grained packaging, "
+            "shape, color, and label details; the crops do not imply that a product is present.\n"
+        )
     return (
         "You are independently adjudicating two fallible retail inventory predictions for one "
         "TARGET IMAGE. Inspect the target and every supplied REFERENCE SHEET. Return one instance "
         "for every distinct visible supported product. Candidate A and Candidate B are hints only: "
         "both may omit the real product, choose a wrong identity, or use a wrong quantity.\n\n"
         f"Candidate A hint: {json.dumps(candidate_a, ensure_ascii=False)}\n"
-        f"Candidate B hint: {json.dumps(candidate_b, ensure_ascii=False)}\n\n"
+        f"Candidate B hint: {json.dumps(candidate_b, ensure_ascii=False)}\n"
+        f"{targeted_note}\n"
         "Rules:\n"
         "- Choose any exact name from the full allowed catalog, including a name absent from both hints.\n"
         "- Independently identify and count products from the TARGET IMAGE; do not copy a hint.\n"
@@ -143,8 +269,26 @@ def call_adjudicator(
     reference_detail: str,
     reasoning_effort: str,
     timeout_seconds: float,
+    reference_sheet_urls: list[str] | None = None,
 ) -> Any:
     content: list[dict[str, Any]] = [{"type": "input_text", "text": prompt}]
+    for index, image_url in enumerate(reference_sheet_urls or [], start=1):
+        content.extend(
+            [
+                {
+                    "type": "input_text",
+                    "text": (
+                        f"FULL CATALOG REFERENCE SHEET {index}. Use for matching only; "
+                        "do not count it."
+                    ),
+                },
+                {
+                    "type": "input_image",
+                    "image_url": image_url,
+                    "detail": reference_detail,
+                },
+            ]
+        )
     for name, image_url in candidate_references:
         content.extend(
             [
@@ -234,6 +378,10 @@ def routed_base_prediction(
 
 
 def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any]:
+    if args.targeted_references_per_product <= 0:
+        raise ValueError("--targeted-references-per-product must be greater than zero")
+    if args.max_targeted_reference_products <= 0:
+        raise ValueError("--max-targeted-reference-products must be greater than zero")
     dataset = args.dataset.resolve()
     manifest = baseline.read_jsonl(dataset / "manifest.jsonl")
     schema = baseline.read_json(dataset / "schema.json")
@@ -243,11 +391,28 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
     catalog_names = baseline.catalog_names(catalog)
     allowed_names = set(catalog_names)
     full_catalog = args.full_catalog_adjudication
-    prompt_version = PROMPT_VERSION_V2 if full_catalog else PROMPT_VERSION
-    model_bundle_version = (
-        MODEL_BUNDLE_VERSION_V2 if full_catalog else MODEL_BUNDLE_VERSION
-    )
-    adjudication_scope = "full_catalog" if full_catalog else "candidate_union"
+    confusion_aware = args.confusion_sets is not None
+    isolated_confusion = args.isolated_confusion_only
+    if confusion_aware and not full_catalog:
+        raise ValueError("--confusion-sets requires --full-catalog-adjudication")
+    if isolated_confusion and not confusion_aware:
+        raise ValueError("--isolated-confusion-only requires --confusion-sets")
+    if isolated_confusion:
+        prompt_version = PROMPT_VERSION_V4
+        model_bundle_version = MODEL_BUNDLE_VERSION_V4
+        adjudication_scope = "full_catalog_isolated_confusion"
+    elif confusion_aware:
+        prompt_version = PROMPT_VERSION_V3
+        model_bundle_version = MODEL_BUNDLE_VERSION_V3
+        adjudication_scope = "full_catalog_confusion_aware"
+    elif full_catalog:
+        prompt_version = PROMPT_VERSION_V2
+        model_bundle_version = MODEL_BUNDLE_VERSION_V2
+        adjudication_scope = "full_catalog"
+    else:
+        prompt_version = PROMPT_VERSION
+        model_bundle_version = MODEL_BUNDLE_VERSION
+        adjudication_scope = "candidate_union"
     rows = baseline.selected_rows(manifest, args.split, args.limit, args.offset)
 
     candidate_a = baseline.load_identity_predictions(args.candidate_a)
@@ -260,12 +425,22 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
         reference_sheet_urls = [
             baseline.image_data_url(path) for path in reference_sheet_paths
         ]
-        references: dict[str, list[dict[str, Any]]] = {}
-        reference_source: Path | None = None
+        if confusion_aware:
+            references, reference_source = reference_index(args.references)
+            confusion_version, confusion_families = load_confusion_sets(
+                args.confusion_sets, allowed_names
+            )
+        else:
+            references = {}
+            reference_source = None
+            confusion_version = None
+            confusion_families = []
     else:
         references, reference_source = reference_index(args.references)
         reference_sheet_paths = []
         reference_sheet_urls = []
+        confusion_version = None
+        confusion_families = []
 
     missing: list[str] = []
     for row in rows:
@@ -300,12 +475,57 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
         for sample_id, value in decisions.items()
         if value == "sol_identity_adjudication"
     ]
+    targeted_preview: dict[str, dict[str, Any]] = {}
+    if confusion_aware:
+        assert reference_source is not None
+        for sample_id in identity_disagreement_ids:
+            targeted_names, matched_families = select_confusion_references(
+                candidate_a[sample_id][0]["data"],
+                candidate_b[sample_id][0]["data"],
+                confusion_families,
+                args.max_targeted_reference_products,
+                isolated_only=isolated_confusion,
+            )
+            crop_count = 0
+            for name in targeted_names:
+                if name not in references:
+                    raise ValueError(
+                        f"Reference manifest lacks confusion-set product {name!r}"
+                    )
+                selected_references = references[name][
+                    : args.targeted_references_per_product
+                ]
+                crop_count += len(selected_references)
+                for reference in selected_references:
+                    filename = reference.get("source_filename")
+                    if not isinstance(filename, str) or not (
+                        reference_source / "images" / filename
+                    ).is_file():
+                        raise ValueError(
+                            f"Reference source image does not exist for {name!r}: {filename!r}"
+                        )
+            targeted_preview[sample_id] = {
+                "matched_confusion_families": matched_families,
+                "targeted_reference_names": targeted_names,
+                "targeted_reference_crop_count": crop_count,
+            }
     run_config = {
         "runner_version": RUNNER_VERSION,
         "prompt_version": prompt_version,
         "model_bundle_version": model_bundle_version,
         "adjudication_scope": adjudication_scope,
         "reference_sheet_count": len(reference_sheet_paths),
+        "confusion_sets": str(args.confusion_sets.resolve()) if confusion_aware else None,
+        "confusion_sets_version": confusion_version,
+        "confusion_targeting_policy": (
+            "isolated_identity_symmetric_difference"
+            if isolated_confusion
+            else "any_candidate_family"
+            if confusion_aware
+            else None
+        ),
+        "targeted_references_per_product": args.targeted_references_per_product,
+        "max_targeted_reference_products": args.max_targeted_reference_products,
         "created_at_utc": datetime.now(timezone.utc).isoformat(),
         "dataset": str(dataset),
         "split": args.split,
@@ -334,6 +554,7 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
             "agreement_sample_ids": agreement_ids,
             "count_guard_sample_ids": count_guard_ids,
             "identity_disagreement_sample_ids": identity_disagreement_ids,
+            "targeted_references_by_sample": targeted_preview,
         }
     if client is None and not os.environ.get("OPENAI_API_KEY"):
         raise ValueError(
@@ -407,10 +628,40 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
                     )
                 if full_catalog:
                     schema_names = catalog_names
+                    if confusion_aware:
+                        targeted_names, matched_confusion_families = select_confusion_references(
+                            a_prediction["data"],
+                            b_prediction["data"],
+                            confusion_families,
+                            args.max_targeted_reference_products,
+                            isolated_only=isolated_confusion,
+                        )
+                        assert reference_source is not None
+                        missing_targeted_references = [
+                            name for name in targeted_names if name not in references
+                        ]
+                        if missing_targeted_references:
+                            raise ValueError(
+                                "Reference manifest lacks confusion-set products for "
+                                f"{sample_id}: {missing_targeted_references}"
+                            )
+                        candidate_reference_images = [
+                            (name, crop_data_url(reference_source, reference))
+                            for name in targeted_names
+                            for reference in references[name][
+                                : args.targeted_references_per_product
+                            ]
+                        ]
+                    else:
+                        targeted_names = []
+                        matched_confusion_families = []
+                        candidate_reference_images = []
                     prompt = build_full_catalog_prompt(
-                        a_prediction["data"], b_prediction["data"], catalog_names
+                        a_prediction["data"],
+                        b_prediction["data"],
+                        catalog_names,
+                        targeted_names,
                     )
-                    candidate_reference_images: list[tuple[str, str]] = []
                 else:
                     missing_references = [
                         name for name in candidate_names if name not in references
@@ -426,6 +677,8 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
                         for reference in references[name]
                     ]
                     schema_names = candidate_names
+                    targeted_names = candidate_names
+                    matched_confusion_families = []
                     prompt = build_prompt(
                         a_prediction["data"], b_prediction["data"], candidate_names
                     )
@@ -446,14 +699,11 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
                     "reasoning_effort": args.reasoning_effort,
                     "timeout_seconds": args.timeout_seconds,
                 }
-                if full_catalog:
-                    response = baseline.call_with_retries(
-                        reference_image_urls=reference_sheet_urls, **request
-                    )
-                else:
-                    response = call_with_retries(
-                        candidate_references=candidate_reference_images, **request
-                    )
+                response = call_with_retries(
+                    candidate_references=candidate_reference_images,
+                    reference_sheet_urls=reference_sheet_urls,
+                    **request,
+                )
                 latency_ms = round((time.perf_counter() - started) * 1_000)
                 output_text = getattr(response, "output_text", None)
                 if not output_text:
@@ -514,6 +764,9 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
                         "candidate_names": candidate_names,
                         "reference_crop_count": len(candidate_reference_images),
                         "reference_sheet_count": len(reference_sheet_paths),
+                        "targeted_reference_names": targeted_names,
+                        "matched_confusion_families": matched_confusion_families,
+                        "confusion_sets_version": confusion_version,
                         "image_detail": args.detail,
                         "reference_detail": args.reference_detail,
                         "reasoning_effort": args.reasoning_effort,
@@ -604,6 +857,24 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
             "reference sheets; candidate predictions remain non-binding hints."
         ),
     )
+    parser.add_argument(
+        "--confusion-sets",
+        type=Path,
+        help=(
+            "Add high-detail crops for catalog-defined confusion families during full-catalog "
+            "adjudication. This versions the resolver as the v3 experimental path."
+        ),
+    )
+    parser.add_argument(
+        "--isolated-confusion-only",
+        action="store_true",
+        help=(
+            "Attach targeted crops only when the identity symmetric difference is fully "
+            "contained in exactly one confusion family. Requires --confusion-sets."
+        ),
+    )
+    parser.add_argument("--targeted-references-per-product", type=int, default=1)
+    parser.add_argument("--max-targeted-reference-products", type=int, default=12)
     parser.add_argument("--detail", choices=["low", "high", "auto"], default="high")
     parser.add_argument(
         "--reference-detail", choices=["low", "high", "auto"], default="high"

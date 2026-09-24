@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0271",
+  "image": "images/inv_0271.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 733,
+        "y": 55,
+        "width": 710,
+        "height": 504
+      },
+      "source_annotation_id": 55209001,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 681,
+        "y": 802,
+        "width": 592,
+        "height": 534
+      },
+      "source_annotation_id": 55209002,
+      "source_category_id": 22
+    }
+  ]
+}

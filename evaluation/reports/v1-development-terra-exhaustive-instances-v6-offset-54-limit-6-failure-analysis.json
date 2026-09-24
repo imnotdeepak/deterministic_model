@@ -1,0 +1,99 @@
+{
+  "analyzer_version": "0.2.0",
+  "generated_at_utc": "2026-09-24T02:49:20.271622+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v1",
+  "split": "development",
+  "selection": {
+    "offset": 54,
+    "limit": 6,
+    "split_samples": 209,
+    "selected_samples": 6
+  },
+  "tuning_safety": {
+    "frozen_test_override_used": false,
+    "warning": null
+  },
+  "summary": {
+    "samples": 6,
+    "product_exact_samples": 4,
+    "fully_correct_samples": 4,
+    "failed_samples": 2,
+    "whole_image_exact_accuracy": 0.6666666666666666,
+    "all_dimensions_correct_rate": 0.6666666666666666,
+    "category_counts": {
+      "identity": 1,
+      "localization": 2,
+      "quantity": 2
+    },
+    "routing_decision_counts": {}
+  },
+  "stage_metrics": {},
+  "failures": [
+    {
+      "sample_id": "inv_0066",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_naturell_02": 2
+      },
+      "predicted": {
+        "adelholzener_classic_bio_apfelschorle_02": 1,
+        "adelholzener_classic_naturell_02": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_classic_bio_apfelschorle_02",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "adelholzener_classic_naturell_02",
+          "expected": 2,
+          "predicted": 1,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_0",
+        "lighting_0"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.5
+    },
+    {
+      "sample_id": "inv_0069",
+      "categories": [
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_bio_apfelschorle_02": 2
+      },
+      "predicted": {
+        "adelholzener_classic_bio_apfelschorle_02": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_classic_bio_apfelschorle_02",
+          "expected": 2,
+          "predicted": 1,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_5",
+        "lighting_0"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.5
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0200",
+  "image": "images/inv_0200.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "clementine_single",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 895,
+        "y": 610,
+        "width": 146,
+        "height": 142
+      },
+      "source_annotation_id": 8927001,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 838,
+        "y": 740,
+        "width": 142,
+        "height": 143
+      },
+      "source_annotation_id": 8927002,
+      "source_category_id": 33
+    }
+  ]
+}

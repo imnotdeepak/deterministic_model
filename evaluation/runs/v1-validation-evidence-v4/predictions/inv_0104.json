@@ -1,0 +1,85 @@
+{
+  "sample_id": "inv_0104",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0104",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 708,
+        "y": 346,
+        "width": 576,
+        "height": 554
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2864,
+  "estimated_cost_usd": 0.0028678,
+  "usage": {
+    "input_tokens": 14033,
+    "output_tokens": 51,
+    "total_tokens": 14084,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14033,
+        "output_tokens": 51,
+        "total_tokens": 14084
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0028678
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0fc6f69551f03d90016ab45d9ca97887d2912751241a64857d",
+    "response_ids": {
+      "localization": "resp_0fc6f69551f03d90016ab45d9ca97887d2912751241a64857d"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 1,
+    "identity_candidates": [
+      "grapes_sweet_celebration_seedless"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0104.json"
+  }
+}

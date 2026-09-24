@@ -1,0 +1,372 @@
+{
+  "sample_id": "inv_0070",
+  "model_bundle_version": "terra-luna-sol-confusion-aware-v3",
+  "data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 2
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006",
+        "ev_007"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.9,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006",
+        "ev_007"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.82,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.82,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 205,
+        "y": 0,
+        "width": 909,
+        "height": 801
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 870,
+        "y": 0,
+        "width": 453,
+        "height": 262
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 845,
+        "y": 369,
+        "width": 441,
+        "height": 471
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 346,
+        "y": 611,
+        "width": 754,
+        "height": 780
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1185,
+        "y": 736,
+        "width": 267,
+        "height": 224
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1064,
+        "y": 940,
+        "width": 278,
+        "height": 260
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0070",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1313,
+        "y": 914,
+        "width": 279,
+        "height": 257
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 14666,
+  "estimated_cost_usd": 0.08694,
+  "usage": {
+    "input_tokens": 18110,
+    "output_tokens": 725,
+    "total_tokens": 18835,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 18110,
+        "output_tokens": 725,
+        "total_tokens": 18835
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.08694
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_049896c4807a8ce7016ab455160e7087d2bdb1568ce597f695",
+    "prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog_confusion_aware",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0070.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0070.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_kraeuterteemischung",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "koelln_muesli_schoko",
+          "quantity": 1
+        },
+        {
+          "name": "pear",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "pasta_reggia_fusilli",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_kraeuterteemischung",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "koelln_muesli_fruechte",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 2
+        },
+        {
+          "name": "pear",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "gepa_bio_und_fair_kraeuterteemischung",
+      "gepa_bio_und_fair_rooibostee",
+      "koelln_muesli_fruechte",
+      "koelln_muesli_schoko",
+      "pasta_reggia_fusilli",
+      "pear"
+    ],
+    "reference_crop_count": 7,
+    "reference_sheet_count": 4,
+    "targeted_reference_names": [
+      "apple_braeburn_bundle",
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "apple_red_boskoop",
+      "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "koelln_muesli_fruechte",
+      "koelln_muesli_schoko"
+    ],
+    "matched_confusion_families": [
+      "apples",
+      "cereal_boxes"
+    ],
+    "confusion_sets_version": "inventory-confusion-sets-v1",
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-sol",
+      "adjudicator": "gpt-5.6-sol"
+    }
+  }
+}

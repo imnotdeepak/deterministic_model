@@ -1,0 +1,114 @@
+{
+  "inv_0003": {
+    "decision": "sol_identity_adjudication",
+    "source": "targeted_v3",
+    "matched_confusion_families": [
+      "coffee_packages"
+    ],
+    "targeted_reference_names": [
+      "cafe_wunderbar_espresso",
+      "douwe_egberts_professional_ground_coffee",
+      "gepa_bio_caffe_crema",
+      "gepa_italienischer_bio_espresso"
+    ]
+  },
+  "inv_0010": {
+    "decision": "sol_identity_adjudication",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0018": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0021": {
+    "decision": "sol_identity_adjudication",
+    "source": "targeted_v3",
+    "matched_confusion_families": [
+      "adelholzener_bottles"
+    ],
+    "targeted_reference_names": [
+      "adelholzener_alpenquelle_classic_075",
+      "adelholzener_alpenquelle_naturell_075",
+      "adelholzener_classic_bio_apfelschorle_02",
+      "adelholzener_classic_naturell_02",
+      "adelholzener_gourmet_mineralwasser_02"
+    ]
+  },
+  "inv_0025": {
+    "decision": "sol_identity_adjudication",
+    "source": "targeted_v3",
+    "matched_confusion_families": [
+      "apples"
+    ],
+    "targeted_reference_names": [
+      "apple_braeburn_bundle",
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "apple_red_boskoop"
+    ]
+  },
+  "inv_0034": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0052": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0055": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0059": {
+    "decision": "terra_count_guard",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0068": {
+    "decision": "sol_identity_adjudication",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0070": {
+    "decision": "sol_identity_adjudication",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0071": {
+    "decision": "sol_identity_adjudication",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0076": {
+    "decision": "sol_identity_adjudication",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0092": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  },
+  "inv_0094": {
+    "decision": "agreement",
+    "source": "standard_v2",
+    "matched_confusion_families": [],
+    "targeted_reference_names": []
+  }
+}

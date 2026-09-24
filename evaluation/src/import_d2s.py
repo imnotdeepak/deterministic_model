@@ -21,7 +21,7 @@ except ImportError:
     from evaluate import catalog_names, validate_annotation, validate_manifest
 
 
-IMPORTER_VERSION = "0.1.0"
+IMPORTER_VERSION = "0.2.0"
 SOURCE_FILES = {
     "training": "D2S_training.json",
     "validation": "D2S_validation.json",
@@ -246,12 +246,19 @@ def select_valid_candidates(
     categories_by_id: dict[int, dict[str, Any]],
     limit: int,
     seed: int,
+    excluded_sessions: set[str] | None = None,
 ) -> tuple[list[Candidate], list[dict[str, Any]]]:
     if limit <= 0:
         raise ValueError("--limit must be greater than zero")
     selected: list[Candidate] = []
     skipped: list[dict[str, Any]] = []
-    for candidate in deterministic_candidate_order(candidates, seed):
+    excluded_sessions = excluded_sessions or set()
+    eligible = [
+        candidate
+        for candidate in candidates
+        if candidate.session_id not in excluded_sessions
+    ]
+    for candidate in deterministic_candidate_order(eligible, seed):
         valid, errors = validate_candidate(candidate, source_root, categories_by_id)
         if not valid:
             skipped.append(
@@ -270,6 +277,66 @@ def select_valid_candidates(
             f"Requested {limit} samples, but only {len(selected)} valid annotated images are available"
         )
     return selected, skipped
+
+
+def load_excluded_sessions(
+    manifest_paths: list[Path], reference_manifest_paths: list[Path]
+) -> tuple[set[str], list[dict[str, Any]]]:
+    sessions: set[str] = set()
+    sources: list[dict[str, Any]] = []
+    for path in manifest_paths:
+        resolved = path.resolve()
+        if not resolved.is_file():
+            raise ValueError(f"Exclusion manifest does not exist: {resolved}")
+        source_sessions: set[str] = set()
+        with resolved.open("r", encoding="utf-8") as handle:
+            for line_number, line in enumerate(handle, start=1):
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                session_id = row.get("session_id")
+                if not isinstance(session_id, str) or not session_id:
+                    raise ValueError(
+                        f"{resolved}:{line_number}: missing non-empty session_id"
+                    )
+                source_sessions.add(session_id)
+        sessions.update(source_sessions)
+        sources.append(
+            {
+                "type": "dataset_manifest",
+                "path": str(resolved),
+                "sha256": sha256_file(resolved),
+                "excluded_sessions": len(source_sessions),
+            }
+        )
+
+    for path in reference_manifest_paths:
+        resolved = path.resolve()
+        if not resolved.is_file():
+            raise ValueError(f"Reference exclusion manifest does not exist: {resolved}")
+        document = read_json(resolved)
+        entries = document.get("entries")
+        if not isinstance(entries, list):
+            raise ValueError(f"Reference manifest lacks entries array: {resolved}")
+        source_sessions: set[str] = set()
+        for entry in entries:
+            for reference in entry.get("references", []):
+                scene_id = reference.get("source_scene_id")
+                if not isinstance(scene_id, int):
+                    raise ValueError(
+                        f"Reference manifest has invalid source_scene_id: {scene_id!r}"
+                    )
+                source_sessions.add(f"d2s_scene_{scene_id:04d}")
+        sessions.update(source_sessions)
+        sources.append(
+            {
+                "type": "reference_manifest",
+                "path": str(resolved),
+                "sha256": sha256_file(resolved),
+                "excluded_sessions": len(source_sessions),
+            }
+        )
+    return sessions, sources
 
 
 def target_split_counts(total: int) -> dict[str, int]:
@@ -307,6 +374,86 @@ def assign_scene_splits(selected: list[Candidate], seed: int) -> dict[str, str]:
         assignments[scene_id] = chosen
         counts[chosen] += size
     return assignments
+
+
+def assign_scene_splits_coverage_balanced(
+    selected: list[Candidate], seed: int
+) -> dict[str, str]:
+    by_scene: dict[str, list[Candidate]] = defaultdict(list)
+    for candidate in selected:
+        by_scene[candidate.session_id].append(candidate)
+    scene_categories = {
+        scene_id: {
+            int(annotation["category_id"])
+            for candidate in candidates
+            for annotation in candidate.annotations
+        }
+        for scene_id, candidates in by_scene.items()
+    }
+    category_scene_frequency: Counter[int] = Counter(
+        category_id
+        for categories in scene_categories.values()
+        for category_id in categories
+    )
+    rng = random.Random(seed ^ 0xC0A3)
+    randomized = list(by_scene)
+    rng.shuffle(randomized)
+    rank = {scene_id: index for index, scene_id in enumerate(randomized)}
+    targets = target_split_counts(len(selected))
+    held_out = ["validation", "test"]
+    counts = {name: 0 for name in SPLIT_RATIOS}
+    coverage: dict[str, set[int]] = {name: set() for name in SPLIT_RATIOS}
+    remaining = set(by_scene)
+    assignments: dict[str, str] = {}
+
+    while any(counts[name] < targets[name] for name in held_out):
+        eligible_splits = [name for name in held_out if counts[name] < targets[name]]
+        split = max(
+            eligible_splits,
+            key=lambda name: (
+                (targets[name] - counts[name]) / max(targets[name], 1),
+                -held_out.index(name),
+            ),
+        )
+        deficit = targets[split] - counts[split]
+
+        def scene_score(scene_id: str) -> tuple[float, int, int, int, int]:
+            categories = scene_categories[scene_id]
+            new_categories = categories - coverage[split]
+            rarity_score = sum(
+                1.0 / category_scene_frequency[category_id]
+                for category_id in new_categories
+            )
+            size = len(by_scene[scene_id])
+            return (
+                rarity_score,
+                len(new_categories),
+                int(size <= deficit),
+                -abs(deficit - size),
+                -rank[scene_id],
+            )
+
+        chosen = max(remaining, key=scene_score)
+        assignments[chosen] = split
+        remaining.remove(chosen)
+        counts[split] += len(by_scene[chosen])
+        coverage[split].update(scene_categories[chosen])
+
+    for scene_id in sorted(remaining, key=lambda value: rank[value]):
+        assignments[scene_id] = "development"
+        counts["development"] += len(by_scene[scene_id])
+        coverage["development"].update(scene_categories[scene_id])
+    return assignments
+
+
+def split_assignments(
+    selected: list[Candidate], seed: int, strategy: str
+) -> dict[str, str]:
+    if strategy == "size_balanced":
+        return assign_scene_splits(selected, seed)
+    if strategy == "coverage_balanced":
+        return assign_scene_splits_coverage_balanced(selected, seed)
+    raise ValueError(f"Unknown split strategy: {strategy!r}")
 
 
 def build_annotation(
@@ -396,11 +543,16 @@ def generate_stage(
     source_info: dict[str, Any],
     seed: int,
     requested_limit: int,
+    schema_source: Path,
+    dataset_id: str,
+    dataset_version: str,
+    excluded_sessions: set[str],
+    exclusion_sources: list[dict[str, Any]],
+    split_strategy: str,
 ) -> dict[str, Any]:
     stage.mkdir(parents=True)
     (stage / "images").mkdir()
     (stage / "annotations").mkdir()
-    schema_source = output / "schema.json"
     if not schema_source.is_file():
         raise ValueError(f"Authoritative schema is missing: {schema_source}")
     shutil.copy2(schema_source, stage / "schema.json")
@@ -408,7 +560,7 @@ def generate_stage(
     catalog = build_catalog(categories)
     write_json(stage / "catalog.json", catalog)
     categories_by_id = {int(item["id"]): item for item in categories}
-    assignments = assign_scene_splits(selected, seed)
+    assignments = split_assignments(selected, seed, split_strategy)
     ordered_selected = sorted(selected, key=lambda item: (item.source_split, item.image_id))
     manifest_rows = []
     for index, candidate in enumerate(ordered_selected, start=1):
@@ -450,8 +602,8 @@ def generate_stage(
     split_counts = Counter(row["split"] for row in manifest_rows)
     source_split_counts = Counter(row["source_split"] for row in manifest_rows)
     metadata = {
-        "dataset_id": "inventory-v0",
-        "dataset_version": "0.1.0",
+        "dataset_id": dataset_id,
+        "dataset_version": dataset_version,
         "task": "controlled_inventory_image_extraction",
         "annotation_spec_version": "1.0.0",
         "bbox_format": "xywh",
@@ -467,10 +619,17 @@ def generate_stage(
         "requested_limit": requested_limit,
         "imported_samples": len(manifest_rows),
         "skipped_invalid_samples": len(skipped),
-        "split_strategy": "deterministic scene-grouped 70/15/15",
+        "split_strategy": (
+            "deterministic scene-grouped 70/15/15 with held-out class coverage balancing"
+            if split_strategy == "coverage_balanced"
+            else "deterministic scene-grouped 70/15/15"
+        ),
+        "split_strategy_id": split_strategy,
         "split_counts": dict(sorted(split_counts.items())),
         "source_split_counts": dict(sorted(source_split_counts.items())),
         "category_count": len(catalog),
+        "excluded_session_count": len(excluded_sessions),
+        "exclusion_sources": exclusion_sources,
         "source_files": source_info,
         "skipped": skipped,
     }
@@ -496,7 +655,12 @@ def commit_stage(stage: Path, output: Path, force: bool) -> None:
         shutil.copy2(path, output / "images" / path.name)
     for path in sorted((stage / "annotations").iterdir()):
         shutil.copy2(path, output / "annotations" / path.name)
-    for filename in ["catalog.json", "manifest.jsonl", "dataset_metadata.json"]:
+    for filename in [
+        "schema.json",
+        "catalog.json",
+        "manifest.jsonl",
+        "dataset_metadata.json",
+    ]:
         shutil.copy2(stage / filename, output / filename)
 
 
@@ -508,8 +672,10 @@ def dry_run_summary(
     skipped: list[dict[str, Any]],
     output: Path,
     seed: int,
+    excluded_sessions: set[str] | None = None,
+    split_strategy: str = "size_balanced",
 ) -> dict[str, Any]:
-    assignments = assign_scene_splits(selected, seed)
+    assignments = split_assignments(selected, seed, split_strategy)
     split_counts = Counter(assignments[item.session_id] for item in selected)
     return {
         "source": str(source_root),
@@ -517,6 +683,7 @@ def dry_run_summary(
         "annotated_images_found": len(candidates),
         "product_classes_found": len(categories),
         "selected_sample_count": len(selected),
+        "excluded_session_count": len(excluded_sessions or set()),
         "expected_split_sizes": dict(sorted(split_counts.items())),
         "skipped_invalid_samples": len(skipped),
         "output": str(output.resolve()),
@@ -527,11 +694,29 @@ def import_dataset(args: argparse.Namespace) -> dict[str, Any]:
     source_root = find_source_root(args.source)
     candidates, categories, source_info = load_source(source_root)
     categories_by_id = {int(item["id"]): item for item in categories}
+    excluded_sessions, exclusion_sources = load_excluded_sessions(
+        list(getattr(args, "exclude_manifest", []) or []),
+        list(getattr(args, "exclude_reference_manifest", []) or []),
+    )
+    split_strategy = getattr(args, "split_strategy", "size_balanced")
     selected, skipped = select_valid_candidates(
-        candidates, source_root, categories_by_id, args.limit, args.seed
+        candidates,
+        source_root,
+        categories_by_id,
+        args.limit,
+        args.seed,
+        excluded_sessions,
     )
     summary = dry_run_summary(
-        source_root, candidates, categories, selected, skipped, args.output, args.seed
+        source_root,
+        candidates,
+        categories,
+        selected,
+        skipped,
+        args.output,
+        args.seed,
+        excluded_sessions,
+        split_strategy,
     )
     if args.dry_run:
         return summary
@@ -542,10 +727,21 @@ def import_dataset(args: argparse.Namespace) -> dict[str, Any]:
             "Generated output already exists. Re-run with --force to replace it:\n" + rendered
         )
     stage = args.output.parent / f".{args.output.name}-import-{uuid.uuid4().hex}"
+    schema_source = getattr(args, "schema", None) or (args.output / "schema.json")
+    dataset_id = getattr(args, "dataset_id", "inventory-v0")
+    dataset_version = getattr(args, "dataset_version", "0.1.0")
     try:
         metadata = generate_stage(
             stage, args.output, source_root, selected, skipped, categories,
-            source_info, args.seed, args.limit,
+            source_info,
+            args.seed,
+            args.limit,
+            schema_source.resolve(),
+            dataset_id,
+            dataset_version,
+            excluded_sessions,
+            exclusion_sources,
+            split_strategy,
         )
         commit_stage(stage, args.output, args.force)
     finally:
@@ -564,6 +760,18 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--schema", type=Path)
+    parser.add_argument("--dataset-id", default="inventory-v0")
+    parser.add_argument("--dataset-version", default="0.1.0")
+    parser.add_argument(
+        "--split-strategy",
+        choices=["size_balanced", "coverage_balanced"],
+        default="size_balanced",
+    )
+    parser.add_argument("--exclude-manifest", action="append", type=Path, default=[])
+    parser.add_argument(
+        "--exclude-reference-manifest", action="append", type=Path, default=[]
+    )
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     return parser.parse_args(argv)

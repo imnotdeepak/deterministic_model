@@ -1,0 +1,81 @@
+{
+  "sample_id": "inv_0298",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 3598,
+  "estimated_cost_usd": 0.029588,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 160,
+    "total_tokens": 13994,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 160,
+        "total_tokens": 13994
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.029588
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0d06d79a036c5fb5016ab45d7ac6e487d29b1fc782fa18e1fd",
+    "response_ids": {
+      "aggregate": "resp_0d06d79a036c5fb5016ab45d7ac6e487d29b1fc782fa18e1fd"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

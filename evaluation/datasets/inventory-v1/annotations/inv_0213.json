@@ -1,0 +1,87 @@
+{
+  "sample_id": "inv_0213",
+  "image": "images/inv_0213.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "lettuce",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "lettuce",
+      "bbox": {
+        "x": 0,
+        "y": 301,
+        "width": 861,
+        "height": 936
+      },
+      "source_annotation_id": 25829001,
+      "source_category_id": 55
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 628,
+        "y": 693,
+        "width": 259,
+        "height": 606
+      },
+      "source_annotation_id": 25829002,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 773,
+        "y": 741,
+        "width": 275,
+        "height": 609
+      },
+      "source_annotation_id": 25829003,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 950,
+        "y": 327,
+        "width": 733,
+        "height": 997
+      },
+      "source_annotation_id": 25829004,
+      "source_category_id": 21
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 599,
+        "y": 276,
+        "width": 839,
+        "height": 509
+      },
+      "source_annotation_id": 25829005,
+      "source_category_id": 9
+    }
+  ]
+}

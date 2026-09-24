@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0183",
+  "image": "images/inv_0183.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "orange_single",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "orange_single",
+      "bbox": {
+        "x": 528,
+        "y": 529,
+        "width": 229,
+        "height": 228
+      },
+      "source_annotation_id": 22623001,
+      "source_category_id": 37
+    },
+    {
+      "product_name": "orange_single",
+      "bbox": {
+        "x": 934,
+        "y": 768,
+        "width": 236,
+        "height": 235
+      },
+      "source_annotation_id": 22623002,
+      "source_category_id": 37
+    },
+    {
+      "product_name": "orange_single",
+      "bbox": {
+        "x": 867,
+        "y": 139,
+        "width": 243,
+        "height": 256
+      },
+      "source_annotation_id": 22623003,
+      "source_category_id": 37
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0216",
+  "image": "images/inv_0216.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 742,
+        "y": 0,
+        "width": 591,
+        "height": 435
+      },
+      "source_annotation_id": 27225001,
+      "source_category_id": 59
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 1074,
+        "y": 412,
+        "width": 310,
+        "height": 560
+      },
+      "source_annotation_id": 27225002,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 1248,
+        "y": 278,
+        "width": 403,
+        "height": 926
+      },
+      "source_annotation_id": 27225003,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 1096,
+        "y": 1030,
+        "width": 242,
+        "height": 191
+      },
+      "source_annotation_id": 27225004,
+      "source_category_id": 39
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 160,
+        "y": 179,
+        "width": 596,
+        "height": 874
+      },
+      "source_annotation_id": 27225005,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 372,
+        "y": 690,
+        "width": 894,
+        "height": 750
+      },
+      "source_annotation_id": 27225006,
+      "source_category_id": 23
+    }
+  ]
+}

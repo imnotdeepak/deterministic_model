@@ -1,0 +1,87 @@
+{
+  "sample_id": "inv_0217",
+  "image": "images/inv_0217.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 272,
+        "y": 21,
+        "width": 1023,
+        "height": 584
+      },
+      "source_annotation_id": 28105001,
+      "source_category_id": 21
+    },
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 230,
+        "y": 472,
+        "width": 567,
+        "height": 657
+      },
+      "source_annotation_id": 28105002,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "corny_schoko_banane",
+      "bbox": {
+        "x": 1120,
+        "y": 717,
+        "width": 531,
+        "height": 440
+      },
+      "source_annotation_id": 28105003,
+      "source_category_id": 14
+    },
+    {
+      "product_name": "pasta_reggia_spaghetti",
+      "bbox": {
+        "x": 1201,
+        "y": 238,
+        "width": 636,
+        "height": 524
+      },
+      "source_annotation_id": 28105004,
+      "source_category_id": 42
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 394,
+        "y": 760,
+        "width": 1107,
+        "height": 680
+      },
+      "source_annotation_id": 28105005,
+      "source_category_id": 56
+    }
+  ]
+}

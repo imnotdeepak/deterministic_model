@@ -1,0 +1,390 @@
+{
+  "sample_id": "inv_0068",
+  "model_bundle_version": "terra-luna-sol-isolated-confusion-routed-v4",
+  "data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "orange_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.87,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.87,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_002"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/2/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/2/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_006"
+      ]
+    },
+    "/products/3/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/3/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_005"
+      ]
+    },
+    "/products/4/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/4/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/5/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/5/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_004"
+      ]
+    },
+    "/products/6/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    },
+    "/products/6/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_007"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 338,
+        "y": 158,
+        "width": 1208,
+        "height": 686
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 973,
+        "y": 301,
+        "width": 288,
+        "height": 287
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 415,
+        "y": 982,
+        "width": 313,
+        "height": 426
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 668,
+        "y": 953,
+        "width": 317,
+        "height": 447
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 931,
+        "y": 942,
+        "width": 317,
+        "height": 420
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1165,
+        "y": 827,
+        "width": 463,
+        "height": 455
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    },
+    {
+      "id": "ev_007",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1342,
+        "y": 1009,
+        "width": 142,
+        "height": 156
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-sol",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 11413,
+  "estimated_cost_usd": 0.067364,
+  "usage": {
+    "input_tokens": 14236,
+    "output_tokens": 521,
+    "total_tokens": 14757,
+    "by_stage": {
+      "adjudication": {
+        "input_tokens": 14236,
+        "output_tokens": 521,
+        "total_tokens": 14757
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "adjudication": 0.067364
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_090dde2ffe60e51b016ab44749168487d2876e80541c8d83ec",
+    "prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_prompt_version": "inventory-full-catalog-adjudication-v2",
+    "resolver_decision": "sol_identity_adjudication",
+    "resolver_model": "gpt-5.6-sol",
+    "adjudication_scope": "full_catalog",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0068.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0068.json",
+    "candidate_a_data": {
+      "products": [
+        {
+          "name": "cocoba_cocoa",
+          "quantity": 1
+        },
+        {
+          "name": "apple_golden_delicious",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_kraeuterteemischung",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_fencheltee",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll",
+          "quantity": 1
+        },
+        {
+          "name": "orange_single",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_b_data": {
+      "products": [
+        {
+          "name": "caona_cocoa",
+          "quantity": 1
+        },
+        {
+          "name": "apple_granny_smith",
+          "quantity": 1
+        },
+        {
+          "name": "corny_nussvoll",
+          "quantity": 1
+        },
+        {
+          "name": "orange_single",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_kraeuterteemischung",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_fencheltee",
+          "quantity": 1
+        },
+        {
+          "name": "gepa_bio_und_fair_rooibostee",
+          "quantity": 1
+        }
+      ]
+    },
+    "candidate_names": [
+      "apple_golden_delicious",
+      "apple_granny_smith",
+      "caona_cocoa",
+      "cocoba_cocoa",
+      "corny_nussvoll",
+      "gepa_bio_und_fair_fencheltee",
+      "gepa_bio_und_fair_kraeuterteemischung",
+      "gepa_bio_und_fair_rooibostee",
+      "orange_single"
+    ],
+    "reference_crop_count": 0,
+    "reference_sheet_count": 4,
+    "image_detail": "high",
+    "reference_detail": "high",
+    "reasoning_effort": "low",
+    "output_mode": "adjudicated_instances",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "base_evidence": "gpt-5.6-luna",
+      "identity_adjudicator": "gpt-5.6-sol"
+    },
+    "replay_version": "0.1.0",
+    "replay_policy": "isolated_identity_symmetric_difference",
+    "replay_source": "standard_v2",
+    "replay_source_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-full-catalog-v2\\predictions\\inv_0068.json",
+    "matched_confusion_families": [],
+    "targeted_reference_names": [],
+    "routing_policy_version": "terra-count-sol-isolated-confusion-v4",
+    "routing_decision": "sol_identity_adjudication",
+    "identity_adjudication_scope": "full_catalog_isolated_confusion",
+    "base_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-terra-evidence-v0\\predictions\\inv_0068.json",
+    "adjudicated_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-sol-isolated-confusion-replay-v4\\predictions\\inv_0068.json"
+  }
+}

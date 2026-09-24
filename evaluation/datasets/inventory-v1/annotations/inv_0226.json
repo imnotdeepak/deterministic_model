@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0226",
+  "image": "images/inv_0226.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 1007,
+        "y": 522,
+        "width": 591,
+        "height": 915
+      },
+      "source_annotation_id": 31804001,
+      "source_category_id": 23
+    },
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 231,
+        "y": 0,
+        "width": 939,
+        "height": 937
+      },
+      "source_annotation_id": 31804002,
+      "source_category_id": 21
+    }
+  ]
+}

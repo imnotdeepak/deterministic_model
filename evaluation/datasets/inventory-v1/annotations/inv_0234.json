@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0234",
+  "image": "images/inv_0234.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 870,
+        "y": 343,
+        "width": 517,
+        "height": 871
+      },
+      "source_annotation_id": 33524001,
+      "source_category_id": 54
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 410,
+        "y": 558,
+        "width": 392,
+        "height": 274
+      },
+      "source_annotation_id": 33524002,
+      "source_category_id": 44
+    }
+  ]
+}

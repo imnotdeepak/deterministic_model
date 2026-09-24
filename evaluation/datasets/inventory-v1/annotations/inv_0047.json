@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0047",
+  "image": "images/inv_0047.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 1048,
+        "y": 711,
+        "width": 264,
+        "height": 231
+      },
+      "source_annotation_id": 6926001,
+      "source_category_id": 11
+    }
+  ]
+}

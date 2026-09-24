@@ -1,0 +1,87 @@
+{
+  "sample_id": "inv_0220",
+  "image": "images/inv_0220.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 1142,
+        "y": 297,
+        "width": 681,
+        "height": 783
+      },
+      "source_annotation_id": 28611001,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "koelln_muesli_fruechte",
+      "bbox": {
+        "x": 121,
+        "y": 81,
+        "width": 796,
+        "height": 761
+      },
+      "source_annotation_id": 28611002,
+      "source_category_id": 17
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 347,
+        "y": 727,
+        "width": 1061,
+        "height": 692
+      },
+      "source_annotation_id": 28611003,
+      "source_category_id": 56
+    },
+    {
+      "product_name": "rocket",
+      "bbox": {
+        "x": 553,
+        "y": 0,
+        "width": 743,
+        "height": 516
+      },
+      "source_annotation_id": 28611004,
+      "source_category_id": 58
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 1389,
+        "y": 425,
+        "width": 154,
+        "height": 151
+      },
+      "source_annotation_id": 28611005,
+      "source_category_id": 33
+    }
+  ]
+}

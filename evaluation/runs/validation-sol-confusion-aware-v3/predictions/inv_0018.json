@@ -1,0 +1,137 @@
+{
+  "sample_id": "inv_0018",
+  "model_bundle_version": "terra-luna-sol-confusion-aware-v3",
+  "data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 914,
+        "y": 577,
+        "width": 159,
+        "height": 382
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1020,
+        "y": 157,
+        "width": 322,
+        "height": 184
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1041,
+        "y": 744,
+        "width": 393,
+        "height": 254
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3221,
+  "estimated_cost_usd": 0.002949,
+  "usage": {
+    "input_tokens": 14031,
+    "output_tokens": 119,
+    "total_tokens": 14150,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14031,
+        "output_tokens": 119,
+        "total_tokens": 14150
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.002949
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_048d54408906f8a7016ab446edced887d282d9df406195c8de",
+    "response_ids": {
+      "localization": "resp_048d54408906f8a7016ab446edced887d282d9df406195c8de"
+    },
+    "prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "pelikan_tintenpatrone_canon"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0018.json",
+    "resolver_prompt_version": "inventory-confusion-aware-adjudication-v3",
+    "resolver_decision": "agreement",
+    "resolver_model": null,
+    "adjudication_scope": "full_catalog_confusion_aware",
+    "candidate_a_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-luna-references-v0\\predictions\\inv_0018.json",
+    "candidate_b_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\validation-terra-references-v0\\predictions\\inv_0018.json",
+    "component_models": {
+      "candidate_a": "gpt-5.6-luna",
+      "candidate_b": "gpt-5.6-terra",
+      "evidence": "gpt-5.6-luna",
+      "adjudicator": null
+    }
+  }
+}

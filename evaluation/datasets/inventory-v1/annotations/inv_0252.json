@@ -1,0 +1,68 @@
+{
+  "sample_id": "inv_0252",
+  "image": "images/inv_0252.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "apple_granny_smith",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 663,
+        "y": 470,
+        "width": 253,
+        "height": 269
+      },
+      "source_annotation_id": 47124001,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 648,
+        "y": 733,
+        "width": 284,
+        "height": 264
+      },
+      "source_annotation_id": 47124002,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 916,
+        "y": 487,
+        "width": 255,
+        "height": 250
+      },
+      "source_annotation_id": 47124003,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 928,
+        "y": 745,
+        "width": 234,
+        "height": 238
+      },
+      "source_annotation_id": 47124004,
+      "source_category_id": 28
+    }
+  ]
+}

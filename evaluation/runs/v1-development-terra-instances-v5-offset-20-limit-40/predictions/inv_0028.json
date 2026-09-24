@@ -1,0 +1,83 @@
+{
+  "sample_id": "inv_0028",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0028",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 501,
+        "y": 487,
+        "width": 995,
+        "height": 773
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2657,
+  "estimated_cost_usd": 0.028488,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 48,
+    "total_tokens": 14004,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 48,
+        "total_tokens": 14004
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.028488
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0463d923a919ea32016ab463282efc87d2982bdf947729888d",
+    "response_ids": {
+      "localization": "resp_0463d923a919ea32016ab463282efc87d2982bdf947729888d"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 1,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

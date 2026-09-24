@@ -1,0 +1,72 @@
+{
+  "sample_id": "inv_0272",
+  "image": "images/inv_0272.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 261,
+        "y": 24,
+        "width": 271,
+        "height": 628
+      },
+      "source_annotation_id": 56022001,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 534,
+        "y": 118,
+        "width": 926,
+        "height": 925
+      },
+      "source_annotation_id": 56022002,
+      "source_category_id": 23
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 255,
+        "y": 802,
+        "width": 378,
+        "height": 301
+      },
+      "source_annotation_id": 56022003,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 756,
+        "y": 1040,
+        "width": 687,
+        "height": 360
+      },
+      "source_annotation_id": 56022004,
+      "source_category_id": 11
+    }
+  ]
+}

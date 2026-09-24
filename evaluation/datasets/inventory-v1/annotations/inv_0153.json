@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0153",
+  "image": "images/inv_0153.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 608,
+        "y": 912,
+        "width": 865,
+        "height": 489
+      },
+      "source_annotation_id": 20717001,
+      "source_category_id": 54
+    }
+  ]
+}

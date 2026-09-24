@@ -1,0 +1,123 @@
+{
+  "sample_id": "inv_0071",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 507,
+        "y": 357,
+        "width": 626,
+        "height": 333
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 459,
+        "y": 543,
+        "width": 632,
+        "height": 284
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0071",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 428,
+        "y": 732,
+        "width": 622,
+        "height": 216
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2896,
+  "estimated_cost_usd": 0.029768,
+  "usage": {
+    "input_tokens": 14080,
+    "output_tokens": 134,
+    "total_tokens": 14214,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14080,
+        "output_tokens": 134,
+        "total_tokens": 14214
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.029768
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_077dbde522862e08016ab48facdc9487d291d18223140310ad",
+    "response_ids": {
+      "localization": "resp_077dbde522862e08016ab48facdc9487d291d18223140310ad"
+    },
+    "prompt_version": "inventory-exhaustive-instance-localization-references-v2",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 3,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

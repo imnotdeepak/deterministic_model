@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0037",
+  "image": "images/inv_0037.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 479,
+        "y": 225,
+        "width": 537,
+        "height": 860
+      },
+      "source_annotation_id": 6023001,
+      "source_category_id": 23
+    }
+  ]
+}

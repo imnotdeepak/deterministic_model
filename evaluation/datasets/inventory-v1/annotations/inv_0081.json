@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0081",
+  "image": "images/inv_0081.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 461,
+        "y": 385,
+        "width": 287,
+        "height": 254
+      },
+      "source_annotation_id": 13810001,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 925,
+        "y": 462,
+        "width": 260,
+        "height": 279
+      },
+      "source_annotation_id": 13810002,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 805,
+        "y": 720,
+        "width": 249,
+        "height": 248
+      },
+      "source_annotation_id": 13810003,
+      "source_category_id": 26
+    }
+  ]
+}

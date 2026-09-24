@@ -9,6 +9,10 @@
 /.venv/
 /venv/
 
+# Local detector weights and training artifacts
+/*.pt
+/evaluation/training-runs/
+
 # Local secrets
 .env
 .env.*

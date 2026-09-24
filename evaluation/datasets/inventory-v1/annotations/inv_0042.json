@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0042",
+  "image": "images/inv_0042.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 301,
+        "y": 302,
+        "width": 355,
+        "height": 277
+      },
+      "source_annotation_id": 6500001,
+      "source_category_id": 7
+    }
+  ]
+}

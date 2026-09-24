@@ -1,0 +1,123 @@
+{
+  "sample_id": "inv_0018",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.91,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 169,
+        "y": 418,
+        "width": 342,
+        "height": 455
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 908,
+        "y": 156,
+        "width": 469,
+        "height": 360
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0018",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1002,
+        "y": 900,
+        "width": 359,
+        "height": 405
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3553,
+  "estimated_cost_usd": 0.029412,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 125,
+    "total_tokens": 14081,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 125,
+        "total_tokens": 14081
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.029412
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01958bbaf3972573016ab461f3fb6c87d2876d54c0099632e0",
+    "response_ids": {
+      "localization": "resp_01958bbaf3972573016ab461f3fb6c87d2876d54c0099632e0"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 3,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

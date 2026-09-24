@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0060",
+  "image": "images/inv_0060.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "banana_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "banana_single",
+      "bbox": {
+        "x": 678,
+        "y": 539,
+        "width": 577,
+        "height": 415
+      },
+      "source_annotation_id": 9309001,
+      "source_category_id": 31
+    }
+  ]
+}

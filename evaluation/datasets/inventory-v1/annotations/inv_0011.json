@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0011",
+  "image": "images/inv_0011.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 384,
+        "y": 533,
+        "width": 322,
+        "height": 410
+      },
+      "source_annotation_id": 2514001,
+      "source_category_id": 50
+    }
+  ]
+}

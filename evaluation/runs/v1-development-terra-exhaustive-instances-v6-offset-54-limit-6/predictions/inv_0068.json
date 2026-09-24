@@ -1,0 +1,103 @@
+{
+  "sample_id": "inv_0068",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 776,
+        "y": 148,
+        "width": 190,
+        "height": 281
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0068",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 881,
+        "y": 654,
+        "width": 196,
+        "height": 206
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 3059,
+  "estimated_cost_usd": 0.029288,
+  "usage": {
+    "input_tokens": 14080,
+    "output_tokens": 94,
+    "total_tokens": 14174,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14080,
+        "output_tokens": 94,
+        "total_tokens": 14174
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.029288
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0eafa043efae8d03016ab48fa2ea6887d2b24e8729f03436f9",
+    "response_ids": {
+      "localization": "resp_0eafa043efae8d03016ab48fa2ea6887d2b24e8729f03436f9"
+    },
+    "prompt_version": "inventory-exhaustive-instance-localization-references-v2",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 2,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

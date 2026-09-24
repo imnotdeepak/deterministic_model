@@ -1,0 +1,177 @@
+{
+  "sample_id": "inv_0296",
+  "image": "images/inv_0296.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "banana_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "clementine",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 649,
+        "y": 258,
+        "width": 824,
+        "height": 875
+      },
+      "source_annotation_id": 65329001,
+      "source_category_id": 54
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 993,
+        "y": 893,
+        "width": 414,
+        "height": 281
+      },
+      "source_annotation_id": 65329002,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 1472,
+        "y": 929,
+        "width": 130,
+        "height": 126
+      },
+      "source_annotation_id": 65329003,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 495,
+        "y": 523,
+        "width": 157,
+        "height": 154
+      },
+      "source_annotation_id": 65329004,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "banana_bundle",
+      "bbox": {
+        "x": 242,
+        "y": 138,
+        "width": 535,
+        "height": 486
+      },
+      "source_annotation_id": 65329005,
+      "source_category_id": 30
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 914,
+        "y": 1132,
+        "width": 724,
+        "height": 308
+      },
+      "source_annotation_id": 65329006,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 0,
+        "y": 640,
+        "width": 524,
+        "height": 403
+      },
+      "source_annotation_id": 65329007,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 918,
+        "y": 0,
+        "width": 435,
+        "height": 263
+      },
+      "source_annotation_id": 65329008,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 1275,
+        "y": 114,
+        "width": 333,
+        "height": 354
+      },
+      "source_annotation_id": 65329009,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 1468,
+        "y": 383,
+        "width": 384,
+        "height": 465
+      },
+      "source_annotation_id": 65329010,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "clementine",
+      "bbox": {
+        "x": 345,
+        "y": 944,
+        "width": 596,
+        "height": 490
+      },
+      "source_annotation_id": 65329011,
+      "source_category_id": 32
+    }
+  ]
+}

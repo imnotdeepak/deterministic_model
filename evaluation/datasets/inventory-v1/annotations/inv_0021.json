@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0021",
+  "image": "images/inv_0021.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 1249,
+        "y": 494,
+        "width": 266,
+        "height": 457
+      },
+      "source_annotation_id": 3529001,
+      "source_category_id": 51
+    }
+  ]
+}

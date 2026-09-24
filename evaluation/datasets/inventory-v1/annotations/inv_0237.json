@@ -1,0 +1,72 @@
+{
+  "sample_id": "inv_0237",
+  "image": "images/inv_0237.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 269,
+        "y": 772,
+        "width": 613,
+        "height": 174
+      },
+      "source_annotation_id": 35105001,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "grapes_green_sugraone_seedless",
+      "bbox": {
+        "x": 439,
+        "y": 94,
+        "width": 596,
+        "height": 645
+      },
+      "source_annotation_id": 35105002,
+      "source_category_id": 34
+    },
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 643,
+        "y": 1027,
+        "width": 441,
+        "height": 413
+      },
+      "source_annotation_id": 35105003,
+      "source_category_id": 46
+    },
+    {
+      "product_name": "rocket",
+      "bbox": {
+        "x": 1013,
+        "y": 353,
+        "width": 618,
+        "height": 756
+      },
+      "source_annotation_id": 35105004,
+      "source_category_id": 58
+    }
+  ]
+}

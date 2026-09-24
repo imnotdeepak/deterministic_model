@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0230",
+  "image": "images/inv_0230.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "oranges",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_elicoidali",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "oranges",
+      "bbox": {
+        "x": 861,
+        "y": 185,
+        "width": 737,
+        "height": 1070
+      },
+      "source_annotation_id": 32727001,
+      "source_category_id": 38
+    },
+    {
+      "product_name": "pasta_reggia_elicoidali",
+      "bbox": {
+        "x": 236,
+        "y": 241,
+        "width": 497,
+        "height": 801
+      },
+      "source_annotation_id": 32727002,
+      "source_category_id": 40
+    }
+  ]
+}

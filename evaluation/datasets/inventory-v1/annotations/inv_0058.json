@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0058",
+  "image": "images/inv_0058.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pear",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 738,
+        "y": 720,
+        "width": 196,
+        "height": 197
+      },
+      "source_annotation_id": 9113001,
+      "source_category_id": 39
+    },
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 979,
+        "y": 408,
+        "width": 288,
+        "height": 230
+      },
+      "source_annotation_id": 9113002,
+      "source_category_id": 39
+    }
+  ]
+}

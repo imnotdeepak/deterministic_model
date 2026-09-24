@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0215",
+  "image": "images/inv_0215.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 567,
+        "y": 981,
+        "width": 591,
+        "height": 459
+      },
+      "source_annotation_id": 27220001,
+      "source_category_id": 59
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 508,
+        "y": 442,
+        "width": 320,
+        "height": 562
+      },
+      "source_annotation_id": 27220002,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 230,
+        "y": 197,
+        "width": 421,
+        "height": 939
+      },
+      "source_annotation_id": 27220003,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 556,
+        "y": 190,
+        "width": 248,
+        "height": 190
+      },
+      "source_annotation_id": 27220004,
+      "source_category_id": 39
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 1143,
+        "y": 356,
+        "width": 580,
+        "height": 868
+      },
+      "source_annotation_id": 27220005,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 631,
+        "y": 0,
+        "width": 897,
+        "height": 725
+      },
+      "source_annotation_id": 27220006,
+      "source_category_id": 23
+    }
+  ]
+}

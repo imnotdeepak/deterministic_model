@@ -323,6 +323,20 @@ def test_instance_prompt_distinguishes_references_from_target():
     assert "REFERENCE SHEET" in prompt
 
 
+def test_exhaustive_instance_prompt_counts_objects_with_hidden_labels():
+    prompt = run_baseline.build_prompt(
+        ["product_one"],
+        has_visual_references=True,
+        instance_localization=True,
+        exhaustive_instance_search=True,
+    )
+
+    assert "showing only a cap, side, rear, bottom" in prompt
+    assert "Do not omit a physical object merely because its label is unreadable" in prompt
+    assert "lower confidence instead of omitting the object" in prompt
+    assert "Omit products that cannot be matched confidently" not in prompt
+
+
 def test_instance_prediction_satisfies_evaluator_evidence_contract():
     model_output = {
         "instances": [

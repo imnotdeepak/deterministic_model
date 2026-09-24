@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0013",
+  "image": "images/inv_0013.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 1187,
+        "y": 535,
+        "width": 301,
+        "height": 433
+      },
+      "source_annotation_id": 3009001,
+      "source_category_id": 45
+    }
+  ]
+}

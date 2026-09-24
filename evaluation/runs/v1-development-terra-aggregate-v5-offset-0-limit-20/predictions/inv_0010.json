@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0010",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {},
+  "evidence": [],
+  "latency_ms": 2365,
+  "estimated_cost_usd": 0.028076,
+  "usage": {
+    "input_tokens": 13834,
+    "output_tokens": 34,
+    "total_tokens": 13868,
+    "by_stage": {
+      "aggregate": {
+        "input_tokens": 13834,
+        "output_tokens": 34,
+        "total_tokens": 13868
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "aggregate": 0.028076
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0569595f2ccaf3be016ab461a1b9fc87d2a6a1c7d7b7d3c676",
+    "response_ids": {
+      "aggregate": "resp_0569595f2ccaf3be016ab461a1b9fc87d2a6a1c7d7b7d3c676"
+    },
+    "prompt_version": "inventory-catalog-visual-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate",
+    "model_instance_count": null,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

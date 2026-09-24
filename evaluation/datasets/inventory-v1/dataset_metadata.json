@@ -1,0 +1,91 @@
+{
+  "dataset_id": "inventory-v1",
+  "dataset_version": "1.0.0",
+  "task": "controlled_inventory_image_extraction",
+  "annotation_spec_version": "1.0.0",
+  "bbox_format": "xywh",
+  "coordinate_space": "original_pixels",
+  "bbox_edges": "right_bottom_exclusive",
+  "json_pointer_root": "data",
+  "source_dataset": "MVTec D2S",
+  "source_dataset_version": "1.1",
+  "source_license": "CC BY-NC-SA 4.0",
+  "source_license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "importer_version": "0.2.0",
+  "seed": 104729,
+  "requested_limit": 300,
+  "imported_samples": 300,
+  "skipped_invalid_samples": 0,
+  "split_strategy": "deterministic scene-grouped 70/15/15 with held-out class coverage balancing",
+  "split_strategy_id": "coverage_balanced",
+  "split_counts": {
+    "development": 209,
+    "test": 46,
+    "validation": 45
+  },
+  "source_split_counts": {
+    "training": 192,
+    "validation": 108
+  },
+  "category_count": 60,
+  "excluded_session_count": 150,
+  "exclusion_sources": [
+    {
+      "type": "dataset_manifest",
+      "path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v0\\manifest.jsonl",
+      "sha256": "3f93c951ebbc3114c39296024655d8284f2521822030a2abbac00f01e56272e0",
+      "excluded_sessions": 100
+    },
+    {
+      "type": "reference_manifest",
+      "path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\references\\inventory-v0\\reference-manifest.json",
+      "sha256": "a9802259131d3f3282f6f68d7af95c313e6669622759ae29f7dc4b3392bfd1f4",
+      "excluded_sessions": 50
+    }
+  ],
+  "source_files": {
+    "training": {
+      "annotation_file": "annotations/D2S_training.json",
+      "annotation_sha256": "1ef0dcd81f1ba9294c816114456b0f9051a919fe9619392047e29f1bb6014fc1",
+      "images": 4380,
+      "annotations": 6900,
+      "dataset_info": {
+        "description": "This is the MVTec Densely Segmented Supermarket (D2S) Dataset in COCO format.",
+        "url": "https://www.mvtec.com/research",
+        "version": "1.1",
+        "year": "2018",
+        "contributor": "MVTec Software GmbH",
+        "date_created": "2018-07-25"
+      },
+      "licenses": [
+        {
+          "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "id": 1,
+          "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+        }
+      ]
+    },
+    "validation": {
+      "annotation_file": "annotations/D2S_validation.json",
+      "annotation_sha256": "0c2cd563420cc27879310b33ef70ba4b3c24f875212f5cadffd57c984d5c2601",
+      "images": 3600,
+      "annotations": 15683,
+      "dataset_info": {
+        "description": "This is the MVTec Densely Segmented Supermarket (D2S) Dataset in COCO format.",
+        "url": "https://www.mvtec.com/research",
+        "version": "1.1",
+        "year": "2018",
+        "contributor": "MVTec Software GmbH",
+        "date_created": "2018-07-25"
+      },
+      "licenses": [
+        {
+          "url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "id": 1,
+          "name": "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)"
+        }
+      ]
+    }
+  },
+  "skipped": []
+}

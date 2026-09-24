@@ -1,0 +1,125 @@
+{
+  "sample_id": "inv_0082",
+  "model_bundle_version": "gpt-5.6-luna",
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 3
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.98,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0082",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 714,
+        "y": 514,
+        "width": 298,
+        "height": 256
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0082",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1020,
+        "y": 560,
+        "width": 257,
+        "height": 249
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0082",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 764,
+        "y": 936,
+        "width": 290,
+        "height": 279
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-luna",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2726,
+  "estimated_cost_usd": 0.0029376,
+  "usage": {
+    "input_tokens": 14028,
+    "output_tokens": 110,
+    "total_tokens": 14138,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 14028,
+        "output_tokens": 110,
+        "total_tokens": 14138
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.0029376
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_000c3bdedf4f0e35016ab45d99c12c87d2a2c406245ef6deaf",
+    "response_ids": {
+      "localization": "resp_000c3bdedf4f0e35016ab45d99c12c87d2a2c406245ef6deaf"
+    },
+    "prompt_version": "inventory-authoritative-evidence-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "aggregate_with_evidence",
+    "model_instance_count": 3,
+    "identity_candidates": [
+      "apple_golden_delicious"
+    ],
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": "predictions",
+    "identity_prediction_path": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-validation-terra-v4\\predictions\\inv_0082.json"
+  }
+}

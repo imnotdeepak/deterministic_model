@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0257",
+  "image": "images/inv_0257.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 579,
+        "y": 269,
+        "width": 324,
+        "height": 1076
+      },
+      "source_annotation_id": 50507001,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 925,
+        "y": 878,
+        "width": 430,
+        "height": 455
+      },
+      "source_annotation_id": 50507002,
+      "source_category_id": 25
+    },
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 1169,
+        "y": 381,
+        "width": 620,
+        "height": 475
+      },
+      "source_annotation_id": 50507003,
+      "source_category_id": 35
+    }
+  ]
+}

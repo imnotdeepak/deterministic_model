@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0072",
+  "image": "images/inv_0072.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 822,
+        "y": 639,
+        "width": 368,
+        "height": 610
+      },
+      "source_annotation_id": 11624001,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 501,
+        "y": 501,
+        "width": 480,
+        "height": 558
+      },
+      "source_annotation_id": 11624002,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 657,
+        "y": 571,
+        "width": 425,
+        "height": 592
+      },
+      "source_annotation_id": 11624003,
+      "source_category_id": 3
+    }
+  ]
+}

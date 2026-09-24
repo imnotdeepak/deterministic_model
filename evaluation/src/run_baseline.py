@@ -24,11 +24,15 @@ from openai import (
 )
 
 
-RUNNER_VERSION = "0.4.0"
+RUNNER_VERSION = "0.5.0"
 PROMPT_VERSION = "inventory-catalog-v1"
 REFERENCE_PROMPT_VERSION = "inventory-catalog-visual-references-v1"
 INSTANCE_PROMPT_VERSION = "inventory-instance-localization-v1"
 INSTANCE_REFERENCE_PROMPT_VERSION = "inventory-instance-localization-references-v1"
+EXHAUSTIVE_INSTANCE_PROMPT_VERSION = "inventory-exhaustive-instance-localization-v2"
+EXHAUSTIVE_INSTANCE_REFERENCE_PROMPT_VERSION = (
+    "inventory-exhaustive-instance-localization-references-v2"
+)
 TWO_STAGE_PROMPT_VERSION = "inventory-two-stage-localization-v1"
 TWO_STAGE_REFERENCE_PROMPT_VERSION = "inventory-two-stage-localization-references-v1"
 EVIDENCE_ONLY_PROMPT_VERSION = "inventory-authoritative-evidence-v1"
@@ -185,6 +189,7 @@ def build_prompt(
     instance_localization: bool = False,
     identity_candidates: list[dict[str, Any]] | None = None,
     restrict_identity_candidates: bool = True,
+    exhaustive_instance_search: bool = False,
 ) -> str:
     catalog = json.dumps(allowed_names, ensure_ascii=False)
     reference_rules = ""
@@ -210,6 +215,19 @@ def build_prompt(
             "\n- Ensure x + width <= 1000 and y + height <= 1000."
             "\n- Confidence is a number from 0 to 1 for the catalog match."
         )
+        if exhaustive_instance_search:
+            instance_rules += (
+                "\n- First enumerate every separate physical retail object in the TARGET IMAGE, "
+                "including objects showing only a cap, side, rear, bottom, blank face, or "
+                "overexposed face."
+                "\n- Do not omit a physical object merely because its label is unreadable. "
+                "Assign its best-supported allowed catalog name using package shape, size, color, "
+                "visible details, reference examples, and matching objects elsewhere in the image."
+                "\n- Count physically separate objects independently even when they share one "
+                "product name; use confidence to represent identity uncertainty."
+                "\n- Omit only obvious background objects or objects that clearly do not belong "
+                "to the supported catalog."
+            )
     candidate_rules = ""
     if identity_candidates:
         if restrict_identity_candidates:
@@ -238,12 +256,20 @@ def build_prompt(
             "- Return an empty products array when no supported product can be identified."
         )
     )
+    catalog_match_rules = (
+        "- Give every plausible supported retail object its best-supported exact catalog name.\n"
+        "- Express an uncertain catalog match with lower confidence instead of omitting the object.\n"
+        if instance_localization and exhaustive_instance_search
+        else (
+            "- Use only an exact product name from the allowed catalog.\n"
+            "- Omit products that cannot be matched confidently to the catalog.\n"
+        )
+    )
     return (
         "You are evaluating a controlled retail inventory extraction system. "
         f"{task}\n\n"
         "Rules:\n"
-        "- Use only an exact product name from the allowed catalog.\n"
-        "- Omit products that cannot be matched confidently to the catalog.\n"
+        f"{catalog_match_rules}"
         "- Do not infer products that are not visibly present.\n"
         f"{output_rules}"
         f"{instance_rules}"
@@ -589,6 +615,10 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
         raise ValueError(
             "--evidence-only cannot be combined with --two-stage or --instance-localization"
         )
+    if args.exhaustive_instance_search and not args.instance_localization:
+        raise ValueError(
+            "--exhaustive-instance-search requires --instance-localization"
+        )
 
     dataset = args.dataset.resolve()
     manifest_path = dataset / "manifest.jsonl"
@@ -628,15 +658,25 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
             else TWO_STAGE_PROMPT_VERSION
         )
     elif instance_localization:
-        prompt_version = (
-            INSTANCE_REFERENCE_PROMPT_VERSION if reference_paths else INSTANCE_PROMPT_VERSION
-        )
+        if args.exhaustive_instance_search:
+            prompt_version = (
+                EXHAUSTIVE_INSTANCE_REFERENCE_PROMPT_VERSION
+                if reference_paths
+                else EXHAUSTIVE_INSTANCE_PROMPT_VERSION
+            )
+        else:
+            prompt_version = (
+                INSTANCE_REFERENCE_PROMPT_VERSION
+                if reference_paths
+                else INSTANCE_PROMPT_VERSION
+            )
     else:
         prompt_version = REFERENCE_PROMPT_VERSION if reference_paths else PROMPT_VERSION
     prompt = build_prompt(
         names,
         has_visual_references=bool(reference_paths),
         instance_localization=instance_localization and not args.two_stage,
+        exhaustive_instance_search=args.exhaustive_instance_search,
     )
     rows = selected_rows(manifest, args.split, args.limit, args.offset)
     identity_predictions: dict[str, tuple[dict[str, Any], Path]] = {}
@@ -676,6 +716,7 @@ def run(args: argparse.Namespace, client: OpenAI | None = None) -> dict[str, Any
             else "instances" if instance_localization else "aggregate"
         ),
         "two_stage": args.two_stage,
+        "exhaustive_instance_search": args.exhaustive_instance_search,
         "evidence_only": args.evidence_only,
         "identity_predictions": (
             str(args.identity_predictions.resolve()) if args.identity_predictions else None
@@ -1018,6 +1059,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--instance-localization",
         action="store_true",
         help="Return one normalized bounding box per instance and derive counts/evidence.",
+    )
+    parser.add_argument(
+        "--exhaustive-instance-search",
+        action="store_true",
+        help=(
+            "In direct instance-localization mode, enumerate rear-facing and otherwise "
+            "hard-to-identify physical objects instead of omitting uncertain catalog matches."
+        ),
     )
     parser.add_argument(
         "--two-stage",

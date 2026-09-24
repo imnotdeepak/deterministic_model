@@ -1,0 +1,72 @@
+{
+  "sample_id": "inv_0243",
+  "image": "images/inv_0243.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 661,
+        "y": 921,
+        "width": 289,
+        "height": 450
+      },
+      "source_annotation_id": 43705001,
+      "source_category_id": 46
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 438,
+        "y": 270,
+        "width": 315,
+        "height": 433
+      },
+      "source_annotation_id": 43705002,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 877,
+        "y": 184,
+        "width": 271,
+        "height": 427
+      },
+      "source_annotation_id": 43705003,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 1168,
+        "y": 768,
+        "width": 282,
+        "height": 414
+      },
+      "source_annotation_id": 43705004,
+      "source_category_id": 49
+    }
+  ]
+}

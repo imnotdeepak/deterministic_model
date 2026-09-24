@@ -56,6 +56,108 @@ def test_predictions_agree_ignores_product_order():
     assert resolver.predictions_agree(a, b)
 
 
+def test_confusion_sets_expand_candidate_to_full_visual_family():
+    evaluation = Path(__file__).parents[1]
+    catalog = json.loads(
+        (evaluation / "datasets" / "inventory-v0" / "catalog.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    allowed_names = {item["name"] for item in catalog}
+    version, families = resolver.load_confusion_sets(
+        evaluation / "confusion_sets.json", allowed_names
+    )
+
+    names, family_ids = resolver.targeted_reference_names(
+        ["gepa_bio_caffe_crema"], families, max_products=12
+    )
+
+    assert version == "inventory-confusion-sets-v1"
+    assert family_ids == ["coffee_packages"]
+    assert names == [
+        "cafe_wunderbar_espresso",
+        "douwe_egberts_professional_ground_coffee",
+        "gepa_bio_caffe_crema",
+        "gepa_italienischer_bio_espresso",
+    ]
+
+
+def test_isolated_confusion_targets_one_family_and_rejects_multi_family_scene():
+    families = [
+        {"id": "coffee", "members": ["coffee_a", "coffee_b"]},
+        {"id": "fruit", "members": ["apple_a", "apple_b"]},
+    ]
+    coffee_a = {
+        "products": [
+            {"name": "shared", "quantity": 1},
+            {"name": "coffee_a", "quantity": 1},
+        ]
+    }
+    coffee_b = {
+        "products": [
+            {"name": "shared", "quantity": 1},
+            {"name": "coffee_b", "quantity": 1},
+        ]
+    }
+    names, family_ids = resolver.isolated_confusion_reference_names(
+        coffee_a, coffee_b, families, max_products=12
+    )
+    assert names == ["coffee_a", "coffee_b"]
+    assert family_ids == ["coffee"]
+
+    multi_a = {
+        "products": [
+            {"name": "coffee_a", "quantity": 1},
+            {"name": "apple_a", "quantity": 1},
+        ]
+    }
+    multi_b = {
+        "products": [
+            {"name": "coffee_b", "quantity": 1},
+            {"name": "apple_b", "quantity": 1},
+        ]
+    }
+    assert resolver.isolated_confusion_reference_names(
+        multi_a, multi_b, families, max_products=12
+    ) == ([], [])
+
+
+def test_adjudicator_request_combines_catalog_sheets_targeted_crops_and_target():
+    class FakeResponses:
+        def __init__(self):
+            self.request = None
+
+        def create(self, **request):
+            self.request = request
+            return SimpleNamespace(output_text='{"instances": []}')
+
+    endpoint = FakeResponses()
+    resolver.call_adjudicator(
+        SimpleNamespace(responses=endpoint),
+        model="gpt-5.6-sol",
+        prompt="prompt",
+        candidate_references=[("product_a", "data:image/jpeg;base64,crop")],
+        reference_sheet_urls=["data:image/jpeg;base64,sheet"],
+        target_image_url="data:image/jpeg;base64,target",
+        output_schema={"type": "object"},
+        detail="high",
+        reference_detail="high",
+        reasoning_effort="low",
+        timeout_seconds=30,
+    )
+
+    content = endpoint.request["input"][0]["content"]
+    labels = [item["text"] for item in content if item["type"] == "input_text"]
+    images = [item["image_url"] for item in content if item["type"] == "input_image"]
+    assert any("FULL CATALOG REFERENCE SHEET" in label for label in labels)
+    assert any("REFERENCE CROP for product_a" in label for label in labels)
+    assert images == [
+        "data:image/jpeg;base64,sheet",
+        "data:image/jpeg;base64,crop",
+        "data:image/jpeg;base64,target",
+    ]
+
+
 def test_real_run_dry_run_applies_count_guard_before_identity_adjudication(tmp_path):
     evaluation = Path(__file__).parents[1]
     args = resolver.parse_args(
