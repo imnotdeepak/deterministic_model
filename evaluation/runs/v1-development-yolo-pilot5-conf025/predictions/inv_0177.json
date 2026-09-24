@@ -1,0 +1,166 @@
+{
+  "sample_id": "inv_0177",
+  "model_bundle_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+  "data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 6
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.8977851271629333,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004",
+        "ev_005",
+        "ev_006"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.8977851271629333,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002",
+        "ev_003",
+        "ev_004",
+        "ev_005",
+        "ev_006"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 701,
+        "y": 203,
+        "width": 406,
+        "height": 219
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 633,
+        "y": 302,
+        "width": 411,
+        "height": 226
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 304,
+        "y": 463,
+        "width": 320,
+        "height": 404
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_004",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1092,
+        "y": 590,
+        "width": 304,
+        "height": 412
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_005",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 343,
+        "y": 641,
+        "width": 341,
+        "height": 368
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    },
+    {
+      "id": "ev_006",
+      "media_id": "med_inv_0177",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 796,
+        "y": 928,
+        "width": 154,
+        "height": 385
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 228.275,
+  "estimated_cost_usd": 0.0,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0
+  },
+  "provider_metadata": {
+    "provider": "local_ultralytics",
+    "runner_version": "0.1.0",
+    "output_mode": "instances",
+    "checkpoint_sha256": "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.7,
+    "detected_instance_count": 6,
+    "image_width": 1920,
+    "image_height": 1440
+  }
+}

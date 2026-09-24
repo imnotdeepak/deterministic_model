@@ -1,0 +1,18 @@
+{
+  "runner_version": "0.1.0",
+  "split": "development",
+  "offset": 0,
+  "selected": 209,
+  "completed_this_run": 209,
+  "resumed": 0,
+  "checkpoint": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\training-runs\\inventory-yolo-v1-pilot-5e\\weights\\best.pt",
+  "checkpoint_sha256": "30d76b9b5dbea84097f21de6991d6e31d4586f1713e92b35b4ada9253ad0b08e",
+  "model_bundle_version": "yolo11s-d2s-pilot5-30d76b9b5dbe",
+  "confidence_threshold": 0.4,
+  "iou_threshold": 0.7,
+  "image_size": 960,
+  "batch": 1,
+  "device": "cpu",
+  "elapsed_seconds": 57.473,
+  "predictions": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\runs\\v1-development-yolo-pilot5-conf040\\predictions"
+}
