@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0236",
+  "image": "images/inv_0236.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 800,
+        "y": 57,
+        "width": 744,
+        "height": 648
+      },
+      "source_annotation_id": 44722001,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 266,
+        "y": 631,
+        "width": 447,
+        "height": 328
+      },
+      "source_annotation_id": 44722002,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 528,
+        "y": 501,
+        "width": 320,
+        "height": 600
+      },
+      "source_annotation_id": 44722003,
+      "source_category_id": 20
+    }
+  ]
+}

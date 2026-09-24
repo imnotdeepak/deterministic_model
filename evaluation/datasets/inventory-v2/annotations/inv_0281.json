@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0281",
+  "image": "images/inv_0281.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 455,
+        "y": 457,
+        "width": 396,
+        "height": 456
+      },
+      "source_annotation_id": 64807001,
+      "source_category_id": 49
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 784,
+        "y": 109,
+        "width": 382,
+        "height": 408
+      },
+      "source_annotation_id": 64807002,
+      "source_category_id": 51
+    }
+  ]
+}

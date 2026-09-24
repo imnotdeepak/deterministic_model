@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0183",
+  "image": "images/inv_0183.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 846,
+        "y": 427,
+        "width": 383,
+        "height": 457
+      },
+      "source_annotation_id": 2719001,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 1352,
+        "y": 637,
+        "width": 391,
+        "height": 445
+      },
+      "source_annotation_id": 2719002,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 1097,
+        "y": 527,
+        "width": 392,
+        "height": 454
+      },
+      "source_annotation_id": 2719003,
+      "source_category_id": 50
+    }
+  ]
+}

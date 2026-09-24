@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0171",
+  "image": "images/inv_0171.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_alpenquelle_naturell_075",
+      "bbox": {
+        "x": 1095,
+        "y": 689,
+        "width": 384,
+        "height": 340
+      },
+      "source_annotation_id": 33115001,
+      "source_category_id": 2
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 396,
+        "y": 686,
+        "width": 292,
+        "height": 214
+      },
+      "source_annotation_id": 33115002,
+      "source_category_id": 5
+    }
+  ]
+}

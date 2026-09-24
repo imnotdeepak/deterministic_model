@@ -1,0 +1,60 @@
+{
+  "sample_id": "inv_0077",
+  "image": "images/inv_0077.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 4
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 855,
+        "y": 1012,
+        "width": 225,
+        "height": 233
+      },
+      "source_annotation_id": 13006001,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 1264,
+        "y": 484,
+        "width": 245,
+        "height": 271
+      },
+      "source_annotation_id": 13006002,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 396,
+        "y": 744,
+        "width": 239,
+        "height": 217
+      },
+      "source_annotation_id": 13006003,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 691,
+        "y": 291,
+        "width": 229,
+        "height": 259
+      },
+      "source_annotation_id": 13006004,
+      "source_category_id": 28
+    }
+  ]
+}

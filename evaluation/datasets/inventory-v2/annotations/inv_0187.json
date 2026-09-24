@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0187",
+  "image": "images/inv_0187.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "avocado",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 986,
+        "y": 822,
+        "width": 303,
+        "height": 202
+      },
+      "source_annotation_id": 16214001,
+      "source_category_id": 29
+    },
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 624,
+        "y": 800,
+        "width": 296,
+        "height": 193
+      },
+      "source_annotation_id": 16214002,
+      "source_category_id": 29
+    },
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 582,
+        "y": 534,
+        "width": 197,
+        "height": 290
+      },
+      "source_annotation_id": 16214003,
+      "source_category_id": 29
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "lock_version": "0.1.0",
+  "locked_at_utc": "2026-09-24T17:53:08.376271+00:00",
+  "dataset_id": "inventory-v2",
+  "dataset_version": "2.0.0",
+  "immutable_content_sha256": "7e8bb2fd9a6a18a123d03de0eda2a03bdfc1e01ce6506d0d562beb4693fdbbf3",
+  "locked_file_count": 604,
+  "core_hashes": {
+    "manifest.jsonl": "2c863b5c4124560cb2ade681be87b03e64806c91d637c276df33fc198a860b5e",
+    "schema.json": "c6c86dc8d61b3dc93efd5ab94646ed7bfd2534814afbde6967281c4528287b07",
+    "catalog.json": "35c5c0aa399d75d5f00fbb87c66adcb01401e313ce5070d5b4dcb6e0b14efac5",
+    "dataset_metadata.json": "6922ade598eeb857a8e0b249cf5870eac090044d920af90fdc0ffcc3536f6c06"
+  },
+  "statistics": {
+    "samples": 300,
+    "unique_sessions": 100,
+    "split_counts": {
+      "development": 210,
+      "test": 45,
+      "validation": 45
+    },
+    "session_counts": {
+      "development": 70,
+      "test": 15,
+      "validation": 15
+    },
+    "class_coverage": {
+      "development": 42,
+      "test": 52,
+      "validation": 55
+    },
+    "instance_counts": {
+      "development": 438,
+      "test": 233,
+      "validation": 213
+    }
+  },
+  "policy": "Do not modify files covered by this lock. Create a new dataset version for any image, annotation, catalog, schema, metadata, or split change."
+}

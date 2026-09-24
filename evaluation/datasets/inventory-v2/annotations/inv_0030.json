@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0030",
+  "image": "images/inv_0030.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 511,
+        "y": 316,
+        "width": 869,
+        "height": 955
+      },
+      "source_annotation_id": 5418001,
+      "source_category_id": 19
+    }
+  ]
+}

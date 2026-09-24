@@ -1,0 +1,60 @@
+{
+  "sample_id": "inv_0035",
+  "image": "images/inv_0035.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 4
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 567,
+        "y": 645,
+        "width": 285,
+        "height": 261
+      },
+      "source_annotation_id": 6206001,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 564,
+        "y": 180,
+        "width": 283,
+        "height": 294
+      },
+      "source_annotation_id": 6206002,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 1048,
+        "y": 956,
+        "width": 283,
+        "height": 370
+      },
+      "source_annotation_id": 6206003,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 1250,
+        "y": 906,
+        "width": 355,
+        "height": 336
+      },
+      "source_annotation_id": 6206004,
+      "source_category_id": 6
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0276",
+  "image": "images/inv_0276.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_alpenquelle_naturell_075",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_alpenquelle_naturell_075",
+      "bbox": {
+        "x": 577,
+        "y": 785,
+        "width": 326,
+        "height": 369
+      },
+      "source_annotation_id": 63127001,
+      "source_category_id": 2
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 1166,
+        "y": 562,
+        "width": 423,
+        "height": 311
+      },
+      "source_annotation_id": 63127002,
+      "source_category_id": 1
+    }
+  ]
+}

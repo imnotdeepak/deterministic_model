@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0057",
+  "image": "images/inv_0057.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 642,
+        "y": 964,
+        "width": 230,
+        "height": 254
+      },
+      "source_annotation_id": 10323001,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 519,
+        "y": 319,
+        "width": 349,
+        "height": 324
+      },
+      "source_annotation_id": 10323002,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 942,
+        "y": 694,
+        "width": 223,
+        "height": 225
+      },
+      "source_annotation_id": 10323003,
+      "source_category_id": 10
+    }
+  ]
+}

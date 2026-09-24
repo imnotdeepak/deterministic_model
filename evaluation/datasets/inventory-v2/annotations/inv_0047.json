@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0047",
+  "image": "images/inv_0047.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 725,
+        "y": 228,
+        "width": 818,
+        "height": 535
+      },
+      "source_annotation_id": 7917001,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 633,
+        "y": 410,
+        "width": 818,
+        "height": 537
+      },
+      "source_annotation_id": 7917002,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 529,
+        "y": 591,
+        "width": 818,
+        "height": 535
+      },
+      "source_annotation_id": 7917003,
+      "source_category_id": 9
+    }
+  ]
+}

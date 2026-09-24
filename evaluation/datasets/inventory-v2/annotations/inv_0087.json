@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0087",
+  "image": "images/inv_0087.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 872,
+        "y": 297,
+        "width": 470,
+        "height": 968
+      },
+      "source_annotation_id": 14216001,
+      "source_category_id": 56
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "sample_id": "inv_0064",
+  "image": "images/inv_0064.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 4
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 853,
+        "y": 631,
+        "width": 189,
+        "height": 192
+      },
+      "source_annotation_id": 12001001,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 797,
+        "y": 267,
+        "width": 467,
+        "height": 585
+      },
+      "source_annotation_id": 12001002,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 953,
+        "y": 139,
+        "width": 388,
+        "height": 629
+      },
+      "source_annotation_id": 12001003,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 1279,
+        "y": 472,
+        "width": 339,
+        "height": 189
+      },
+      "source_annotation_id": 12001004,
+      "source_category_id": 5
+    }
+  ]
+}

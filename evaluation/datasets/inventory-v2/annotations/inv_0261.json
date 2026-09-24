@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0261",
+  "image": "images/inv_0261.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 736,
+        "y": 801,
+        "width": 137,
+        "height": 139
+      },
+      "source_annotation_id": 56526001,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 985,
+        "y": 410,
+        "width": 530,
+        "height": 537
+      },
+      "source_annotation_id": 56526002,
+      "source_category_id": 25
+    }
+  ]
+}

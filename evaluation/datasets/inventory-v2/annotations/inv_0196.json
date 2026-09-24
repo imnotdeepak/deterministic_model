@@ -1,0 +1,87 @@
+{
+  "sample_id": "inv_0196",
+  "image": "images/inv_0196.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 778,
+        "y": 143,
+        "width": 735,
+        "height": 1221
+      },
+      "source_annotation_id": 25701001,
+      "source_category_id": 19
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 991,
+        "y": 434,
+        "width": 395,
+        "height": 646
+      },
+      "source_annotation_id": 25701002,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 411,
+        "y": 583,
+        "width": 313,
+        "height": 383
+      },
+      "source_annotation_id": 25701003,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 533,
+        "y": 593,
+        "width": 192,
+        "height": 179
+      },
+      "source_annotation_id": 25701004,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 287,
+        "y": 743,
+        "width": 277,
+        "height": 267
+      },
+      "source_annotation_id": 25701005,
+      "source_category_id": 26
+    }
+  ]
+}

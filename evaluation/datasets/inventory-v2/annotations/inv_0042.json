@@ -1,0 +1,38 @@
+{
+  "sample_id": "inv_0042",
+  "image": "images/inv_0042.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_05",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 388,
+        "y": 262,
+        "width": 379,
+        "height": 313
+      },
+      "source_annotation_id": 7329001,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 1132,
+        "y": 841,
+        "width": 396,
+        "height": 384
+      },
+      "source_annotation_id": 7329002,
+      "source_category_id": 8
+    }
+  ]
+}

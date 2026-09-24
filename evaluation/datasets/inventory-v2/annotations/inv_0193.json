@@ -1,0 +1,98 @@
+{
+  "sample_id": "inv_0193",
+  "image": "images/inv_0193.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 872,
+        "y": 682,
+        "width": 214,
+        "height": 220
+      },
+      "source_annotation_id": 25221001,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 691,
+        "y": 1152,
+        "width": 253,
+        "height": 288
+      },
+      "source_annotation_id": 25221002,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 81,
+        "y": 694,
+        "width": 492,
+        "height": 279
+      },
+      "source_annotation_id": 25221003,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1258,
+        "y": 68,
+        "width": 470,
+        "height": 389
+      },
+      "source_annotation_id": 25221004,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 1280,
+        "y": 875,
+        "width": 373,
+        "height": 314
+      },
+      "source_annotation_id": 25221005,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 461,
+        "y": 0,
+        "width": 320,
+        "height": 311
+      },
+      "source_annotation_id": 25221006,
+      "source_category_id": 9
+    }
+  ]
+}

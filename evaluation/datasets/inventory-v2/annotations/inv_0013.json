@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0013",
+  "image": "images/inv_0013.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 858,
+        "y": 0,
+        "width": 500,
+        "height": 376
+      },
+      "source_annotation_id": 3618001,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 1067,
+        "y": 731,
+        "width": 461,
+        "height": 497
+      },
+      "source_annotation_id": 3618002,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 225,
+        "y": 428,
+        "width": 417,
+        "height": 324
+      },
+      "source_annotation_id": 3618003,
+      "source_category_id": 51
+    }
+  ]
+}

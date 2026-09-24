@@ -1,0 +1,147 @@
+{
+  "sample_id": "inv_0284",
+  "image": "images/inv_0284.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "avocado",
+        "quantity": 1
+      },
+      {
+        "name": "banana_single",
+        "quantity": 1
+      },
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "orange_single",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "banana_single",
+      "bbox": {
+        "x": 570,
+        "y": 397,
+        "width": 533,
+        "height": 264
+      },
+      "source_annotation_id": 66621001,
+      "source_category_id": 31
+    },
+    {
+      "product_name": "orange_single",
+      "bbox": {
+        "x": 686,
+        "y": 901,
+        "width": 163,
+        "height": 213
+      },
+      "source_annotation_id": 66621002,
+      "source_category_id": 37
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 38,
+        "y": 396,
+        "width": 476,
+        "height": 500
+      },
+      "source_annotation_id": 66621003,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 1250,
+        "y": 0,
+        "width": 592,
+        "height": 562
+      },
+      "source_annotation_id": 66621004,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "pasta_reggia_spaghetti",
+      "bbox": {
+        "x": 897,
+        "y": 0,
+        "width": 821,
+        "height": 694
+      },
+      "source_annotation_id": 66621005,
+      "source_category_id": 42
+    },
+    {
+      "product_name": "avocado",
+      "bbox": {
+        "x": 1393,
+        "y": 1020,
+        "width": 283,
+        "height": 179
+      },
+      "source_annotation_id": 66621006,
+      "source_category_id": 29
+    },
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 280,
+        "y": 0,
+        "width": 523,
+        "height": 262
+      },
+      "source_annotation_id": 66621007,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "corny_schoko_banane",
+      "bbox": {
+        "x": 706,
+        "y": 1046,
+        "width": 522,
+        "height": 394
+      },
+      "source_annotation_id": 66621008,
+      "source_category_id": 14
+    },
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 373,
+        "y": 54,
+        "width": 1201,
+        "height": 1139
+      },
+      "source_annotation_id": 66621009,
+      "source_category_id": 19
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0222",
+  "image": "images/inv_0222.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "rocket",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 692,
+        "y": 945,
+        "width": 221,
+        "height": 350
+      },
+      "source_annotation_id": 37429001,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 1068,
+        "y": 219,
+        "width": 230,
+        "height": 703
+      },
+      "source_annotation_id": 37429002,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "rocket",
+      "bbox": {
+        "x": 561,
+        "y": 268,
+        "width": 702,
+        "height": 500
+      },
+      "source_annotation_id": 37429003,
+      "source_category_id": 58
+    }
+  ]
+}

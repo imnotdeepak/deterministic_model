@@ -1,0 +1,98 @@
+{
+  "sample_id": "inv_0194",
+  "image": "images/inv_0194.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 777,
+        "y": 565,
+        "width": 213,
+        "height": 214
+      },
+      "source_annotation_id": 25227001,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 527,
+        "y": 0,
+        "width": 282,
+        "height": 287
+      },
+      "source_annotation_id": 25227002,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 1174,
+        "y": 71,
+        "width": 421,
+        "height": 386
+      },
+      "source_annotation_id": 25227003,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 676,
+        "y": 1127,
+        "width": 249,
+        "height": 313
+      },
+      "source_annotation_id": 25227004,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 138,
+        "y": 640,
+        "width": 399,
+        "height": 254
+      },
+      "source_annotation_id": 25227005,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1352,
+        "y": 848,
+        "width": 536,
+        "height": 372
+      },
+      "source_annotation_id": 25227006,
+      "source_category_id": 9
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0072",
+  "image": "images/inv_0072.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cucumber",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 754,
+        "y": 156,
+        "width": 296,
+        "height": 1160
+      },
+      "source_annotation_id": 12727001,
+      "source_category_id": 52
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0277",
+  "image": "images/inv_0277.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 1236,
+        "y": 724,
+        "width": 420,
+        "height": 287
+      },
+      "source_annotation_id": 64105001,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 144,
+        "y": 592,
+        "width": 469,
+        "height": 262
+      },
+      "source_annotation_id": 64105002,
+      "source_category_id": 7
+    }
+  ]
+}

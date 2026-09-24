@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0215",
+  "image": "images/inv_0215.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 968,
+        "y": 152,
+        "width": 227,
+        "height": 258
+      },
+      "source_annotation_id": 33310001,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 878,
+        "y": 755,
+        "width": 212,
+        "height": 245
+      },
+      "source_annotation_id": 33310002,
+      "source_category_id": 11
+    }
+  ]
+}

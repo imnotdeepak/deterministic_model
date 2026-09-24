@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0144",
+  "image": "images/inv_0144.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 978,
+        "y": 434,
+        "width": 661,
+        "height": 638
+      },
+      "source_annotation_id": 19628001,
+      "source_category_id": 41
+    }
+  ]
+}

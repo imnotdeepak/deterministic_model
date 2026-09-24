@@ -77,3 +77,22 @@ def test_protected_sessions_include_only_locked_validation_and_test(tmp_path):
         "d2s_scene_0002",
         "d2s_scene_0003",
     }
+
+
+def test_all_dataset_sessions_includes_development_validation_and_test(tmp_path):
+    dataset = tmp_path / "dataset"
+    dataset.mkdir()
+    rows = [
+        {"session_id": "d2s_scene_0001", "split": "development"},
+        {"session_id": "d2s_scene_0002", "split": "validation"},
+        {"session_id": "d2s_scene_0003", "split": "test"},
+    ]
+    (dataset / "manifest.jsonl").write_text(
+        "\n".join(json.dumps(row) for row in rows) + "\n", encoding="utf-8"
+    )
+
+    assert export_d2s_yolo.all_dataset_sessions(dataset) == {
+        "d2s_scene_0001",
+        "d2s_scene_0002",
+        "d2s_scene_0003",
+    }

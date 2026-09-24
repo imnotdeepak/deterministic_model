@@ -1,0 +1,158 @@
+{
+  "sample_id": "inv_0199",
+  "image": "images/inv_0199.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 2
+      },
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "carrot",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 833,
+        "y": 895,
+        "width": 476,
+        "height": 400
+      },
+      "source_annotation_id": 25904001,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 599,
+        "y": 1025,
+        "width": 325,
+        "height": 414
+      },
+      "source_annotation_id": 25904002,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 263,
+        "y": 437,
+        "width": 598,
+        "height": 718
+      },
+      "source_annotation_id": 25904003,
+      "source_category_id": 54
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 0,
+        "y": 184,
+        "width": 654,
+        "height": 711
+      },
+      "source_annotation_id": 25904004,
+      "source_category_id": 20
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 726,
+        "y": 383,
+        "width": 250,
+        "height": 242
+      },
+      "source_annotation_id": 25904005,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 903,
+        "y": 205,
+        "width": 254,
+        "height": 246
+      },
+      "source_annotation_id": 25904006,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "carrot",
+      "bbox": {
+        "x": 1029,
+        "y": 163,
+        "width": 399,
+        "height": 300
+      },
+      "source_annotation_id": 25904007,
+      "source_category_id": 53
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 967,
+        "y": 489,
+        "width": 554,
+        "height": 598
+      },
+      "source_annotation_id": 25904008,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 1125,
+        "y": 356,
+        "width": 553,
+        "height": 589
+      },
+      "source_annotation_id": 25904009,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 1201,
+        "y": 119,
+        "width": 533,
+        "height": 543
+      },
+      "source_annotation_id": 25904010,
+      "source_category_id": 22
+    }
+  ]
+}

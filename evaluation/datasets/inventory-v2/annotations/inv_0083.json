@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0083",
+  "image": "images/inv_0083.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 558,
+        "y": 310,
+        "width": 543,
+        "height": 548
+      },
+      "source_annotation_id": 14010001,
+      "source_category_id": 25
+    }
+  ]
+}

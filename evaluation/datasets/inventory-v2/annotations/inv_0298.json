@@ -1,0 +1,207 @@
+{
+  "sample_id": "inv_0298",
+  "image": "images/inv_0298.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_braeburn_bundle",
+        "quantity": 1
+      },
+      {
+        "name": "apple_red_boskoop",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_spaghetti",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 213,
+        "y": 482,
+        "width": 348,
+        "height": 551
+      },
+      "source_annotation_id": 70010001,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 428,
+        "y": 63,
+        "width": 246,
+        "height": 279
+      },
+      "source_annotation_id": 70010002,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 1252,
+        "y": 730,
+        "width": 598,
+        "height": 684
+      },
+      "source_annotation_id": 70010003,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 701,
+        "y": 100,
+        "width": 434,
+        "height": 955
+      },
+      "source_annotation_id": 70010004,
+      "source_category_id": 56
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 1573,
+        "y": 480,
+        "width": 219,
+        "height": 246
+      },
+      "source_annotation_id": 70010005,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "pasta_reggia_spaghetti",
+      "bbox": {
+        "x": 767,
+        "y": 1074,
+        "width": 505,
+        "height": 366
+      },
+      "source_annotation_id": 70010006,
+      "source_category_id": 42
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 1090,
+        "y": 1334,
+        "width": 144,
+        "height": 106
+      },
+      "source_annotation_id": 70010007,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "apple_braeburn_bundle",
+      "bbox": {
+        "x": 1084,
+        "y": 0,
+        "width": 446,
+        "height": 378
+      },
+      "source_annotation_id": 70010008,
+      "source_category_id": 25
+    },
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 386,
+        "y": 916,
+        "width": 381,
+        "height": 524
+      },
+      "source_annotation_id": 70010009,
+      "source_category_id": 35
+    },
+    {
+      "product_name": "apple_red_boskoop",
+      "bbox": {
+        "x": 403,
+        "y": 1276,
+        "width": 257,
+        "height": 164
+      },
+      "source_annotation_id": 70010010,
+      "source_category_id": 28
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 0,
+        "y": 37,
+        "width": 716,
+        "height": 839
+      },
+      "source_annotation_id": 70010011,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 1601,
+        "y": 244,
+        "width": 319,
+        "height": 277
+      },
+      "source_annotation_id": 70010012,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 1352,
+        "y": 1197,
+        "width": 150,
+        "height": 140
+      },
+      "source_annotation_id": 70010013,
+      "source_category_id": 33
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0190",
+  "image": "images/inv_0190.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "koelln_muesli_fruechte",
+      "bbox": {
+        "x": 580,
+        "y": 796,
+        "width": 795,
+        "height": 560
+      },
+      "source_annotation_id": 25108001,
+      "source_category_id": 17
+    },
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 1044,
+        "y": 16,
+        "width": 707,
+        "height": 681
+      },
+      "source_annotation_id": 25108002,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "koelln_muesli_schoko",
+      "bbox": {
+        "x": 253,
+        "y": 386,
+        "width": 763,
+        "height": 667
+      },
+      "source_annotation_id": 25108003,
+      "source_category_id": 18
+    }
+  ]
+}

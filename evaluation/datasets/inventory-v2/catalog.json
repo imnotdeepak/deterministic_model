@@ -1,0 +1,362 @@
+[
+  {
+    "id": "d2s_001",
+    "name": "adelholzener_alpenquelle_classic_075",
+    "source_category_id": 1,
+    "supercategory": "water"
+  },
+  {
+    "id": "d2s_002",
+    "name": "adelholzener_alpenquelle_naturell_075",
+    "source_category_id": 2,
+    "supercategory": "water"
+  },
+  {
+    "id": "d2s_003",
+    "name": "adelholzener_classic_bio_apfelschorle_02",
+    "source_category_id": 3,
+    "supercategory": "apple spritzer"
+  },
+  {
+    "id": "d2s_004",
+    "name": "adelholzener_classic_naturell_02",
+    "source_category_id": 4,
+    "supercategory": "water"
+  },
+  {
+    "id": "d2s_005",
+    "name": "adelholzener_gourmet_mineralwasser_02",
+    "source_category_id": 5,
+    "supercategory": "blue glass"
+  },
+  {
+    "id": "d2s_006",
+    "name": "augustiner_lagerbraeu_hell_05",
+    "source_category_id": 6,
+    "supercategory": "brown glass"
+  },
+  {
+    "id": "d2s_007",
+    "name": "augustiner_weissbier_05",
+    "source_category_id": 7,
+    "supercategory": "brown glass"
+  },
+  {
+    "id": "d2s_008",
+    "name": "coca_cola_05",
+    "source_category_id": 8,
+    "supercategory": "coca cola"
+  },
+  {
+    "id": "d2s_009",
+    "name": "coca_cola_light_05",
+    "source_category_id": 9,
+    "supercategory": "coca cola"
+  },
+  {
+    "id": "d2s_010",
+    "name": "suntory_gokuri_lemonade",
+    "source_category_id": 10,
+    "supercategory": "canned soft drink"
+  },
+  {
+    "id": "d2s_011",
+    "name": "tegernseer_hell_03",
+    "source_category_id": 11,
+    "supercategory": "brown glass"
+  },
+  {
+    "id": "d2s_012",
+    "name": "corny_nussvoll",
+    "source_category_id": 12,
+    "supercategory": "packaged cereal bars"
+  },
+  {
+    "id": "d2s_013",
+    "name": "corny_nussvoll_single",
+    "source_category_id": 13,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_014",
+    "name": "corny_schoko_banane",
+    "source_category_id": 14,
+    "supercategory": "packaged cereal bars"
+  },
+  {
+    "id": "d2s_015",
+    "name": "corny_schoko_banane_single",
+    "source_category_id": 15,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_016",
+    "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+    "source_category_id": 16,
+    "supercategory": "cereals"
+  },
+  {
+    "id": "d2s_017",
+    "name": "koelln_muesli_fruechte",
+    "source_category_id": 17,
+    "supercategory": "cereals"
+  },
+  {
+    "id": "d2s_018",
+    "name": "koelln_muesli_schoko",
+    "source_category_id": 18,
+    "supercategory": "cereals"
+  },
+  {
+    "id": "d2s_019",
+    "name": "caona_cocoa",
+    "source_category_id": 19,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_020",
+    "name": "cocoba_cocoa",
+    "source_category_id": 20,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_021",
+    "name": "cafe_wunderbar_espresso",
+    "source_category_id": 21,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_022",
+    "name": "douwe_egberts_professional_ground_coffee",
+    "source_category_id": 22,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_023",
+    "name": "gepa_bio_caffe_crema",
+    "source_category_id": 23,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_024",
+    "name": "gepa_italienischer_bio_espresso",
+    "source_category_id": 24,
+    "supercategory": "textured packaging"
+  },
+  {
+    "id": "d2s_025",
+    "name": "apple_braeburn_bundle",
+    "source_category_id": 25,
+    "supercategory": "cardboard tray"
+  },
+  {
+    "id": "d2s_026",
+    "name": "apple_golden_delicious",
+    "source_category_id": 26,
+    "supercategory": "apples"
+  },
+  {
+    "id": "d2s_027",
+    "name": "apple_granny_smith",
+    "source_category_id": 27,
+    "supercategory": "apples"
+  },
+  {
+    "id": "d2s_028",
+    "name": "apple_red_boskoop",
+    "source_category_id": 28,
+    "supercategory": "apples"
+  },
+  {
+    "id": "d2s_029",
+    "name": "avocado",
+    "source_category_id": 29,
+    "supercategory": "avocados"
+  },
+  {
+    "id": "d2s_030",
+    "name": "banana_bundle",
+    "source_category_id": 30,
+    "supercategory": "bananas"
+  },
+  {
+    "id": "d2s_031",
+    "name": "banana_single",
+    "source_category_id": 31,
+    "supercategory": "bananas"
+  },
+  {
+    "id": "d2s_032",
+    "name": "clementine",
+    "source_category_id": 32,
+    "supercategory": "nets"
+  },
+  {
+    "id": "d2s_033",
+    "name": "clementine_single",
+    "source_category_id": 33,
+    "supercategory": "orange citrus"
+  },
+  {
+    "id": "d2s_034",
+    "name": "grapes_green_sugraone_seedless",
+    "source_category_id": 34,
+    "supercategory": "plastic tray"
+  },
+  {
+    "id": "d2s_035",
+    "name": "grapes_sweet_celebration_seedless",
+    "source_category_id": 35,
+    "supercategory": "plastic tray"
+  },
+  {
+    "id": "d2s_036",
+    "name": "kiwi",
+    "source_category_id": 36,
+    "supercategory": "kiwis"
+  },
+  {
+    "id": "d2s_037",
+    "name": "orange_single",
+    "source_category_id": 37,
+    "supercategory": "orange citrus"
+  },
+  {
+    "id": "d2s_038",
+    "name": "oranges",
+    "source_category_id": 38,
+    "supercategory": "nets"
+  },
+  {
+    "id": "d2s_039",
+    "name": "pear",
+    "source_category_id": 39,
+    "supercategory": "pears"
+  },
+  {
+    "id": "d2s_040",
+    "name": "pasta_reggia_elicoidali",
+    "source_category_id": 40,
+    "supercategory": "pasta"
+  },
+  {
+    "id": "d2s_041",
+    "name": "pasta_reggia_fusilli",
+    "source_category_id": 41,
+    "supercategory": "pasta"
+  },
+  {
+    "id": "d2s_042",
+    "name": "pasta_reggia_spaghetti",
+    "source_category_id": 42,
+    "supercategory": "pasta"
+  },
+  {
+    "id": "d2s_043",
+    "name": "franken_tafelreiniger",
+    "source_category_id": 43,
+    "supercategory": "board eraser"
+  },
+  {
+    "id": "d2s_044",
+    "name": "pelikan_tintenpatrone_canon",
+    "source_category_id": 44,
+    "supercategory": "ink cartridge"
+  },
+  {
+    "id": "d2s_045",
+    "name": "ethiquable_gruener_tee_ceylon",
+    "source_category_id": 45,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_046",
+    "name": "gepa_bio_und_fair_fencheltee",
+    "source_category_id": 46,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_047",
+    "name": "gepa_bio_und_fair_kamillentee",
+    "source_category_id": 47,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_048",
+    "name": "gepa_bio_und_fair_kraeuterteemischung",
+    "source_category_id": 48,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_049",
+    "name": "gepa_bio_und_fair_pfefferminztee",
+    "source_category_id": 49,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_050",
+    "name": "gepa_bio_und_fair_rooibostee",
+    "source_category_id": 50,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_051",
+    "name": "kilimanjaro_tea_earl_grey",
+    "source_category_id": 51,
+    "supercategory": "tea"
+  },
+  {
+    "id": "d2s_052",
+    "name": "cucumber",
+    "source_category_id": 52,
+    "supercategory": "cucumbers"
+  },
+  {
+    "id": "d2s_053",
+    "name": "carrot",
+    "source_category_id": 53,
+    "supercategory": "carrots"
+  },
+  {
+    "id": "d2s_054",
+    "name": "corn_salad",
+    "source_category_id": 54,
+    "supercategory": "plastic tray"
+  },
+  {
+    "id": "d2s_055",
+    "name": "lettuce",
+    "source_category_id": 55,
+    "supercategory": "salad"
+  },
+  {
+    "id": "d2s_056",
+    "name": "vine_tomatoes",
+    "source_category_id": 56,
+    "supercategory": "cardboard tray"
+  },
+  {
+    "id": "d2s_057",
+    "name": "roma_vine_tomatoes",
+    "source_category_id": 57,
+    "supercategory": "cardboard tray"
+  },
+  {
+    "id": "d2s_058",
+    "name": "rocket",
+    "source_category_id": 58,
+    "supercategory": "plastic tray"
+  },
+  {
+    "id": "d2s_059",
+    "name": "salad_iceberg",
+    "source_category_id": 59,
+    "supercategory": "foil"
+  },
+  {
+    "id": "d2s_060",
+    "name": "zucchini",
+    "source_category_id": 60,
+    "supercategory": "zucchinis"
+  }
+]

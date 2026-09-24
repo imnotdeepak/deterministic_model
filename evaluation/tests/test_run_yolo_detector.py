@@ -106,6 +106,45 @@ def test_selected_rows_refuses_locked_splits():
         run_yolo_detector.selected_rows(manifest, "validation", 0, None)
 
 
+def test_locked_validation_requires_full_split_and_frozen_configuration():
+    manifest = [
+        {"sample_id": "inv_0001", "split": "development"},
+        {"sample_id": "inv_0002", "split": "validation"},
+    ]
+
+    assert run_yolo_detector.selected_rows(
+        manifest, "validation", 0, None, allow_locked_validation=True
+    ) == [{"sample_id": "inv_0002", "split": "validation"}]
+    with pytest.raises(ValueError, match="complete split"):
+        run_yolo_detector.selected_rows(
+            manifest, "validation", 0, 1, allow_locked_validation=True
+        )
+
+    run_yolo_detector.validate_frozen_validation_config(
+        split="validation",
+        checkpoint_sha256=run_yolo_detector.FROZEN_VALIDATION_CHECKPOINT_SHA256,
+        confidence=0.35,
+        iou=0.70,
+        image_size=960,
+    )
+    with pytest.raises(ValueError, match="differs from the frozen"):
+        run_yolo_detector.validate_frozen_validation_config(
+            split="validation",
+            checkpoint_sha256=run_yolo_detector.FROZEN_VALIDATION_CHECKPOINT_SHA256,
+            confidence=0.40,
+            iou=0.70,
+            image_size=960,
+        )
+
+
+def test_selected_rows_always_refuses_test_even_with_validation_authorization():
+    manifest = [{"sample_id": "inv_0003", "split": "test"}]
+    with pytest.raises(ValueError, match="test split"):
+        run_yolo_detector.selected_rows(
+            manifest, "test", 0, None, allow_locked_validation=True
+        )
+
+
 def test_checkpoint_catalog_requires_exact_order():
     run_yolo_detector.validate_checkpoint_catalog(
         {0: "product_one", 1: "product_two"}, ["product_one", "product_two"]
