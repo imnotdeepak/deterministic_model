@@ -1,0 +1,98 @@
+{
+  "sample_id": "inv_0195",
+  "image": "images/inv_0195.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "augustiner_lagerbraeu_hell_05",
+        "quantity": 1
+      },
+      {
+        "name": "augustiner_weissbier_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 2
+      },
+      {
+        "name": "tegernseer_hell_03",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "tegernseer_hell_03",
+      "bbox": {
+        "x": 764,
+        "y": 615,
+        "width": 213,
+        "height": 210
+      },
+      "source_annotation_id": 25228001,
+      "source_category_id": 11
+    },
+    {
+      "product_name": "augustiner_lagerbraeu_hell_05",
+      "bbox": {
+        "x": 158,
+        "y": 247,
+        "width": 391,
+        "height": 285
+      },
+      "source_annotation_id": 25228002,
+      "source_category_id": 6
+    },
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 901,
+        "y": 0,
+        "width": 257,
+        "height": 329
+      },
+      "source_annotation_id": 25228003,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1050,
+        "y": 1096,
+        "width": 299,
+        "height": 344
+      },
+      "source_annotation_id": 25228004,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "augustiner_weissbier_05",
+      "bbox": {
+        "x": 319,
+        "y": 937,
+        "width": 340,
+        "height": 345
+      },
+      "source_annotation_id": 25228005,
+      "source_category_id": 7
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1397,
+        "y": 468,
+        "width": 523,
+        "height": 244
+      },
+      "source_annotation_id": 25228006,
+      "source_category_id": 9
+    }
+  ]
+}

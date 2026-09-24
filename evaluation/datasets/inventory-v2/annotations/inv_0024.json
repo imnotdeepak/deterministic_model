@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0024",
+  "image": "images/inv_0024.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 778,
+        "y": 930,
+        "width": 286,
+        "height": 378
+      },
+      "source_annotation_id": 5125001,
+      "source_category_id": 46
+    }
+  ]
+}

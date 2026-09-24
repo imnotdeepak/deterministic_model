@@ -1,0 +1,192 @@
+{
+  "sample_id": "inv_0297",
+  "image": "images/inv_0297.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 458,
+        "y": 533,
+        "width": 1066,
+        "height": 252
+      },
+      "source_annotation_id": 68413001,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 266,
+        "y": 266,
+        "width": 415,
+        "height": 194
+      },
+      "source_annotation_id": 68413002,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 730,
+        "y": 30,
+        "width": 470,
+        "height": 533
+      },
+      "source_annotation_id": 68413003,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 344,
+        "y": 0,
+        "width": 436,
+        "height": 255
+      },
+      "source_annotation_id": 68413004,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 592,
+        "y": 738,
+        "width": 353,
+        "height": 288
+      },
+      "source_annotation_id": 68413005,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 294,
+        "y": 768,
+        "width": 257,
+        "height": 289
+      },
+      "source_annotation_id": 68413006,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 1167,
+        "y": 0,
+        "width": 464,
+        "height": 628
+      },
+      "source_annotation_id": 68413007,
+      "source_category_id": 35
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 1157,
+        "y": 1127,
+        "width": 253,
+        "height": 313
+      },
+      "source_annotation_id": 68413008,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 1001,
+        "y": 755,
+        "width": 854,
+        "height": 348
+      },
+      "source_annotation_id": 68413009,
+      "source_category_id": 1
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 94,
+        "y": 440,
+        "width": 372,
+        "height": 399
+      },
+      "source_annotation_id": 68413010,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 0,
+        "y": 709,
+        "width": 462,
+        "height": 564
+      },
+      "source_annotation_id": 68413011,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 403,
+        "y": 1016,
+        "width": 675,
+        "height": 424
+      },
+      "source_annotation_id": 68413012,
+      "source_category_id": 59
+    }
+  ]
+}

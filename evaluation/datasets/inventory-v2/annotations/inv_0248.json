@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0248",
+  "image": "images/inv_0248.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "clementine",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 820,
+        "y": 0,
+        "width": 548,
+        "height": 610
+      },
+      "source_annotation_id": 49326001,
+      "source_category_id": 35
+    },
+    {
+      "product_name": "grapes_green_sugraone_seedless",
+      "bbox": {
+        "x": 278,
+        "y": 674,
+        "width": 622,
+        "height": 693
+      },
+      "source_annotation_id": 49326002,
+      "source_category_id": 34
+    },
+    {
+      "product_name": "clementine",
+      "bbox": {
+        "x": 603,
+        "y": 567,
+        "width": 446,
+        "height": 541
+      },
+      "source_annotation_id": 49326003,
+      "source_category_id": 32
+    }
+  ]
+}

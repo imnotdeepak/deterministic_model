@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0091",
+  "image": "images/inv_0091.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "grapes_green_sugraone_seedless",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "grapes_green_sugraone_seedless",
+      "bbox": {
+        "x": 643,
+        "y": 647,
+        "width": 474,
+        "height": 620
+      },
+      "source_annotation_id": 15302001,
+      "source_category_id": 34
+    }
+  ]
+}

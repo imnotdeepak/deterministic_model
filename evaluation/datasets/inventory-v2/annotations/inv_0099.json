@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0099",
+  "image": "images/inv_0099.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 435,
+        "y": 694,
+        "width": 607,
+        "height": 526
+      },
+      "source_annotation_id": 15823001,
+      "source_category_id": 35
+    }
+  ]
+}

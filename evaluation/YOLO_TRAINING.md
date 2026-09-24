@@ -168,3 +168,14 @@ split. It was rejected after reaching 66.67% whole-image exact accuracy, 86.52%
 product precision, 79.74% product recall, and 80.90% evidence-localization
 accuracy. No threshold or checkpoint was changed after observing validation.
 The test split remains untouched. See `V1_YOLO_VALIDATION_RESULTS.md`.
+
+## V2 training candidate
+
+The rejected v1 validation result must not be used for detector tuning. A fresh
+inventory-v2 benchmark was therefore locked before new training. The v2 export
+protects validation/test scenes from both inventory-v1 and inventory-v2 and
+contains 5,130 training images plus 900 internal-validation images.
+
+The predeclared v2 candidate uses `yolo11m.pt`, image size 1280, at most 30
+epochs, batch size 8, and early-stopping patience 10. See `V2_PLAN.md` for the
+exact RunPod commands and leakage protocol.

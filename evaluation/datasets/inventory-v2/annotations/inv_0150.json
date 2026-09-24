@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0150",
+  "image": "images/inv_0150.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "rocket",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "rocket",
+      "bbox": {
+        "x": 814,
+        "y": 671,
+        "width": 788,
+        "height": 631
+      },
+      "source_annotation_id": 19827001,
+      "source_category_id": 58
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "sample_id": "inv_0270",
+  "image": "images/inv_0270.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_classic_naturell_02",
+      "bbox": {
+        "x": 931,
+        "y": 9,
+        "width": 186,
+        "height": 321
+      },
+      "source_annotation_id": 61927001,
+      "source_category_id": 4
+    },
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 412,
+        "y": 972,
+        "width": 271,
+        "height": 309
+      },
+      "source_annotation_id": 61927002,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 866,
+        "y": 489,
+        "width": 522,
+        "height": 548
+      },
+      "source_annotation_id": 61927003,
+      "source_category_id": 59
+    }
+  ]
+}

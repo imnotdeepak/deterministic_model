@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0219",
+  "image": "images/inv_0219.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 946,
+        "y": 170,
+        "width": 704,
+        "height": 1214
+      },
+      "source_annotation_id": 36809001,
+      "source_category_id": 19
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 636,
+        "y": 810,
+        "width": 147,
+        "height": 183
+      },
+      "source_annotation_id": 36809002,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 182,
+        "y": 0,
+        "width": 877,
+        "height": 767
+      },
+      "source_annotation_id": 36809003,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 312,
+        "y": 1055,
+        "width": 466,
+        "height": 385
+      },
+      "source_annotation_id": 36809004,
+      "source_category_id": 49
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 1250,
+        "y": 0,
+        "width": 142,
+        "height": 140
+      },
+      "source_annotation_id": 36809005,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 0,
+        "y": 693,
+        "width": 410,
+        "height": 272
+      },
+      "source_annotation_id": 36809006,
+      "source_category_id": 9
+    }
+  ]
+}

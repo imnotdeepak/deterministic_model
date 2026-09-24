@@ -1,0 +1,162 @@
+{
+  "sample_id": "inv_0292",
+  "image": "images/inv_0292.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kamillentee",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "orange_single",
+        "quantity": 1
+      },
+      {
+        "name": "oranges",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_elicoidali",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "orange_single",
+      "bbox": {
+        "x": 288,
+        "y": 1113,
+        "width": 216,
+        "height": 215
+      },
+      "source_annotation_id": 68305001,
+      "source_category_id": 37
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 843,
+        "y": 1112,
+        "width": 404,
+        "height": 302
+      },
+      "source_annotation_id": 68305002,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kamillentee",
+      "bbox": {
+        "x": 1441,
+        "y": 61,
+        "width": 388,
+        "height": 466
+      },
+      "source_annotation_id": 68305003,
+      "source_category_id": 47
+    },
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 1094,
+        "y": 400,
+        "width": 483,
+        "height": 669
+      },
+      "source_annotation_id": 68305004,
+      "source_category_id": 16
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1548,
+        "y": 556,
+        "width": 225,
+        "height": 838
+      },
+      "source_annotation_id": 68305005,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "oranges",
+      "bbox": {
+        "x": 303,
+        "y": 291,
+        "width": 790,
+        "height": 889
+      },
+      "source_annotation_id": 68305006,
+      "source_category_id": 38
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 681,
+        "y": 1168,
+        "width": 451,
+        "height": 272
+      },
+      "source_annotation_id": 68305007,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 729,
+        "y": 0,
+        "width": 319,
+        "height": 97
+      },
+      "source_annotation_id": 68305008,
+      "source_category_id": 20
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 1295,
+        "y": 1147,
+        "width": 254,
+        "height": 293
+      },
+      "source_annotation_id": 68305009,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "pasta_reggia_elicoidali",
+      "bbox": {
+        "x": 0,
+        "y": 70,
+        "width": 438,
+        "height": 839
+      },
+      "source_annotation_id": 68305010,
+      "source_category_id": 40
+    }
+  ]
+}

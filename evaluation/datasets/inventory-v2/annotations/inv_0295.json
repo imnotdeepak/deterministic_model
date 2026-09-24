@@ -1,0 +1,207 @@
+{
+  "sample_id": "inv_0295",
+  "image": "images/inv_0295.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "cucumber",
+        "quantity": 1
+      },
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "grapes_sweet_celebration_seedless",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "salad_iceberg",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cucumber",
+      "bbox": {
+        "x": 478,
+        "y": 400,
+        "width": 976,
+        "height": 504
+      },
+      "source_annotation_id": 68404001,
+      "source_category_id": 52
+    },
+    {
+      "product_name": "corny_nussvoll_single",
+      "bbox": {
+        "x": 169,
+        "y": 572,
+        "width": 402,
+        "height": 273
+      },
+      "source_annotation_id": 68404002,
+      "source_category_id": 13
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 455,
+        "y": 78,
+        "width": 536,
+        "height": 587
+      },
+      "source_annotation_id": 68404003,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 392,
+        "y": 0,
+        "width": 139,
+        "height": 96
+      },
+      "source_annotation_id": 68404004,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 8,
+        "y": 191,
+        "width": 489,
+        "height": 426
+      },
+      "source_annotation_id": 68404005,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 751,
+        "y": 777,
+        "width": 307,
+        "height": 351
+      },
+      "source_annotation_id": 68404006,
+      "source_category_id": 10
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 519,
+        "y": 1047,
+        "width": 273,
+        "height": 262
+      },
+      "source_annotation_id": 68404007,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "grapes_sweet_celebration_seedless",
+      "bbox": {
+        "x": 845,
+        "y": 0,
+        "width": 499,
+        "height": 453
+      },
+      "source_annotation_id": 68404008,
+      "source_category_id": 35
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 1381,
+        "y": 788,
+        "width": 464,
+        "height": 497
+      },
+      "source_annotation_id": 68404009,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 1168,
+        "y": 254,
+        "width": 652,
+        "height": 722
+      },
+      "source_annotation_id": 68404010,
+      "source_category_id": 1
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 291,
+        "y": 830,
+        "width": 161,
+        "height": 425
+      },
+      "source_annotation_id": 68404011,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 189,
+        "y": 1236,
+        "width": 643,
+        "height": 204
+      },
+      "source_annotation_id": 68404012,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "salad_iceberg",
+      "bbox": {
+        "x": 856,
+        "y": 982,
+        "width": 551,
+        "height": 458
+      },
+      "source_annotation_id": 68404013,
+      "source_category_id": 59
+    }
+  ]
+}

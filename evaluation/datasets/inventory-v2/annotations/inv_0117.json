@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0117",
+  "image": "images/inv_0117.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 704,
+        "y": 210,
+        "width": 473,
+        "height": 714
+      },
+      "source_annotation_id": 17529001,
+      "source_category_id": 16
+    }
+  ]
+}

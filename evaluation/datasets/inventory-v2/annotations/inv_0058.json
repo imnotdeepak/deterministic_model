@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0058",
+  "image": "images/inv_0058.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 1050,
+        "y": 522,
+        "width": 496,
+        "height": 403
+      },
+      "source_annotation_id": 10616001,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 404,
+        "y": 827,
+        "width": 254,
+        "height": 228
+      },
+      "source_annotation_id": 10616002,
+      "source_category_id": 43
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 679,
+        "y": 252,
+        "width": 445,
+        "height": 476
+      },
+      "source_annotation_id": 10616003,
+      "source_category_id": 43
+    }
+  ]
+}

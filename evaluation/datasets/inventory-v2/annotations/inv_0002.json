@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0002",
+  "image": "images/inv_0002.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cocoba_cocoa",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "cocoba_cocoa",
+      "bbox": {
+        "x": 365,
+        "y": 609,
+        "width": 577,
+        "height": 631
+      },
+      "source_annotation_id": 715001,
+      "source_category_id": 20
+    }
+  ]
+}

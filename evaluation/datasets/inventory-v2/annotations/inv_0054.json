@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0054",
+  "image": "images/inv_0054.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 592,
+        "y": 76,
+        "width": 392,
+        "height": 362
+      },
+      "source_annotation_id": 9929001,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 1036,
+        "y": 554,
+        "width": 391,
+        "height": 299
+      },
+      "source_annotation_id": 9929002,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 531,
+        "y": 832,
+        "width": 308,
+        "height": 316
+      },
+      "source_annotation_id": 9929003,
+      "source_category_id": 44
+    }
+  ]
+}

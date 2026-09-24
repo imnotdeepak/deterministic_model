@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0207",
+  "image": "images/inv_0207.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "lettuce",
+        "quantity": 1
+      },
+      {
+        "name": "zucchini",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "lettuce",
+      "bbox": {
+        "x": 123,
+        "y": 492,
+        "width": 854,
+        "height": 873
+      },
+      "source_annotation_id": 28826001,
+      "source_category_id": 55
+    },
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 315,
+        "y": 0,
+        "width": 936,
+        "height": 429
+      },
+      "source_annotation_id": 28826002,
+      "source_category_id": 21
+    },
+    {
+      "product_name": "zucchini",
+      "bbox": {
+        "x": 914,
+        "y": 492,
+        "width": 660,
+        "height": 148
+      },
+      "source_annotation_id": 28826003,
+      "source_category_id": 60
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 1483,
+        "y": 527,
+        "width": 162,
+        "height": 176
+      },
+      "source_annotation_id": 28826004,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 1017,
+        "y": 707,
+        "width": 302,
+        "height": 718
+      },
+      "source_annotation_id": 28826005,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 1299,
+        "y": 775,
+        "width": 395,
+        "height": 445
+      },
+      "source_annotation_id": 28826006,
+      "source_category_id": 12
+    }
+  ]
+}

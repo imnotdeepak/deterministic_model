@@ -43,6 +43,14 @@ def protected_sessions(locked_dataset: Path) -> set[str]:
     return protected
 
 
+def all_dataset_sessions(dataset: Path) -> set[str]:
+    rows = read_jsonl(dataset / "manifest.jsonl")
+    sessions = {str(row["session_id"]) for row in rows}
+    if not sessions:
+        raise ValueError(f"Dataset has no sessions to exclude: {dataset}")
+    return sessions
+
+
 def scene_categories(candidates: list[Candidate]) -> dict[str, set[int]]:
     result: dict[str, set[int]] = defaultdict(set)
     for candidate in candidates:
@@ -156,7 +164,36 @@ def export(args: argparse.Namespace) -> dict[str, Any]:
         raise ValueError(f"Output already exists: {output}")
 
     candidates, categories, source_info = load_source(source_root)
+    additional_locked_datasets = [
+        path.resolve() for path in args.additional_locked_dataset
+    ]
+    exclude_all_datasets = [path.resolve() for path in args.exclude_all_dataset]
     protected = protected_sessions(locked_dataset)
+    exclusion_details = [
+        {
+            "dataset": str(locked_dataset),
+            "splits": ["validation", "test"],
+            "manifest_sha256": sha256_file(locked_dataset / "manifest.jsonl"),
+        }
+    ]
+    for dataset in additional_locked_datasets:
+        protected.update(protected_sessions(dataset))
+        exclusion_details.append(
+            {
+                "dataset": str(dataset),
+                "splits": ["validation", "test"],
+                "manifest_sha256": sha256_file(dataset / "manifest.jsonl"),
+            }
+        )
+    for dataset in exclude_all_datasets:
+        protected.update(all_dataset_sessions(dataset))
+        exclusion_details.append(
+            {
+                "dataset": str(dataset),
+                "splits": ["development", "validation", "test"],
+                "manifest_sha256": sha256_file(dataset / "manifest.jsonl"),
+            }
+        )
     eligible = [candidate for candidate in candidates if candidate.session_id not in protected]
     if not eligible:
         raise ValueError("No source images remain after protected-scene exclusion")
@@ -193,6 +230,7 @@ def export(args: argparse.Namespace) -> dict[str, Any]:
         "locked_manifest_sha256": sha256_file(locked_dataset / "manifest.jsonl"),
         "protected_splits": ["validation", "test"],
         "protected_scene_count": len(protected),
+        "scene_exclusions": exclusion_details,
         "seed": args.seed,
         "model_validation_fraction": args.validation_fraction,
         "category_count": len(category_ids),
@@ -243,6 +281,20 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Export a leakage-safe D2S YOLO dataset.")
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--locked-dataset", required=True, type=Path)
+    parser.add_argument(
+        "--additional-locked-dataset",
+        action="append",
+        type=Path,
+        default=[],
+        help="Also exclude this dataset's validation and test scenes; may be repeated.",
+    )
+    parser.add_argument(
+        "--exclude-all-dataset",
+        action="append",
+        type=Path,
+        default=[],
+        help="Exclude every scene in this dataset; may be repeated.",
+    )
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--seed", type=int, default=104729)
     parser.add_argument("--validation-fraction", type=float, default=0.15)

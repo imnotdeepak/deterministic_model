@@ -1,0 +1,53 @@
+{
+  "sample_id": "inv_0245",
+  "image": "images/inv_0245.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "pelikan_tintenpatrone_canon",
+        "quantity": 2
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 1069,
+        "y": 470,
+        "width": 242,
+        "height": 159
+      },
+      "source_annotation_id": 48628001,
+      "source_category_id": 44
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 701,
+        "y": 649,
+        "width": 614,
+        "height": 604
+      },
+      "source_annotation_id": 48628002,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "pelikan_tintenpatrone_canon",
+      "bbox": {
+        "x": 851,
+        "y": 773,
+        "width": 397,
+        "height": 116
+      },
+      "source_annotation_id": 48628003,
+      "source_category_id": 44
+    }
+  ]
+}

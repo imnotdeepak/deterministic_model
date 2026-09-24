@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0113",
+  "image": "images/inv_0113.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "koelln_muesli_schoko",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "koelln_muesli_schoko",
+      "bbox": {
+        "x": 652,
+        "y": 321,
+        "width": 489,
+        "height": 719
+      },
+      "source_annotation_id": 17220001,
+      "source_category_id": 18
+    }
+  ]
+}

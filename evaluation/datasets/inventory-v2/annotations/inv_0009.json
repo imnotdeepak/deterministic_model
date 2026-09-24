@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0009",
+  "image": "images/inv_0009.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_italienischer_bio_espresso",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 875,
+        "y": 26,
+        "width": 580,
+        "height": 635
+      },
+      "source_annotation_id": 1423001,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 840,
+        "y": 694,
+        "width": 290,
+        "height": 696
+      },
+      "source_annotation_id": 1423002,
+      "source_category_id": 24
+    },
+    {
+      "product_name": "gepa_italienischer_bio_espresso",
+      "bbox": {
+        "x": 213,
+        "y": 247,
+        "width": 456,
+        "height": 433
+      },
+      "source_annotation_id": 1423003,
+      "source_category_id": 24
+    }
+  ]
+}

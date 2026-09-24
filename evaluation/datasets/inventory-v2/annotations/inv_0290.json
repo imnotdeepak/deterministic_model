@@ -1,0 +1,162 @@
+{
+  "sample_id": "inv_0290",
+  "image": "images/inv_0290.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "cafe_wunderbar_espresso",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_05",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "kilimanjaro_tea_earl_grey",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_elicoidali",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "coca_cola_05",
+      "bbox": {
+        "x": 521,
+        "y": 408,
+        "width": 696,
+        "height": 715
+      },
+      "source_annotation_id": 68011001,
+      "source_category_id": 8
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 466,
+        "y": 588,
+        "width": 136,
+        "height": 137
+      },
+      "source_annotation_id": 68011002,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "cafe_wunderbar_espresso",
+      "bbox": {
+        "x": 1188,
+        "y": 0,
+        "width": 466,
+        "height": 871
+      },
+      "source_annotation_id": 68011003,
+      "source_category_id": 21
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 1414,
+        "y": 890,
+        "width": 434,
+        "height": 461
+      },
+      "source_annotation_id": 68011004,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 1107,
+        "y": 1066,
+        "width": 464,
+        "height": 374
+      },
+      "source_annotation_id": 68011005,
+      "source_category_id": 46
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 321,
+        "y": 0,
+        "width": 677,
+        "height": 690
+      },
+      "source_annotation_id": 68011006,
+      "source_category_id": 9
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 581,
+        "y": 0,
+        "width": 677,
+        "height": 566
+      },
+      "source_annotation_id": 68011007,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "kilimanjaro_tea_earl_grey",
+      "bbox": {
+        "x": 0,
+        "y": 236,
+        "width": 466,
+        "height": 254
+      },
+      "source_annotation_id": 68011008,
+      "source_category_id": 51
+    },
+    {
+      "product_name": "pasta_reggia_elicoidali",
+      "bbox": {
+        "x": 282,
+        "y": 815,
+        "width": 879,
+        "height": 625
+      },
+      "source_annotation_id": 68011009,
+      "source_category_id": 40
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 0,
+        "y": 522,
+        "width": 524,
+        "height": 918
+      },
+      "source_annotation_id": 68011010,
+      "source_category_id": 56
+    }
+  ]
+}

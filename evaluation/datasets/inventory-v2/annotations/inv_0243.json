@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0243",
+  "image": "images/inv_0243.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "lettuce",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "lettuce",
+      "bbox": {
+        "x": 649,
+        "y": 413,
+        "width": 790,
+        "height": 766
+      },
+      "source_annotation_id": 48028001,
+      "source_category_id": 55
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 808,
+        "y": 716,
+        "width": 544,
+        "height": 575
+      },
+      "source_annotation_id": 48028002,
+      "source_category_id": 12
+    }
+  ]
+}

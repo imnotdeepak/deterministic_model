@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0017",
+  "image": "images/inv_0017.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 649,
+        "y": 494,
+        "width": 447,
+        "height": 351
+      },
+      "source_annotation_id": 4012001,
+      "source_category_id": 48
+    }
+  ]
+}

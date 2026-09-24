@@ -1,0 +1,64 @@
+{
+  "sample_id": "inv_0239",
+  "image": "images/inv_0239.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 3
+      },
+      {
+        "name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 553,
+        "y": 484,
+        "width": 409,
+        "height": 160
+      },
+      "source_annotation_id": 46727001,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 692,
+        "y": 729,
+        "width": 397,
+        "height": 426
+      },
+      "source_annotation_id": 46727002,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 1104,
+        "y": 555,
+        "width": 252,
+        "height": 462
+      },
+      "source_annotation_id": 46727003,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "dr_oetker_vitalis_knuspermuesli_klassisch",
+      "bbox": {
+        "x": 512,
+        "y": 452,
+        "width": 797,
+        "height": 661
+      },
+      "source_annotation_id": 46727004,
+      "source_category_id": 16
+    }
+  ]
+}

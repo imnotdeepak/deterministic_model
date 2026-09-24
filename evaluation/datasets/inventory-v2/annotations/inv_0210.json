@@ -1,0 +1,128 @@
+{
+  "sample_id": "inv_0210",
+  "image": "images/inv_0210.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 2
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      },
+      {
+        "name": "koelln_muesli_fruechte",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      },
+      {
+        "name": "pear",
+        "quantity": 1
+      },
+      {
+        "name": "suntory_gokuri_lemonade",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 884,
+        "y": 505,
+        "width": 448,
+        "height": 372
+      },
+      "source_annotation_id": 30027001,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "koelln_muesli_fruechte",
+      "bbox": {
+        "x": 195,
+        "y": 502,
+        "width": 778,
+        "height": 618
+      },
+      "source_annotation_id": 30027002,
+      "source_category_id": 17
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 1270,
+        "y": 16,
+        "width": 375,
+        "height": 445
+      },
+      "source_annotation_id": 30027003,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 490,
+        "y": 0,
+        "width": 866,
+        "height": 563
+      },
+      "source_annotation_id": 30027004,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 804,
+        "y": 1023,
+        "width": 266,
+        "height": 260
+      },
+      "source_annotation_id": 30027005,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 1038,
+        "y": 1156,
+        "width": 261,
+        "height": 256
+      },
+      "source_annotation_id": 30027006,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "pear",
+      "bbox": {
+        "x": 983,
+        "y": 931,
+        "width": 311,
+        "height": 226
+      },
+      "source_annotation_id": 30027007,
+      "source_category_id": 39
+    },
+    {
+      "product_name": "suntory_gokuri_lemonade",
+      "bbox": {
+        "x": 385,
+        "y": 731,
+        "width": 275,
+        "height": 253
+      },
+      "source_annotation_id": 30027008,
+      "source_category_id": 10
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0179",
+  "image": "images/inv_0179.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "douwe_egberts_professional_ground_coffee",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 349,
+        "y": 463,
+        "width": 405,
+        "height": 483
+      },
+      "source_annotation_id": 1905001,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 839,
+        "y": 830,
+        "width": 454,
+        "height": 457
+      },
+      "source_annotation_id": 1905002,
+      "source_category_id": 22
+    },
+    {
+      "product_name": "douwe_egberts_professional_ground_coffee",
+      "bbox": {
+        "x": 703,
+        "y": 300,
+        "width": 587,
+        "height": 531
+      },
+      "source_annotation_id": 1905003,
+      "source_category_id": 22
+    }
+  ]
+}

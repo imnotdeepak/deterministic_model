@@ -1,0 +1,117 @@
+{
+  "sample_id": "inv_0203",
+  "image": "images/inv_0203.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corny_nussvoll",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_kraeuterteemischung",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_rooibostee",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 335,
+        "y": 161,
+        "width": 1229,
+        "height": 680
+      },
+      "source_annotation_id": 27706001,
+      "source_category_id": 19
+    },
+    {
+      "product_name": "corny_nussvoll",
+      "bbox": {
+        "x": 1161,
+        "y": 824,
+        "width": 467,
+        "height": 474
+      },
+      "source_annotation_id": 27706002,
+      "source_category_id": 12
+    },
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 933,
+        "y": 931,
+        "width": 307,
+        "height": 432
+      },
+      "source_annotation_id": 27706003,
+      "source_category_id": 46
+    },
+    {
+      "product_name": "gepa_bio_und_fair_kraeuterteemischung",
+      "bbox": {
+        "x": 414,
+        "y": 980,
+        "width": 309,
+        "height": 427
+      },
+      "source_annotation_id": 27706004,
+      "source_category_id": 48
+    },
+    {
+      "product_name": "gepa_bio_und_fair_rooibostee",
+      "bbox": {
+        "x": 676,
+        "y": 965,
+        "width": 307,
+        "height": 433
+      },
+      "source_annotation_id": 27706005,
+      "source_category_id": 50
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 976,
+        "y": 302,
+        "width": 285,
+        "height": 283
+      },
+      "source_annotation_id": 27706006,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 1335,
+        "y": 1021,
+        "width": 141,
+        "height": 142
+      },
+      "source_annotation_id": 27706007,
+      "source_category_id": 33
+    }
+  ]
+}

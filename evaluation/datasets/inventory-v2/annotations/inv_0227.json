@@ -1,0 +1,42 @@
+{
+  "sample_id": "inv_0227",
+  "image": "images/inv_0227.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "corn_salad",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "corn_salad",
+      "bbox": {
+        "x": 362,
+        "y": 223,
+        "width": 602,
+        "height": 862
+      },
+      "source_annotation_id": 39913001,
+      "source_category_id": 54
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 389,
+        "y": 402,
+        "width": 158,
+        "height": 162
+      },
+      "source_annotation_id": 39913002,
+      "source_category_id": 33
+    }
+  ]
+}

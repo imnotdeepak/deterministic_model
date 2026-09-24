@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0127",
+  "image": "images/inv_0127.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "clementine",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "clementine",
+      "bbox": {
+        "x": 752,
+        "y": 411,
+        "width": 677,
+        "height": 534
+      },
+      "source_annotation_id": 18208001,
+      "source_category_id": 32
+    }
+  ]
+}

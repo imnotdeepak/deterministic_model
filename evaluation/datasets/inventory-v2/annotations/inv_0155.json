@@ -1,0 +1,27 @@
+{
+  "sample_id": "inv_0155",
+  "image": "images/inv_0155.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "pasta_reggia_elicoidali",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "pasta_reggia_elicoidali",
+      "bbox": {
+        "x": 708,
+        "y": 199,
+        "width": 796,
+        "height": 946
+      },
+      "source_annotation_id": 20219001,
+      "source_category_id": 40
+    }
+  ]
+}

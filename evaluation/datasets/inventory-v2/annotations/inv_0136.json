@@ -1,0 +1,49 @@
+{
+  "sample_id": "inv_0136",
+  "image": "images/inv_0136.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "apple_granny_smith",
+        "quantity": 3
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 479,
+        "y": 859,
+        "width": 258,
+        "height": 253
+      },
+      "source_annotation_id": 18804001,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 692,
+        "y": 354,
+        "width": 273,
+        "height": 267
+      },
+      "source_annotation_id": 18804002,
+      "source_category_id": 27
+    },
+    {
+      "product_name": "apple_granny_smith",
+      "bbox": {
+        "x": 1049,
+        "y": 805,
+        "width": 258,
+        "height": 268
+      },
+      "source_annotation_id": 18804003,
+      "source_category_id": 27
+    }
+  ]
+}

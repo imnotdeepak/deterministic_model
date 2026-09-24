@@ -1,0 +1,102 @@
+{
+  "sample_id": "inv_0218",
+  "image": "images/inv_0218.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "caona_cocoa",
+        "quantity": 1
+      },
+      {
+        "name": "clementine_single",
+        "quantity": 1
+      },
+      {
+        "name": "coca_cola_light_05",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      },
+      {
+        "name": "kiwi",
+        "quantity": 1
+      },
+      {
+        "name": "pasta_reggia_fusilli",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "caona_cocoa",
+      "bbox": {
+        "x": 244,
+        "y": 24,
+        "width": 711,
+        "height": 1223
+      },
+      "source_annotation_id": 36804001,
+      "source_category_id": 19
+    },
+    {
+      "product_name": "kiwi",
+      "bbox": {
+        "x": 1112,
+        "y": 419,
+        "width": 149,
+        "height": 184
+      },
+      "source_annotation_id": 36804002,
+      "source_category_id": 36
+    },
+    {
+      "product_name": "pasta_reggia_fusilli",
+      "bbox": {
+        "x": 836,
+        "y": 648,
+        "width": 866,
+        "height": 792
+      },
+      "source_annotation_id": 36804003,
+      "source_category_id": 41
+    },
+    {
+      "product_name": "gepa_bio_und_fair_pfefferminztee",
+      "bbox": {
+        "x": 1122,
+        "y": 0,
+        "width": 472,
+        "height": 355
+      },
+      "source_annotation_id": 36804004,
+      "source_category_id": 49
+    },
+    {
+      "product_name": "clementine_single",
+      "bbox": {
+        "x": 511,
+        "y": 1266,
+        "width": 138,
+        "height": 139
+      },
+      "source_annotation_id": 36804005,
+      "source_category_id": 33
+    },
+    {
+      "product_name": "coca_cola_light_05",
+      "bbox": {
+        "x": 1483,
+        "y": 490,
+        "width": 437,
+        "height": 240
+      },
+      "source_annotation_id": 36804006,
+      "source_category_id": 9
+    }
+  ]
+}

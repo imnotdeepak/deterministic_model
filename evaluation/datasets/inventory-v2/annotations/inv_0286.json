@@ -1,0 +1,162 @@
+{
+  "sample_id": "inv_0286",
+  "image": "images/inv_0286.jpg",
+  "width": 1920,
+  "height": 1440,
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_alpenquelle_classic_075",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_classic_bio_apfelschorle_02",
+        "quantity": 1
+      },
+      {
+        "name": "adelholzener_gourmet_mineralwasser_02",
+        "quantity": 1
+      },
+      {
+        "name": "apple_golden_delicious",
+        "quantity": 1
+      },
+      {
+        "name": "corny_schoko_banane_single",
+        "quantity": 1
+      },
+      {
+        "name": "ethiquable_gruener_tee_ceylon",
+        "quantity": 1
+      },
+      {
+        "name": "franken_tafelreiniger",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_caffe_crema",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "vine_tomatoes",
+        "quantity": 1
+      }
+    ]
+  },
+  "instances": [
+    {
+      "product_name": "adelholzener_gourmet_mineralwasser_02",
+      "bbox": {
+        "x": 1059,
+        "y": 920,
+        "width": 486,
+        "height": 520
+      },
+      "source_annotation_id": 67002001,
+      "source_category_id": 5
+    },
+    {
+      "product_name": "gepa_bio_caffe_crema",
+      "bbox": {
+        "x": 904,
+        "y": 180,
+        "width": 925,
+        "height": 526
+      },
+      "source_annotation_id": 67002002,
+      "source_category_id": 23
+    },
+    {
+      "product_name": "apple_golden_delicious",
+      "bbox": {
+        "x": 859,
+        "y": 0,
+        "width": 258,
+        "height": 174
+      },
+      "source_annotation_id": 67002003,
+      "source_category_id": 26
+    },
+    {
+      "product_name": "ethiquable_gruener_tee_ceylon",
+      "bbox": {
+        "x": 1146,
+        "y": 0,
+        "width": 465,
+        "height": 183
+      },
+      "source_annotation_id": 67002004,
+      "source_category_id": 45
+    },
+    {
+      "product_name": "corny_schoko_banane_single",
+      "bbox": {
+        "x": 1300,
+        "y": 733,
+        "width": 413,
+        "height": 203
+      },
+      "source_annotation_id": 67002005,
+      "source_category_id": 15
+    },
+    {
+      "product_name": "gepa_bio_und_fair_fencheltee",
+      "bbox": {
+        "x": 724,
+        "y": 1226,
+        "width": 282,
+        "height": 214
+      },
+      "source_annotation_id": 67002006,
+      "source_category_id": 46
+    },
+    {
+      "product_name": "adelholzener_alpenquelle_classic_075",
+      "bbox": {
+        "x": 397,
+        "y": 850,
+        "width": 839,
+        "height": 452
+      },
+      "source_annotation_id": 67002007,
+      "source_category_id": 1
+    },
+    {
+      "product_name": "adelholzener_classic_bio_apfelschorle_02",
+      "bbox": {
+        "x": 127,
+        "y": 837,
+        "width": 368,
+        "height": 256
+      },
+      "source_annotation_id": 67002008,
+      "source_category_id": 3
+    },
+    {
+      "product_name": "vine_tomatoes",
+      "bbox": {
+        "x": 277,
+        "y": 0,
+        "width": 522,
+        "height": 870
+      },
+      "source_annotation_id": 67002009,
+      "source_category_id": 56
+    },
+    {
+      "product_name": "franken_tafelreiniger",
+      "bbox": {
+        "x": 13,
+        "y": 339,
+        "width": 243,
+        "height": 576
+      },
+      "source_annotation_id": 67002010,
+      "source_category_id": 43
+    }
+  ]
+}
