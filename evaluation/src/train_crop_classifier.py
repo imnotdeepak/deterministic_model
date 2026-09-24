@@ -244,8 +244,14 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     model.classifier[1] = torch.nn.Linear(model.classifier[1].in_features, len(names))
     model.to(device)
     criterion = torch.nn.CrossEntropyLoss(label_smoothing=0.05)
+    for parameter in model.features.parameters():
+        parameter.requires_grad = False
     optimizer = torch.optim.AdamW(
-        model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay
+        [
+            {"params": model.features.parameters(), "lr": args.backbone_learning_rate},
+            {"params": model.classifier.parameters(), "lr": args.learning_rate},
+        ],
+        weight_decay=args.weight_decay,
     )
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs)
     scaler = torch.amp.GradScaler("cuda", enabled=device.type == "cuda")
@@ -255,7 +261,12 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
     stale_epochs = 0
 
     for epoch in range(1, args.epochs + 1):
+        if epoch == args.freeze_backbone_epochs + 1:
+            for parameter in model.features.parameters():
+                parameter.requires_grad = True
         model.train()
+        if epoch <= args.freeze_backbone_epochs:
+            model.features.eval()
         train_loss = 0.0
         seen = 0
         for images, labels in train_loader:
@@ -268,14 +279,16 @@ def train(args: argparse.Namespace) -> dict[str, Any]:
             scaler.scale(loss).backward()
             scaler.step(optimizer)
             scaler.update()
-            train_loss += float(loss) * labels.numel()
+            train_loss += float(loss.detach()) * labels.numel()
             seen += labels.numel()
         scheduler.step()
         metrics = evaluate_model(model, validation_loader, device, len(names))
         row = {
             "epoch": epoch,
             "train_loss": train_loss / seen,
-            "learning_rate": optimizer.param_groups[0]["lr"],
+            "backbone_learning_rate": optimizer.param_groups[0]["lr"],
+            "head_learning_rate": optimizer.param_groups[1]["lr"],
+            "backbone_frozen": epoch <= args.freeze_backbone_epochs,
             **metrics,
         }
         history.append(row)
@@ -330,6 +343,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--image-size", type=int, default=384)
     parser.add_argument("--margin", type=float, default=0.05)
     parser.add_argument("--learning-rate", type=float, default=3e-4)
+    parser.add_argument("--backbone-learning-rate", type=float, default=1e-5)
+    parser.add_argument("--freeze-backbone-epochs", type=int, default=2)
     parser.add_argument("--weight-decay", type=float, default=0.05)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--workers", type=int, default=8)
@@ -338,6 +353,8 @@ def parse_args() -> argparse.Namespace:
     args = parser.parse_args()
     if args.epochs <= 0 or args.patience <= 0 or args.batch <= 0 or args.image_size <= 0:
         parser.error("epochs, patience, batch, and image size must be positive")
+    if not 0 <= args.freeze_backbone_epochs < args.epochs:
+        parser.error("freeze-backbone-epochs must be non-negative and less than epochs")
     if not 0.0 <= args.margin <= 0.5:
         parser.error("margin must be between 0 and 0.5")
     return args

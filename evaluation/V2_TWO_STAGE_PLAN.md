@@ -45,12 +45,20 @@ new guarded dataset without accessing an external benchmark split.
 - batch: 32 (RTX 3090-safe)
 - optimizer: AdamW, learning rate 0.0003, weight decay 0.05
 - early-stopping metric: macro recall
-- early-stopping patience: 4
+- backbone schedule: freeze for 2 epochs, then fine-tune at learning rate 0.00001
+- classifier-head learning rate: 0.0003
+- early-stopping patience: 6
 - seed: 20260924
 
 Training uses inverse-frequency sampling so every catalog class contributes
 equal expected sampling weight. Color augmentation is deliberately mild because
 color distinguishes several product variants.
+
+The first full-network fine-tuning attempt peaked after one epoch at 89.71%
+top-1 accuracy and 88.94% macro recall, then overfit. It is rejected using only
+internal-validation evidence. The staged configuration above keeps the
+pretrained representation fixed for two epochs and uses a 30x lower learning
+rate for the backbone after unfreezing.
 
 ## GPU commands
 

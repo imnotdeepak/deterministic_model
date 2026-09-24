@@ -2,8 +2,10 @@
 set -euo pipefail
 
 data="data/yolo-inventory-v2"
-output="evaluation/training-runs/inventory-v2-crop-classifier-efficientnetv2s"
+output="evaluation/training-runs/inventory-v2-crop-classifier-efficientnetv2s-staged"
 dry_run=false
+
+export CUBLAS_WORKSPACE_CONFIG=:4096:8
 
 if [[ "${1:-}" == "--dry-run" ]]; then
   dry_run=true
@@ -39,11 +41,13 @@ arguments=(
   --data "$data"
   --output "$output"
   --epochs 12
-  --patience 4
+  --patience 6
   --batch 32
   --image-size 384
   --margin 0.05
   --learning-rate 0.0003
+  --backbone-learning-rate 0.00001
+  --freeze-backbone-epochs 2
   --weight-decay 0.05
   --device cuda
   --workers 8
