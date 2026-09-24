@@ -61,6 +61,6 @@ fi
 
 python evaluation/src/train_yolo_detector.py \
   --data "$localizer_data/dataset.yaml" \
-  --model yolo11s.pt --epochs 20 --imgsz 1280 --batch 16 \
+  --model yolo11s.pt --epochs 20 --imgsz 1280 --batch 8 \
   --device 0 --workers 4 --patience 7 --seed 20260924 \
   --name "$run_name"

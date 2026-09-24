@@ -40,7 +40,7 @@ arguments=(
   --output "$output"
   --epochs 12
   --patience 4
-  --batch 64
+  --batch 32
   --image-size 384
   --margin 0.05
   --learning-rate 0.0003

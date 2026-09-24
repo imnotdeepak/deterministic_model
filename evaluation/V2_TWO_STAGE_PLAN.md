@@ -28,7 +28,7 @@ sealed.
 - one output class: `product`
 - image size: 1280
 - epochs: at most 20
-- batch: 16
+- batch: 8 (RTX 3090-safe)
 - early-stopping patience: 7
 - seed: 20260924
 
@@ -42,7 +42,7 @@ new guarded dataset without accessing an external benchmark split.
 - input size: 384 square pixels with aspect-preserving padding
 - crop context margin: 5%
 - epochs: at most 12
-- batch: 64
+- batch: 32 (RTX 3090-safe)
 - optimizer: AdamW, learning rate 0.0003, weight decay 0.05
 - early-stopping metric: macro recall
 - early-stopping patience: 4
