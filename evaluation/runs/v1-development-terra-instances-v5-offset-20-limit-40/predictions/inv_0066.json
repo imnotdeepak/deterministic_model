@@ -1,0 +1,103 @@
+{
+  "sample_id": "inv_0066",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "adelholzener_classic_naturell_02",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.94,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0066",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 649,
+        "y": 173,
+        "width": 622,
+        "height": 366
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0066",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 685,
+        "y": 456,
+        "width": 373,
+        "height": 592
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2966,
+  "estimated_cost_usd": 0.028968,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 88,
+    "total_tokens": 14044,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 88,
+        "total_tokens": 14044
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.028968
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0b3a1dd91427fa2e016ab46376184487d2b48da4c4cb23b391",
+    "response_ids": {
+      "localization": "resp_0b3a1dd91427fa2e016ab46376184487d2b48da4c4cb23b391"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 2,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

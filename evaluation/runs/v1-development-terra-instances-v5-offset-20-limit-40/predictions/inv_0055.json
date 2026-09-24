@@ -1,0 +1,83 @@
+{
+  "sample_id": "inv_0055",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "pear",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0055",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 637,
+        "y": 747,
+        "width": 267,
+        "height": 284
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2254,
+  "estimated_cost_usd": 0.028416,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 42,
+    "total_tokens": 13998,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 42,
+        "total_tokens": 13998
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.028416
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_0ad099c8b88eb1ac016ab46366581c87d2a8554a972d01f2de",
+    "response_ids": {
+      "localization": "resp_0ad099c8b88eb1ac016ab46366581c87d2a8554a972d01f2de"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 1,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

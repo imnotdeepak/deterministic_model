@@ -177,6 +177,21 @@ development slice:
   -Offset 20 -Limit 40 -InstancesOnly
 ```
 
+Result: v5 failed to generalize at the required quality level. On the larger
+40-image development slice it reached 87.50% exact accuracy, 95.12% precision,
+97.50% recall, and 92.50% localization accuracy. Cost and latency passed. The
+dominant error was omission of separately visible objects whose identifying
+face was hidden. See `V1_TERRA_INSTANCES_SCALE_RESULTS.md`.
+
+V6 tests an exhaustive-instance prompt on the observed failure clusters and
+nearby correct controls. It remains a one-call Terra design and uses only
+development data:
+
+```powershell
+.\evaluation\run_v1_exhaustive_instances_pilot.ps1 -Offset 24 -Limit 8
+.\evaluation\run_v1_exhaustive_instances_pilot.ps1 -Offset 54 -Limit 6
+```
+
 ## Definition of done
 
 - A written error hypothesis is supported by development-set measurements.

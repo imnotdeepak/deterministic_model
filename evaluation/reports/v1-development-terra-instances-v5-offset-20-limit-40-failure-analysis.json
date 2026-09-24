@@ -1,0 +1,213 @@
+{
+  "analyzer_version": "0.2.0",
+  "generated_at_utc": "2026-09-23T23:42:46.462899+00:00",
+  "dataset": "C:\\Users\\dpkko\\Documents\\Coding\\Frontend\\worldao\\evaluation\\datasets\\inventory-v1",
+  "split": "development",
+  "selection": {
+    "offset": 20,
+    "limit": 40,
+    "split_samples": 209,
+    "selected_samples": 40
+  },
+  "tuning_safety": {
+    "frozen_test_override_used": false,
+    "warning": null
+  },
+  "summary": {
+    "samples": 40,
+    "product_exact_samples": 35,
+    "fully_correct_samples": 34,
+    "failed_samples": 6,
+    "whole_image_exact_accuracy": 0.875,
+    "all_dimensions_correct_rate": 0.85,
+    "category_counts": {
+      "identity": 2,
+      "localization": 6,
+      "quantity": 4
+    },
+    "routing_decision_counts": {}
+  },
+  "stage_metrics": {},
+  "failures": [
+    {
+      "sample_id": "inv_0025",
+      "categories": [
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "gepa_bio_und_fair_pfefferminztee": 3
+      },
+      "predicted": {
+        "gepa_bio_und_fair_pfefferminztee": 2
+      },
+      "count_deltas": [
+        {
+          "product": "gepa_bio_und_fair_pfefferminztee",
+          "expected": 3,
+          "predicted": 2,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_6",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666
+    },
+    {
+      "sample_id": "inv_0026",
+      "categories": [
+        "identity",
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "gepa_bio_und_fair_pfefferminztee": 3
+      },
+      "predicted": {
+        "gepa_bio_und_fair_fencheltee": 1,
+        "gepa_bio_und_fair_pfefferminztee": 2
+      },
+      "count_deltas": [
+        {
+          "product": "gepa_bio_und_fair_fencheltee",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        },
+        {
+          "product": "gepa_bio_und_fair_pfefferminztee",
+          "expected": 3,
+          "predicted": 2,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_4",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666
+    },
+    {
+      "sample_id": "inv_0031",
+      "categories": [
+        "identity",
+        "localization"
+      ],
+      "expected": {
+        "cafe_wunderbar_espresso": 1
+      },
+      "predicted": {
+        "pasta_reggia_spaghetti": 1
+      },
+      "count_deltas": [
+        {
+          "product": "cafe_wunderbar_espresso",
+          "expected": 1,
+          "predicted": 0,
+          "delta": -1
+        },
+        {
+          "product": "pasta_reggia_spaghetti",
+          "expected": 0,
+          "predicted": 1,
+          "delta": 1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_6",
+        "lighting_1"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.0
+    },
+    {
+      "sample_id": "inv_0068",
+      "categories": [
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_bio_apfelschorle_02": 2
+      },
+      "predicted": {
+        "adelholzener_classic_bio_apfelschorle_02": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_classic_bio_apfelschorle_02",
+          "expected": 2,
+          "predicted": 1,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_1",
+        "lighting_0"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.5
+    },
+    {
+      "sample_id": "inv_0069",
+      "categories": [
+        "quantity",
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_bio_apfelschorle_02": 2
+      },
+      "predicted": {
+        "adelholzener_classic_bio_apfelschorle_02": 1
+      },
+      "count_deltas": [
+        {
+          "product": "adelholzener_classic_bio_apfelschorle_02",
+          "expected": 2,
+          "predicted": 1,
+          "delta": -1
+        }
+      ],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_5",
+        "lighting_0"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.5
+    },
+    {
+      "sample_id": "inv_0071",
+      "categories": [
+        "localization"
+      ],
+      "expected": {
+        "adelholzener_classic_bio_apfelschorle_02": 3
+      },
+      "predicted": {
+        "adelholzener_classic_bio_apfelschorle_02": 3
+      },
+      "count_deltas": [],
+      "tags": [
+        "d2s",
+        "d2s_training",
+        "rotation_2",
+        "lighting_2"
+      ],
+      "prediction_validation_errors": [],
+      "evidence_localization_accuracy": 0.6666666666666666
+    }
+  ]
+}

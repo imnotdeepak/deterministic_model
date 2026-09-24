@@ -1,0 +1,83 @@
+{
+  "sample_id": "inv_0023",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 1
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.99,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0023",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 536,
+        "y": 202,
+        "width": 451,
+        "height": 468
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 2967,
+  "estimated_cost_usd": 0.028572,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 55,
+    "total_tokens": 14011,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 55,
+        "total_tokens": 14011
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.028572
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_01735e5232fadc2d016ab46318ef7c87d28079c53083fee39f",
+    "response_ids": {
+      "localization": "resp_01735e5232fadc2d016ab46318ef7c87d28079c53083fee39f"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 1,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}

@@ -124,6 +124,35 @@ def test_analyze_refuses_frozen_test_without_explicit_override(tmp_path):
         analyze_failures.analyze(dataset, tmp_path / "predictions", "test")
 
 
+def test_analyze_applies_offset_and_limit_before_classifying_missing_predictions(
+    tmp_path,
+):
+    dataset = build_dataset(tmp_path)
+    predictions = tmp_path / "predictions"
+    write_json(
+        predictions / "inv_0002.json",
+        {"data": {"products": [{"name": "beta", "quantity": 1}]}},
+    )
+
+    result = analyze_failures.analyze(
+        dataset,
+        predictions,
+        "validation",
+        offset=1,
+        limit=1,
+    )
+
+    assert result["selection"] == {
+        "offset": 1,
+        "limit": 1,
+        "split_samples": 2,
+        "selected_samples": 1,
+    }
+    assert result["summary"]["samples"] == 1
+    assert result["summary"]["product_exact_samples"] == 1
+    assert result["summary"]["failed_samples"] == 0
+
+
 def test_stage_summary_reports_cost_and_latency(tmp_path):
     stage = tmp_path / "stage"
     write_json(stage / "inv_0001.json", {"latency_ms": 100, "estimated_cost_usd": 0.01})

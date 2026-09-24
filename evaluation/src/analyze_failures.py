@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 
-ANALYZER_VERSION = "0.1.0"
+ANALYZER_VERSION = "0.2.0"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -113,6 +113,8 @@ def analyze(
     candidate_b: Path | None = None,
     stages: list[tuple[str, Path]] | None = None,
     allow_frozen_test: bool = False,
+    offset: int = 0,
+    limit: int | None = None,
 ) -> dict[str, Any]:
     if split == "test" and not allow_frozen_test:
         raise ValueError(
@@ -120,13 +122,23 @@ def analyze(
             "pass --allow-frozen-test only for an explicitly authorized audit"
         )
 
+    if offset < 0:
+        raise ValueError("offset must be non-negative")
+    if limit is not None and limit <= 0:
+        raise ValueError("limit must be positive")
+
     manifest = load_jsonl(dataset / "manifest.jsonl")
-    rows = sorted(
+    split_rows = sorted(
         (row for row in manifest if row.get("split") == split),
         key=lambda row: row["sample_id"],
     )
-    if not rows:
+    if not split_rows:
         raise ValueError(f"No manifest samples found for split {split!r}")
+    rows = split_rows[offset : offset + limit if limit is not None else None]
+    if not rows:
+        raise ValueError(
+            f"No manifest samples selected for split {split!r} at offset {offset}"
+        )
 
     report_samples: dict[str, dict[str, Any]] = {}
     if report_path is not None:
@@ -239,6 +251,12 @@ def analyze(
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "dataset": str(dataset.resolve()),
         "split": split,
+        "selection": {
+            "offset": offset,
+            "limit": limit,
+            "split_samples": len(split_rows),
+            "selected_samples": len(rows),
+        },
         "tuning_safety": {
             "frozen_test_override_used": split == "test" and allow_frozen_test,
             "warning": (
@@ -269,6 +287,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--dataset", type=Path, required=True)
     parser.add_argument("--predictions", type=Path, required=True)
     parser.add_argument("--split", required=True)
+    parser.add_argument("--offset", type=int, default=0)
+    parser.add_argument("--limit", type=int)
     parser.add_argument("--report", type=Path)
     parser.add_argument("--routing-decisions", type=Path)
     parser.add_argument("--candidate-a", type=Path)
@@ -291,6 +311,8 @@ def main() -> None:
         candidate_b=args.candidate_b,
         stages=args.stage,
         allow_frozen_test=args.allow_frozen_test,
+        offset=args.offset,
+        limit=args.limit,
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,139 @@
+{
+  "sample_id": "inv_0026",
+  "model_bundle_version": "gpt-5.6-terra",
+  "data": {
+    "products": [
+      {
+        "name": "gepa_bio_und_fair_fencheltee",
+        "quantity": 1
+      },
+      {
+        "name": "gepa_bio_und_fair_pfefferminztee",
+        "quantity": 2
+      }
+    ]
+  },
+  "field_metadata": {
+    "/products/0/name": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/0/quantity": {
+      "confidence": 0.72,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_003"
+      ]
+    },
+    "/products/1/name": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    },
+    "/products/1/quantity": {
+      "confidence": 0.96,
+      "status": "unverified",
+      "evidence_refs": [
+        "ev_001",
+        "ev_002"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev_001",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 415,
+        "y": 575,
+        "width": 439,
+        "height": 466
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_002",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 1069,
+        "y": 243,
+        "width": 425,
+        "height": 333
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    },
+    {
+      "id": "ev_003",
+      "media_id": "med_inv_0026",
+      "source_type": "image_region",
+      "coordinate_space": "original_pixels",
+      "bbox": {
+        "x": 960,
+        "y": 965,
+        "width": 455,
+        "height": 459
+      },
+      "rotation_degrees": 0,
+      "page_index": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "model_version": "gpt-5.6-terra",
+      "media_available": true
+    }
+  ],
+  "latency_ms": 4482,
+  "estimated_cost_usd": 0.029532,
+  "usage": {
+    "input_tokens": 13956,
+    "output_tokens": 135,
+    "total_tokens": 14091,
+    "by_stage": {
+      "localization": {
+        "input_tokens": 13956,
+        "output_tokens": 135,
+        "total_tokens": 14091
+      }
+    }
+  },
+  "estimated_cost_usd_by_stage": {
+    "localization": 0.029532
+  },
+  "provider_metadata": {
+    "provider": "openai",
+    "response_id": "resp_04b79d60be717787016ab46320f28487d29089c3d7992246e8",
+    "response_ids": {
+      "localization": "resp_04b79d60be717787016ab46320f28487d29089c3d7992246e8"
+    },
+    "prompt_version": "inventory-instance-localization-references-v1",
+    "image_detail": "high",
+    "reference_sheet_count": 4,
+    "reference_detail": "high",
+    "reasoning_effort": "none",
+    "output_mode": "instances",
+    "model_instance_count": 3,
+    "identity_candidates": null,
+    "identity_candidate_fallback_to_full_catalog": false,
+    "identity_source": null,
+    "identity_prediction_path": null
+  }
+}
